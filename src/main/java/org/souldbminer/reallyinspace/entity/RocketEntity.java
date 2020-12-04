@@ -1,7 +1,7 @@
 
 package org.souldbminer.reallyinspace.entity;
 
-import org.souldbminer.reallyinspace.procedures.RocketliftoffProcedure;
+import org.souldbminer.reallyinspace.procedures.LiftoffProcedure;
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
 import org.souldbminer.reallyinspace.RisModElements;
 
@@ -157,16 +157,25 @@ public class RocketEntity extends RisModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
+			return retval;
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("sourceentity", sourceentity);
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				RocketliftoffProcedure.executeProcedure($_dependencies);
+				LiftoffProcedure.executeProcedure($_dependencies);
 			}
-			return retval;
 		}
 
 		@Override

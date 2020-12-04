@@ -19,59 +19,64 @@ import java.util.Map;
 import java.util.Collections;
 
 @RisModElements.ModElement.Tag
-public class RocketliftoffProcedure extends RisModElements.ModElement {
-	public RocketliftoffProcedure(RisModElements instance) {
-		super(instance, 55);
+public class LiftoffProcedure extends RisModElements.ModElement {
+	public LiftoffProcedure(RisModElements instance) {
+		super(instance, 58);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("sourceentity") == null) {
-			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure Rocketliftoff!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure Liftoff!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure Rocketliftoff!");
+				System.err.println("Failed to load dependency x for procedure Liftoff!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure Rocketliftoff!");
+				System.err.println("Failed to load dependency y for procedure Liftoff!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure Rocketliftoff!");
+				System.err.println("Failed to load dependency z for procedure Liftoff!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure Rocketliftoff!");
+				System.err.println("Failed to load dependency world for procedure Liftoff!");
 			return;
 		}
-		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		for (int index0 = 0; index0 < (int) (10000); index0++) {
+		boolean funcran = false;
+		funcran = (boolean) (false);
+		while (((entity.isBeingRidden()) == (true))) {
 			{
-				Entity _ent = sourceentity;
-				_ent.setPositionAndUpdate(x, (y + 1), z);
+				Entity _ent = entity;
+				_ent.setPositionAndUpdate(x, (y + 0.1), z);
 				if (_ent instanceof ServerPlayerEntity) {
-					((ServerPlayerEntity) _ent).connection.setPlayerLocation(x, (y + 1), z, _ent.rotationYaw, _ent.rotationPitch,
+					((ServerPlayerEntity) _ent).connection.setPlayerLocation(x, (y + 0.1), z, _ent.rotationYaw, _ent.rotationPitch,
 							Collections.emptySet());
 				}
 			}
-		}
-		if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-			Optional<FunctionObject> _fopt = world.getWorld().getServer().getFunctionManager().get(new ResourceLocation("ris:risfunc"));
-			if (_fopt.isPresent()) {
-				FunctionObject _fobj = _fopt.get();
-				world.getWorld().getServer().getFunctionManager().execute(_fobj, new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z),
-						Vec2f.ZERO, (ServerWorld) world.getWorld(), 4, "", new StringTextComponent(""), world.getWorld().getServer(), null));
+			if (((funcran) == (false))) {
+				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+					Optional<FunctionObject> _fopt = world.getWorld().getServer().getFunctionManager().get(new ResourceLocation("ris:rcfunc"));
+					if (_fopt.isPresent()) {
+						FunctionObject _fobj = _fopt.get();
+						world.getWorld().getServer().getFunctionManager().execute(_fobj, new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z),
+								Vec2f.ZERO, (ServerWorld) world.getWorld(), 4, "", new StringTextComponent(""), world.getWorld().getServer(), null));
+					}
+				}
 			}
+			funcran = (boolean) (true);
 		}
 	}
 }

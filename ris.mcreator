@@ -570,17 +570,35 @@
       }
     },
     {
-      "name": "Rocketliftoff",
-      "type": "procedure",
-      "sortid": 55,
+      "name": "Rc",
+      "type": "item",
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rocketliftoff",
+      "registry_name": "rc"
+    },
+    {
+      "name": "Rcf",
+      "type": "function",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcf"
+    },
+    {
+      "name": "Liftoff",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "liftoff",
       "metadata": {
         "dependencies": [
           {
-            "name": "sourceentity",
+            "name": "entity",
             "type": "entity"
           },
           {
@@ -601,24 +619,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Rc",
-      "type": "item",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rc"
-    },
-    {
-      "name": "Rcf",
-      "type": "function",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rcf"
     }
   ],
   "variable_elements": [],
@@ -626,8 +626,8 @@
   "language_map": {
     "en_gb": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.rismod.jupiter_rock": "Jupiter Rock",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -712,8 +712,8 @@
     },
     "en_us": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.rismod.jupiter_rock": "Jupiter Rock",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -798,8 +798,8 @@
     },
     "hi_in": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.rismod.jupiter_rock": "Jupiter Rock",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -884,8 +884,8 @@
     },
     "en_in": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.rismod.jupiter_rock": "Jupiter Rock",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -970,8 +970,8 @@
     },
     "es_es": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.rismod.jupiter_rock": "Jupiter Rock",
+      "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "item.ris.mercdim": "Mercury Rocket",
       "biome.rismod.venus": "Venus",
       "block.rismod.martian_stairs": "Martian Stairs",
