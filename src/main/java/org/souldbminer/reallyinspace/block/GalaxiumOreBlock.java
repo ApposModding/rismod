@@ -4,7 +4,7 @@ package org.souldbminer.reallyinspace.block;
 import org.souldbminer.reallyinspace.world.dimension.MercdimDimension;
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
 import org.souldbminer.reallyinspace.item.GalaxiumDustItem;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -34,11 +34,11 @@ import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
-@RismodModElements.ModElement.Tag
-public class GalaxiumOreBlock extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:galaxium_ore")
+@RisModElements.ModElement.Tag
+public class GalaxiumOreBlock extends RisModElements.ModElement {
+	@ObjectHolder("ris:galaxium_ore")
 	public static final Block block = null;
-	public GalaxiumOreBlock(RismodModElements instance) {
+	public GalaxiumOreBlock(RisModElements instance) {
 		super(instance, 24);
 	}
 

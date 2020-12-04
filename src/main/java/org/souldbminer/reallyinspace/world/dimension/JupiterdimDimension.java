@@ -4,7 +4,7 @@ package org.souldbminer.reallyinspace.world.dimension;
 import org.souldbminer.reallyinspace.item.JupiterdimItem;
 import org.souldbminer.reallyinspace.block.PortalBlock;
 import org.souldbminer.reallyinspace.block.JupiterRockBlock;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import org.jline.terminal.Size;
 
@@ -95,15 +95,15 @@ import com.google.common.collect.Sets;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.cache.LoadingCache;
 
-@RismodModElements.ModElement.Tag
-public class JupiterdimDimension extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:jupiterdim")
+@RisModElements.ModElement.Tag
+public class JupiterdimDimension extends RisModElements.ModElement {
+	@ObjectHolder("ris:jupiterdim")
 	public static final ModDimension dimension = null;
-	@ObjectHolder("rismod:jupiterdim_portal")
+	@ObjectHolder("ris:jupiterdim_portal")
 	public static final CustomPortalBlock portal = null;
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
-	public JupiterdimDimension(RismodModElements instance) {
+	public JupiterdimDimension(RisModElements instance) {
 		super(instance, 53);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -116,15 +116,15 @@ public class JupiterdimDimension extends RismodModElements.ModElement {
 
 	@SubscribeEvent
 	public void onRegisterDimensionsEvent(RegisterDimensionsEvent event) {
-		if (DimensionType.byName(new ResourceLocation("rismod:jupiterdim")) == null) {
-			DimensionManager.registerDimension(new ResourceLocation("rismod:jupiterdim"), dimension, null, false);
+		if (DimensionType.byName(new ResourceLocation("ris:jupiterdim")) == null) {
+			DimensionManager.registerDimension(new ResourceLocation("ris:jupiterdim"), dimension, null, false);
 		}
-		type = DimensionType.byName(new ResourceLocation("rismod:jupiterdim"));
+		type = DimensionType.byName(new ResourceLocation("ris:jupiterdim"));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("rismod:jupiter")),};
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("ris:jupiter")),};
 	}
 
 	@Override

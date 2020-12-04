@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ris:blocks/ptex",
+    "particle": "ris:blocks/ptex"
+  }
+}

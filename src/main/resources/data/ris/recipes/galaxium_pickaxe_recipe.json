@@ -1,0 +1,30 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "ris:galaxium_dust"
+    },
+    "1": {
+      "item": "ris:galaxium_dust"
+    },
+    "2": {
+      "item": "ris:galaxium_dust"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "ris:galaxium_pickaxe",
+    "count": 1
+  }
+}

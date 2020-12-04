@@ -2,7 +2,7 @@
 package org.souldbminer.reallyinspace.block;
 
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -18,11 +18,11 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
-@RismodModElements.ModElement.Tag
-public class JupiterRockBlock extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:jupiter_rock")
+@RisModElements.ModElement.Tag
+public class JupiterRockBlock extends RisModElements.ModElement {
+	@ObjectHolder("ris:jupiter_rock")
 	public static final Block block = null;
-	public JupiterRockBlock(RismodModElements instance) {
+	public JupiterRockBlock(RisModElements instance) {
 		super(instance, 52);
 	}
 

@@ -2,7 +2,7 @@
 package org.souldbminer.reallyinspace.block;
 
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -18,11 +18,11 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
-@RismodModElements.ModElement.Tag
-public class PortalBlock extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:portal")
+@RisModElements.ModElement.Tag
+public class PortalBlock extends RisModElements.ModElement {
+	@ObjectHolder("ris:portal")
 	public static final Block block = null;
-	public PortalBlock(RismodModElements instance) {
+	public PortalBlock(RisModElements instance) {
 		super(instance, 22);
 	}
 

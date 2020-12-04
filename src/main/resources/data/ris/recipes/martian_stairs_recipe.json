@@ -1,0 +1,33 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ris:martian_planks"
+    },
+    "3": {
+      "item": "ris:martian_planks"
+    },
+    "4": {
+      "item": "ris:martian_planks"
+    },
+    "6": {
+      "item": "ris:martian_planks"
+    },
+    "7": {
+      "item": "ris:martian_planks"
+    },
+    "8": {
+      "item": "ris:martian_planks"
+    }
+  },
+  "result": {
+    "item": "ris:martian_stairs",
+    "count": 4
+  }
+}

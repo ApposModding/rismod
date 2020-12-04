@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "ris:block/jupiterdim_portal_ew"
+    },
+    "axis=x": {
+      "model": "ris:block/jupiterdim_portal_ns"
+    }
+  }
+}

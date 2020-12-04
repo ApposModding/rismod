@@ -4,7 +4,7 @@ package org.souldbminer.reallyinspace.world.dimension;
 import org.souldbminer.reallyinspace.item.MarsItem;
 import org.souldbminer.reallyinspace.block.PortalBlock;
 import org.souldbminer.reallyinspace.block.MartianStoneBlock;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import org.jline.terminal.Size;
 
@@ -95,15 +95,15 @@ import com.google.common.collect.Sets;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.cache.LoadingCache;
 
-@RismodModElements.ModElement.Tag
-public class MarsDimension extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:mars")
+@RisModElements.ModElement.Tag
+public class MarsDimension extends RisModElements.ModElement {
+	@ObjectHolder("ris:mars")
 	public static final ModDimension dimension = null;
-	@ObjectHolder("rismod:mars_portal")
+	@ObjectHolder("ris:mars_portal")
 	public static final CustomPortalBlock portal = null;
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
-	public MarsDimension(RismodModElements instance) {
+	public MarsDimension(RisModElements instance) {
 		super(instance, 51);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -116,15 +116,15 @@ public class MarsDimension extends RismodModElements.ModElement {
 
 	@SubscribeEvent
 	public void onRegisterDimensionsEvent(RegisterDimensionsEvent event) {
-		if (DimensionType.byName(new ResourceLocation("rismod:mars")) == null) {
-			DimensionManager.registerDimension(new ResourceLocation("rismod:mars"), dimension, null, true);
+		if (DimensionType.byName(new ResourceLocation("ris:mars")) == null) {
+			DimensionManager.registerDimension(new ResourceLocation("ris:mars"), dimension, null, true);
 		}
-		type = DimensionType.byName(new ResourceLocation("rismod:mars"));
+		type = DimensionType.byName(new ResourceLocation("ris:mars"));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("rismod:marsflat")),};
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("ris:marsflat")),};
 	}
 
 	@Override

@@ -4,8 +4,8 @@ package org.souldbminer.reallyinspace.gui;
 import org.souldbminer.reallyinspace.procedures.VentpProcedure;
 import org.souldbminer.reallyinspace.procedures.MerctpProcedure;
 import org.souldbminer.reallyinspace.procedures.EtpProcedure;
-import org.souldbminer.reallyinspace.RismodModElements;
-import org.souldbminer.reallyinspace.RismodMod;
+import org.souldbminer.reallyinspace.RisModElements;
+import org.souldbminer.reallyinspace.RisMod;
 
 import org.lwjgl.opengl.GL11;
 
@@ -39,11 +39,11 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-@RismodModElements.ModElement.Tag
-public class PannelGui extends RismodModElements.ModElement {
+@RisModElements.ModElement.Tag
+public class PannelGui extends RisModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public PannelGui(RismodModElements instance) {
+	public PannelGui(RisModElements instance) {
 		super(instance, 21);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
@@ -188,67 +188,67 @@ public class PannelGui extends RismodModElements.ModElement {
 			Search.setMaxStringLength(32767);
 			this.children.add(this.Search);
 			this.addButton(new Button(this.guiLeft + 14, this.guiTop + 207, 35, 20, "<<", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 253, this.guiTop + 209, 35, 20, ">>", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 27, this.guiTop + 39, 60, 20, "Mercury", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
 				handleButtonAction(entity, 2, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 31, this.guiTop + 72, 50, 20, "Venus", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
 				handleButtonAction(entity, 3, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 32, this.guiTop + 109, 50, 20, "Earth", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(4, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(4, x, y, z));
 				handleButtonAction(entity, 4, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 31, this.guiTop + 140, 45, 20, "Mars", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(5, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(5, x, y, z));
 				handleButtonAction(entity, 5, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 24, this.guiTop + 166, 60, 20, "Jupiter", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(6, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(6, x, y, z));
 				handleButtonAction(entity, 6, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 124, this.guiTop + 39, 55, 20, "Saturn", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(7, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(7, x, y, z));
 				handleButtonAction(entity, 7, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 122, this.guiTop + 71, 55, 20, "Uranus", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(8, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(8, x, y, z));
 				handleButtonAction(entity, 8, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 122, this.guiTop + 104, 60, 20, "Neptune", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(9, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(9, x, y, z));
 				handleButtonAction(entity, 9, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 228, this.guiTop + 73, 50, 20, "Pluto", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(10, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(10, x, y, z));
 				handleButtonAction(entity, 10, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 227, this.guiTop + 47, 50, 20, "Cerus", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(11, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(11, x, y, z));
 				handleButtonAction(entity, 11, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 227, this.guiTop + 103, 55, 20, "Haumea", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(12, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(12, x, y, z));
 				handleButtonAction(entity, 12, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 234, this.guiTop + 128, 45, 20, "Eris", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(13, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(13, x, y, z));
 				handleButtonAction(entity, 13, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 123, this.guiTop + 160, 55, 20, "Middle", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(14, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(14, x, y, z));
 				handleButtonAction(entity, 14, x, y, z);
 			}));
 			this.addButton(new Button(this.guiLeft + 127, this.guiTop + 192, 55, 20, "Kupier", e -> {
-				RismodMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(15, x, y, z));
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(15, x, y, z));
 				handleButtonAction(entity, 15, x, y, z);
 			}));
 		}

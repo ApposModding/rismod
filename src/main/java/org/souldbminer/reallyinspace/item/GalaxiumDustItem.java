@@ -1,7 +1,7 @@
 
 package org.souldbminer.reallyinspace.item;
 
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -11,11 +11,11 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-@RismodModElements.ModElement.Tag
-public class GalaxiumDustItem extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:galaxium_dust")
+@RisModElements.ModElement.Tag
+public class GalaxiumDustItem extends RisModElements.ModElement {
+	@ObjectHolder("ris:galaxium_dust")
 	public static final Item block = null;
-	public GalaxiumDustItem(RismodModElements instance) {
+	public GalaxiumDustItem(RisModElements instance) {
 		super(instance, 23);
 	}
 

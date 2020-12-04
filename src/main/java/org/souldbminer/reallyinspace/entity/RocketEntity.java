@@ -4,7 +4,7 @@ package org.souldbminer.reallyinspace.entity;
 import org.souldbminer.reallyinspace.procedures.RocketliftoffProcedure;
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
 import org.souldbminer.reallyinspace.gui.PannelGui;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.wrapper.EntityHandsInvWrapper;
@@ -73,10 +73,10 @@ import io.netty.buffer.Unpooled;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
-@RismodModElements.ModElement.Tag
-public class RocketEntity extends RismodModElements.ModElement {
+@RisModElements.ModElement.Tag
+public class RocketEntity extends RisModElements.ModElement {
 	public static EntityType entity = null;
-	public RocketEntity(RismodModElements instance) {
+	public RocketEntity(RisModElements instance) {
 		super(instance, 20);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
@@ -98,7 +98,7 @@ public class RocketEntity extends RismodModElements.ModElement {
 			return new MobRenderer(renderManager, new Modelrocketmodel(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("rismod:textures/rocketmodel.png");
+					return new ResourceLocation("ris:textures/rocketmodel.png");
 				}
 			};
 		});
@@ -237,6 +237,11 @@ public class RocketEntity extends RismodModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				RocketliftoffProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

@@ -1,7 +1,7 @@
 
 package org.souldbminer.reallyinspace.itemgroup;
 
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
@@ -10,9 +10,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.block.Blocks;
 
-@RismodModElements.ModElement.Tag
-public class RISItemGroup extends RismodModElements.ModElement {
-	public RISItemGroup(RismodModElements instance) {
+@RisModElements.ModElement.Tag
+public class RISItemGroup extends RisModElements.ModElement {
+	public RISItemGroup(RisModElements instance) {
 		super(instance, 1);
 	}
 

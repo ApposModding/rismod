@@ -4,7 +4,7 @@ package org.souldbminer.reallyinspace.world.dimension;
 import org.souldbminer.reallyinspace.item.MercdimItem;
 import org.souldbminer.reallyinspace.block.PortalBlock;
 import org.souldbminer.reallyinspace.block.MercsoilBlock;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import org.jline.terminal.Size;
 
@@ -95,15 +95,15 @@ import com.google.common.collect.Sets;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.cache.LoadingCache;
 
-@RismodModElements.ModElement.Tag
-public class MercdimDimension extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:mercdim")
+@RisModElements.ModElement.Tag
+public class MercdimDimension extends RisModElements.ModElement {
+	@ObjectHolder("ris:mercdim")
 	public static final ModDimension dimension = null;
-	@ObjectHolder("rismod:mercdim_portal")
+	@ObjectHolder("ris:mercdim_portal")
 	public static final CustomPortalBlock portal = null;
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
-	public MercdimDimension(RismodModElements instance) {
+	public MercdimDimension(RisModElements instance) {
 		super(instance, 22);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -116,15 +116,15 @@ public class MercdimDimension extends RismodModElements.ModElement {
 
 	@SubscribeEvent
 	public void onRegisterDimensionsEvent(RegisterDimensionsEvent event) {
-		if (DimensionType.byName(new ResourceLocation("rismod:mercdim")) == null) {
-			DimensionManager.registerDimension(new ResourceLocation("rismod:mercdim"), dimension, null, true);
+		if (DimensionType.byName(new ResourceLocation("ris:mercdim")) == null) {
+			DimensionManager.registerDimension(new ResourceLocation("ris:mercdim"), dimension, null, true);
 		}
-		type = DimensionType.byName(new ResourceLocation("rismod:mercdim"));
+		type = DimensionType.byName(new ResourceLocation("ris:mercdim"));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("rismod:mercfltbiomes")),};
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("ris:mercfltbiomes")),};
 	}
 
 	@Override

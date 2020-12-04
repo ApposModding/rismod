@@ -1,7 +1,7 @@
 
 package org.souldbminer.reallyinspace.item;
 
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -12,11 +12,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.HoeItem;
 
-@RismodModElements.ModElement.Tag
-public class GalaxiumHoeItem extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:galaxium_hoe")
+@RisModElements.ModElement.Tag
+public class GalaxiumHoeItem extends RisModElements.ModElement {
+	@ObjectHolder("ris:galaxium_hoe")
 	public static final Item block = null;
-	public GalaxiumHoeItem(RismodModElements instance) {
+	public GalaxiumHoeItem(RisModElements instance) {
 		super(instance, 33);
 	}
 

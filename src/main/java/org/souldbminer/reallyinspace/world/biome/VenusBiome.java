@@ -2,7 +2,7 @@
 package org.souldbminer.reallyinspace.world.biome;
 
 import org.souldbminer.reallyinspace.block.CompressedmagmaBlock;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -19,11 +19,11 @@ import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.block.Blocks;
 
-@RismodModElements.ModElement.Tag
-public class VenusBiome extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:venus")
+@RisModElements.ModElement.Tag
+public class VenusBiome extends RisModElements.ModElement {
+	@ObjectHolder("ris:venus")
 	public static final CustomBiome biome = null;
-	public VenusBiome(RismodModElements instance) {
+	public VenusBiome(RisModElements instance) {
 		super(instance, 45);
 	}
 

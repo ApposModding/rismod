@@ -15,7 +15,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 public class MercdimItem extends Item {
-	@ObjectHolder("rismod:mercdim")
+	@ObjectHolder("ris:mercdim")
 	public static final Item block = null;
 	public MercdimItem() {
 		super(new Item.Properties().group(RISItemGroup.tab).maxDamage(64));

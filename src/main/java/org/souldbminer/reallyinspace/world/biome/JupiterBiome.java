@@ -2,7 +2,7 @@
 package org.souldbminer.reallyinspace.world.biome;
 
 import org.souldbminer.reallyinspace.block.JupiterRockBlock;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -18,11 +18,11 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.Biome;
 
-@RismodModElements.ModElement.Tag
-public class JupiterBiome extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:jupiter")
+@RisModElements.ModElement.Tag
+public class JupiterBiome extends RisModElements.ModElement {
+	@ObjectHolder("ris:jupiter")
 	public static final CustomBiome biome = null;
-	public JupiterBiome(RismodModElements instance) {
+	public JupiterBiome(RisModElements instance) {
 		super(instance, 52);
 	}
 

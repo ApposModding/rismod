@@ -1,0 +1,13 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:martian_log"
+    }
+  ],
+  "result": {
+    "item": "ris:martian_planks",
+    "count": 4
+  }
+}

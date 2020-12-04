@@ -4,7 +4,7 @@ package org.souldbminer.reallyinspace.world.biome;
 import org.souldbminer.reallyinspace.block.MartianStoneBlock;
 import org.souldbminer.reallyinspace.block.MartianLogBlock;
 import org.souldbminer.reallyinspace.block.MartianLeavesBlock;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -39,11 +39,11 @@ import net.minecraft.block.Block;
 import java.util.Set;
 import java.util.Random;
 
-@RismodModElements.ModElement.Tag
-public class MarsflatBiome extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:marsflat")
+@RisModElements.ModElement.Tag
+public class MarsflatBiome extends RisModElements.ModElement {
+	@ObjectHolder("ris:marsflat")
 	public static final CustomBiome biome = null;
-	public MarsflatBiome(RismodModElements instance) {
+	public MarsflatBiome(RisModElements instance) {
 		super(instance, 50);
 	}
 

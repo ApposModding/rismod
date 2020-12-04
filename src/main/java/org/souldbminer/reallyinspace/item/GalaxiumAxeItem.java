@@ -1,7 +1,7 @@
 
 package org.souldbminer.reallyinspace.item;
 
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -12,11 +12,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.AxeItem;
 
-@RismodModElements.ModElement.Tag
-public class GalaxiumAxeItem extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:galaxium_axe")
+@RisModElements.ModElement.Tag
+public class GalaxiumAxeItem extends RisModElements.ModElement {
+	@ObjectHolder("ris:galaxium_axe")
 	public static final Item block = null;
-	public GalaxiumAxeItem(RismodModElements instance) {
+	public GalaxiumAxeItem(RisModElements instance) {
 		super(instance, 30);
 	}
 

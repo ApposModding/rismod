@@ -2,7 +2,7 @@
 package org.souldbminer.reallyinspace.item;
 
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,17 +18,17 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.Entity;
 
-@RismodModElements.ModElement.Tag
-public class GalaxiumArmorItem extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:galaxium_armor_helmet")
+@RisModElements.ModElement.Tag
+public class GalaxiumArmorItem extends RisModElements.ModElement {
+	@ObjectHolder("ris:galaxium_armor_helmet")
 	public static final Item helmet = null;
-	@ObjectHolder("rismod:galaxium_armor_chestplate")
+	@ObjectHolder("ris:galaxium_armor_chestplate")
 	public static final Item body = null;
-	@ObjectHolder("rismod:galaxium_armor_leggings")
+	@ObjectHolder("ris:galaxium_armor_leggings")
 	public static final Item legs = null;
-	@ObjectHolder("rismod:galaxium_armor_boots")
+	@ObjectHolder("ris:galaxium_armor_boots")
 	public static final Item boots = null;
-	public GalaxiumArmorItem(RismodModElements instance) {
+	public GalaxiumArmorItem(RisModElements instance) {
 		super(instance, 39);
 	}
 
@@ -67,25 +67,25 @@ public class GalaxiumArmorItem extends RismodModElements.ModElement {
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(RISItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "rismod:textures/models/armor/galaxium_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "ris:textures/models/armor/galaxium_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("galaxium_armor_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(RISItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "rismod:textures/models/armor/galaxium_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "ris:textures/models/armor/galaxium_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("galaxium_armor_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(RISItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "rismod:textures/models/armor/galaxium_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "ris:textures/models/armor/galaxium_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("galaxium_armor_leggings"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(RISItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "rismod:textures/models/armor/galaxium_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "ris:textures/models/armor/galaxium_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("galaxium_armor_boots"));
 	}

@@ -2,7 +2,7 @@
 package org.souldbminer.reallyinspace.block;
 
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -21,11 +21,11 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
-@RismodModElements.ModElement.Tag
-public class CompressedmagmaBlock extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:compressedmagma")
+@RisModElements.ModElement.Tag
+public class CompressedmagmaBlock extends RisModElements.ModElement {
+	@ObjectHolder("ris:compressedmagma")
 	public static final Block block = null;
-	public CompressedmagmaBlock(RismodModElements instance) {
+	public CompressedmagmaBlock(RisModElements instance) {
 		super(instance, 44);
 	}
 

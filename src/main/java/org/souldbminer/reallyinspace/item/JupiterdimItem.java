@@ -15,7 +15,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 public class JupiterdimItem extends Item {
-	@ObjectHolder("rismod:jupiterdim")
+	@ObjectHolder("ris:jupiterdim")
 	public static final Item block = null;
 	public JupiterdimItem() {
 		super(new Item.Properties().group(RISItemGroup.tab).maxDamage(64));

@@ -1,6 +1,6 @@
 package org.souldbminer.reallyinspace.procedures;
 
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 
@@ -17,9 +17,9 @@ import net.minecraft.entity.Entity;
 
 import java.util.Map;
 
-@RismodModElements.ModElement.Tag
-public class EtpProcedure extends RismodModElements.ModElement {
-	public EtpProcedure(RismodModElements instance) {
+@RisModElements.ModElement.Tag
+public class EtpProcedure extends RisModElements.ModElement {
+	public EtpProcedure(RisModElements instance) {
 		super(instance, 48);
 	}
 

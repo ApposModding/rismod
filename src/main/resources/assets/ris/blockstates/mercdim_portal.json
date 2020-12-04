@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "ris:block/mercdim_portal_ew"
+    },
+    "axis=x": {
+      "model": "ris:block/mercdim_portal_ns"
+    }
+  }
+}

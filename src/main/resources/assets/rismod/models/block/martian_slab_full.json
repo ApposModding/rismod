@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "rismod:blocks/martian_planks",
-    "top": "rismod:blocks/martian_planks",
-    "side": "rismod:blocks/martian_planks"
-  }
-}

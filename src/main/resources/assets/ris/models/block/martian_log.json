@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ris:blocks/martian_log_top",
+    "up": "ris:blocks/martian_log_top",
+    "north": "ris:blocks/martian_log_side",
+    "east": "ris:blocks/martian_log_side",
+    "south": "ris:blocks/martian_log_side",
+    "west": "ris:blocks/martian_log_side",
+    "particle": "ris:blocks/martian_log_top"
+  }
+}

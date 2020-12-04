@@ -1,7 +1,7 @@
 
 package org.souldbminer.reallyinspace.item;
 
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -12,11 +12,11 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-@RismodModElements.ModElement.Tag
-public class GalaxiumPickaxeItem extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:galaxium_pickaxe")
+@RisModElements.ModElement.Tag
+public class GalaxiumPickaxeItem extends RisModElements.ModElement {
+	@ObjectHolder("ris:galaxium_pickaxe")
 	public static final Item block = null;
-	public GalaxiumPickaxeItem(RismodModElements instance) {
+	public GalaxiumPickaxeItem(RisModElements instance) {
 		super(instance, 29);
 	}
 

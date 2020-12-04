@@ -2,7 +2,7 @@
 package org.souldbminer.reallyinspace.block;
 
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -18,11 +18,11 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
-@RismodModElements.ModElement.Tag
-public class MercsoilBlock extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:mercsoil")
+@RisModElements.ModElement.Tag
+public class MercsoilBlock extends RisModElements.ModElement {
+	@ObjectHolder("ris:mercsoil")
 	public static final Block block = null;
-	public MercsoilBlock(RismodModElements instance) {
+	public MercsoilBlock(RisModElements instance) {
 		super(instance, 2);
 	}
 

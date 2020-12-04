@@ -1,0 +1,9 @@
+{
+  "_fv": 13,
+  "_type": "function",
+  "definition": {
+    "code": "# Enter the function code here\n/give @p ris:rc 1\n#give rocket controller to player",
+    "name": "rcfunc",
+    "namespace": "mod"
+  }
+}

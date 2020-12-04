@@ -4,7 +4,7 @@ package org.souldbminer.reallyinspace.world.biome;
 import org.souldbminer.reallyinspace.block.MercsoilBlock;
 import org.souldbminer.reallyinspace.block.MartianWoodBlock;
 import org.souldbminer.reallyinspace.block.MartianLogBlock;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -38,11 +38,11 @@ import net.minecraft.block.Block;
 import java.util.Set;
 import java.util.Random;
 
-@RismodModElements.ModElement.Tag
-public class MercfltbiomesBiome extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:mercfltbiomes")
+@RisModElements.ModElement.Tag
+public class MercfltbiomesBiome extends RisModElements.ModElement {
+	@ObjectHolder("ris:mercfltbiomes")
 	public static final CustomBiome biome = null;
-	public MercfltbiomesBiome(RismodModElements instance) {
+	public MercfltbiomesBiome(RisModElements instance) {
 		super(instance, 19);
 	}
 

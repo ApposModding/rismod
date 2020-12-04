@@ -2,7 +2,7 @@
 package org.souldbminer.reallyinspace.block;
 
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -22,11 +22,11 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
-@RismodModElements.ModElement.Tag
-public class MartianStairsBlock extends RismodModElements.ModElement {
-	@ObjectHolder("rismod:martian_stairs")
+@RisModElements.ModElement.Tag
+public class MartianStairsBlock extends RisModElements.ModElement {
+	@ObjectHolder("ris:martian_stairs")
 	public static final Block block = null;
-	public MartianStairsBlock(RismodModElements instance) {
+	public MartianStairsBlock(RisModElements instance) {
 		super(instance, 7);
 	}
 

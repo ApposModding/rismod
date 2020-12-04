@@ -15,7 +15,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 public class VenusdimensionItem extends Item {
-	@ObjectHolder("rismod:venusdimension")
+	@ObjectHolder("ris:venusdimension")
 	public static final Item block = null;
 	public VenusdimensionItem() {
 		super(new Item.Properties().group(RISItemGroup.tab).maxDamage(64));

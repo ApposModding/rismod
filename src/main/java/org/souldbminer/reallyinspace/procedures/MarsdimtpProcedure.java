@@ -1,7 +1,7 @@
 package org.souldbminer.reallyinspace.procedures;
 
 import org.souldbminer.reallyinspace.world.dimension.MarsDimension;
-import org.souldbminer.reallyinspace.RismodModElements;
+import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 
@@ -18,9 +18,9 @@ import net.minecraft.entity.Entity;
 
 import java.util.Map;
 
-@RismodModElements.ModElement.Tag
-public class MarsdimtpProcedure extends RismodModElements.ModElement {
-	public MarsdimtpProcedure(RismodModElements instance) {
+@RisModElements.ModElement.Tag
+public class MarsdimtpProcedure extends RisModElements.ModElement {
+	public MarsdimtpProcedure(RisModElements instance) {
 		super(instance, 51);
 	}
 

@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "ris:blocks/martian_planks",
+    "particle": "ris:blocks/martian_planks"
+  }
+}

@@ -15,7 +15,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 public class MarsItem extends Item {
-	@ObjectHolder("rismod:mars")
+	@ObjectHolder("ris:mars")
 	public static final Item block = null;
 	public MarsItem() {
 		super(new Item.Properties().group(RISItemGroup.tab).maxDamage(64));

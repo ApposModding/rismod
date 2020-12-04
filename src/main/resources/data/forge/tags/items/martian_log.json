@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "rismod:martian_wood",
-    "rismod:martian_log"
+    "ris:martian_wood",
+    "ris:martian_log"
   ]
 }
