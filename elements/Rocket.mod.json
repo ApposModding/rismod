@@ -56,7 +56,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
-    "guiBoundTo": "Pannel",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,

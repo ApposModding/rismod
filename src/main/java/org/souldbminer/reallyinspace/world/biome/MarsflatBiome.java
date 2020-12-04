@@ -8,7 +8,6 @@ import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.common.BiomeManager;
 
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
@@ -54,8 +53,6 @@ public class MarsflatBiome extends RisModElements.ModElement {
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		BiomeManager.addSpawnBiome(biome);
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 10));
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
