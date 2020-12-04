@@ -111,7 +111,7 @@ public class RocketEntity extends RisModElements.ModElement {
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
 			experienceValue = 0;
-			setNoAI(true);
+			setNoAI(false);
 			enablePersistence();
 			this.moveController = new FlyingMovementController(this, 10, true);
 			this.navigator = new FlyingPathNavigator(this, this.world);
@@ -120,6 +120,11 @@ public class RocketEntity extends RisModElements.ModElement {
 		@Override
 		public IPacket<?> createSpawnPacket() {
 			return NetworkHooks.getEntitySpawningPacket(this);
+		}
+
+		@Override
+		protected void registerGoals() {
+			super.registerGoals();
 		}
 
 		@Override
@@ -151,9 +156,13 @@ public class RocketEntity extends RisModElements.ModElement {
 		public boolean attackEntityFrom(DamageSource source, float amount) {
 			if (source.getImmediateSource() instanceof ArrowEntity)
 				return false;
+			if (source.getImmediateSource() instanceof PlayerEntity)
+				return false;
 			if (source.getImmediateSource() instanceof PotionEntity)
 				return false;
 			if (source == DamageSource.FALL)
+				return false;
+			if (source == DamageSource.CACTUS)
 				return false;
 			if (source == DamageSource.DROWN)
 				return false;
@@ -262,11 +271,6 @@ public class RocketEntity extends RisModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.FLYING_SPEED) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.FLYING_SPEED);
 			this.getAttribute(SharedMonsterAttributes.FLYING_SPEED).setBaseValue(0.3);
-		}
-
-		@Override
-		public boolean canBeCollidedWith() {
-			return false;
 		}
 
 		@Override

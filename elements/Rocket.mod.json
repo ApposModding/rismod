@@ -59,18 +59,18 @@
     "guiBoundTo": "Pannel",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "disableCollisions": true,
+    "disableCollisions": false,
     "ridable": true,
     "canControlForward": true,
     "canControlStrafe": true,
     "immuneToFire": true,
     "immuneToArrows": true,
     "immuneToFallDamage": true,
-    "immuneToCactus": false,
+    "immuneToCactus": true,
     "immuneToDrowning": true,
     "immuneToLightning": true,
     "immuneToPotions": true,
-    "immuneToPlayer": false,
+    "immuneToPlayer": true,
     "mobDrop": {
       "value": ""
     },
@@ -96,7 +96,7 @@
     "onRightClickedOn": {
       "name": "Rocketliftoff"
     },
-    "hasAI": false,
+    "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"-153\"></block></xml>",
     "breedable": false,
