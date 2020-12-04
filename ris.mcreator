@@ -580,7 +580,7 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
+            "name": "sourceentity",
             "type": "entity"
           },
           {
@@ -626,8 +626,8 @@
   "language_map": {
     "en_gb": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.rismod.jupiter_rock": "Jupiter Rock",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -712,8 +712,8 @@
     },
     "en_us": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.rismod.jupiter_rock": "Jupiter Rock",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -798,8 +798,8 @@
     },
     "hi_in": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.rismod.jupiter_rock": "Jupiter Rock",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -884,8 +884,8 @@
     },
     "en_in": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.rismod.jupiter_rock": "Jupiter Rock",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -970,8 +970,8 @@
     },
     "es_es": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.rismod.jupiter_rock": "Jupiter Rock",
+      "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "item.ris.mercdim": "Mercury Rocket",
       "biome.rismod.venus": "Venus",
       "block.rismod.martian_stairs": "Martian Stairs",
