@@ -1,0 +1,39 @@
+{
+  "group": "rismod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "rismod:galaxium_dust"
+    },
+    "2": {
+      "item": "rismod:galaxium_dust"
+    },
+    "3": {
+      "item": "rismod:galaxium_dust"
+    },
+    "4": {
+      "item": "rismod:galaxium_dust"
+    },
+    "5": {
+      "item": "rismod:galaxium_dust"
+    },
+    "6": {
+      "item": "rismod:galaxium_dust"
+    },
+    "7": {
+      "item": "rismod:galaxium_dust"
+    },
+    "8": {
+      "item": "rismod:galaxium_dust"
+    }
+  },
+  "result": {
+    "item": "rismod:galaxium_armor_chestplate",
+    "count": 1
+  }
+}

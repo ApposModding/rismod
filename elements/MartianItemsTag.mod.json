@@ -1,0 +1,19 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:MartianWood"
+      },
+      {
+        "value": "CUSTOM:MartianLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "martian_log",
+    "namespace": "forge"
+  }
+}

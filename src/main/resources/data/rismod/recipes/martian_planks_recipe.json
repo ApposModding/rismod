@@ -1,0 +1,13 @@
+{
+  "group": "rismod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:martian_log"
+    }
+  ],
+  "result": {
+    "item": "rismod:martian_planks",
+    "count": 4
+  }
+}

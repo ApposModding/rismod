@@ -1,0 +1,237 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 238,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Search Planets",
+          "width": 120,
+          "height": 20,
+          "name": "Search",
+          "x": 153,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<<",
+          "width": 35,
+          "height": 20,
+          "name": "<<",
+          "x": 78,
+          "y": 208
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">>",
+          "width": 35,
+          "height": 20,
+          "name": ">>",
+          "x": 317,
+          "y": 210
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mercury",
+          "onClick": {
+            "name": "Merctp"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Mercury",
+          "x": 91,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Venus",
+          "onClick": {
+            "name": "Ventp"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Venus",
+          "x": 95,
+          "y": 73
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Earth",
+          "onClick": {
+            "name": "Etp"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Earth",
+          "x": 96,
+          "y": 110
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mars",
+          "width": 45,
+          "height": 20,
+          "name": "Mars",
+          "x": 95,
+          "y": 141
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Jupiter",
+          "width": 60,
+          "height": 20,
+          "name": "Jupiter",
+          "x": 88,
+          "y": 167
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Saturn",
+          "width": 55,
+          "height": 20,
+          "name": "Saturn",
+          "x": 188,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Uranus",
+          "width": 55,
+          "height": 20,
+          "name": "Uranus",
+          "x": 186,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Neptune",
+          "width": 60,
+          "height": 20,
+          "name": "Neptune",
+          "x": 186,
+          "y": 105
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Pluto",
+          "width": 50,
+          "height": 20,
+          "name": "Pluto",
+          "x": 292,
+          "y": 74
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Cerus",
+          "width": 50,
+          "height": 20,
+          "name": "Cerus",
+          "x": 291,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Dwarf Planets",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "Dwarf Planets",
+          "x": 285,
+          "y": 23
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Haumea",
+          "width": 55,
+          "height": 20,
+          "name": "Haumea",
+          "x": 291,
+          "y": 104
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Eris",
+          "width": 45,
+          "height": 20,
+          "name": "Eris",
+          "x": 298,
+          "y": 129
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Astroid Belts",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": "Astroid Belts",
+          "x": 183,
+          "y": 139
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Middle",
+          "width": 55,
+          "height": 20,
+          "name": "Middle",
+          "x": 187,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Kupier",
+          "width": 55,
+          "height": 20,
+          "name": "Kupier",
+          "x": 191,
+          "y": 193
+        }
+      }
+    ]
+  }
+}

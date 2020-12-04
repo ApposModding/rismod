@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="rismod"
+version="1.0.0"
+displayName="ReallyInSpaceForge"
+credits="Help From my Patreons"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+authors="Souldbminer & Help From My Patreons"
+description='''
+Adds 10+ Custom Dimensions to explore space and thrive 
+'''
+
+[[dependencies.rismod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

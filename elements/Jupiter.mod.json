@@ -1,0 +1,68 @@
+{
+  "_fv": 13,
+  "_type": "biome",
+  "definition": {
+    "name": "Jupiter",
+    "groundBlock": {
+      "value": "CUSTOM:JupiterRock"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:JupiterRock"
+    },
+    "treeType": 1,
+    "vanillaTreeType": "Default",
+    "minHeight": 7,
+    "spawnVines": false,
+    "treeVines": {
+      "value": "CUSTOM:Compressedmagma"
+    },
+    "treeStem": {
+      "value": "CUSTOM:Compressedmagma"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:Compressedmagma"
+    },
+    "treeFruits": {
+      "value": "CUSTOM:Compressedmagma"
+    },
+    "treesPerChunk": 0,
+    "grassPerChunk": 4,
+    "seagrassPerChunk": 20,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPathcesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeType": "WARM",
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "biomeDictionaryTypes": [],
+    "defaultFeatures": [
+      "Caves",
+      "Structures",
+      "Ores"
+    ],
+    "spawnEntries": []
+  }
+}

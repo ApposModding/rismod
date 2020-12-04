@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "rismod:blocks/martian_planks",
+    "particle": "rismod:blocks/martian_planks"
+  }
+}

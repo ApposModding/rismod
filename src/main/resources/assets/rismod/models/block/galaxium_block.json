@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "rismod:blocks/galaxium_ore_block",
+    "particle": "rismod:blocks/galaxium_ore_block"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "rismod:block/mars_portal_ew"
+    },
+    "axis=x": {
+      "model": "rismod:block/mars_portal_ns"
+    }
+  }
+}

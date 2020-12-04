@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "rismod:blocks/mstonetexpngtex",
+    "particle": "rismod:blocks/mstonetexpngtex"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "rismod:block/venusdimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "rismod:block/venusdimension_portal_ns"
+    }
+  }
+}
