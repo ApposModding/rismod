@@ -93,7 +93,7 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "onMobTickUpdate": {
+    "onRightClickedOn": {
       "name": "Liftoff"
     },
     "hasAI": true,

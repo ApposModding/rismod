@@ -157,16 +157,6 @@ public class RocketEntity extends RisModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
-			return retval;
-		}
-
-		@Override
-		public void baseTick() {
-			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -175,6 +165,7 @@ public class RocketEntity extends RisModElements.ModElement {
 				$_dependencies.put("z", z);
 				LiftoffProcedure.executeProcedure($_dependencies);
 			}
+			return retval;
 		}
 
 		@Override
