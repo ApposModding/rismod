@@ -1,6 +1,7 @@
 
 package org.souldbminer.reallyinspace.world.dimension;
 
+import org.souldbminer.reallyinspace.particle.PortaleffectParticle;
 import org.souldbminer.reallyinspace.item.VenusdimensionItem;
 import org.souldbminer.reallyinspace.block.PortalBlock;
 import org.souldbminer.reallyinspace.block.CompressedmagmaBlock;
@@ -61,7 +62,6 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Direction;
 import net.minecraft.util.CachedBlockInfo;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
@@ -246,7 +246,7 @@ public class VenusdimensionDimension extends RisModElements.ModElement {
 					pz = pos.getZ() + 0.5 + 0.25 * j;
 					vz = random.nextFloat() * 2 * j;
 				}
-				world.addParticle(ParticleTypes.FALLING_WATER, px, py, pz, vx, vy, vz);
+				world.addParticle(PortaleffectParticle.particle, px, py, pz, vx, vy, vz);
 			}
 			if (random.nextInt(110) == 0)
 				world.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,

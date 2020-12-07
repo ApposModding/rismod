@@ -12,33 +12,33 @@
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "Venus Rocket",
+    "igniterName": "Uranus Rocket",
     "igniterTab": {
-      "value": "CUSTOM:RIS"
+      "value": "TOOLS"
     },
     "texture": "igneiertextures",
-    "portalTexture": "galaxium_ore_block",
+    "portalTexture": "ptex",
     "enablePortal": true,
     "biomesInDimension": [
       {
-        "value": "CUSTOM:Venus"
+        "value": "CUSTOM:Uranusbiome"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:Compressedmagma"
+      "value": "Blocks.BLUE_ICE"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_LAVA"
+      "value": "Blocks.ICE"
     },
     "airColor": {
-      "value": -39424,
+      "value": -10066177,
       "falpha": 0.0
     },
     "canRespawnHere": false,
     "hasFog": true,
     "hasWeather": false,
-    "isDark": true,
+    "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": false,

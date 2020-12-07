@@ -6,7 +6,7 @@
       "value": "CUSTOM:Portal"
     },
     "portalParticles": {
-      "value": "WATER_SPLASH"
+      "value": "CUSTOM:Portaleffect"
     },
     "portalLuminance": 0.0,
     "portalSound": {

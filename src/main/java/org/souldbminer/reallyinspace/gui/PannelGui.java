@@ -2,7 +2,11 @@
 package org.souldbminer.reallyinspace.gui;
 
 import org.souldbminer.reallyinspace.procedures.VentpProcedure;
+import org.souldbminer.reallyinspace.procedures.UtpProcedure;
+import org.souldbminer.reallyinspace.procedures.SattpProcedure;
 import org.souldbminer.reallyinspace.procedures.MerctpProcedure;
+import org.souldbminer.reallyinspace.procedures.MarsdimtpProcedure;
+import org.souldbminer.reallyinspace.procedures.JuptpProcedure;
 import org.souldbminer.reallyinspace.procedures.EtpProcedure;
 import org.souldbminer.reallyinspace.RisModElements;
 import org.souldbminer.reallyinspace.RisMod;
@@ -243,13 +247,17 @@ public class PannelGui extends RisModElements.ModElement {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(13, x, y, z));
 				handleButtonAction(entity, 13, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 123, this.guiTop + 160, 55, 20, "Middle", e -> {
+			this.addButton(new Button(this.guiLeft + 116, this.guiTop + 156, 55, 20, "Middle", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(14, x, y, z));
 				handleButtonAction(entity, 14, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 127, this.guiTop + 192, 55, 20, "Kupier", e -> {
+			this.addButton(new Button(this.guiLeft + 110, this.guiTop + 192, 55, 20, "Kupier", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(15, x, y, z));
 				handleButtonAction(entity, 15, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + 177, this.guiTop + 156, 120, 20, ">>>>More Dwarfs<<<<", e -> {
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(16, x, y, z));
+				handleButtonAction(entity, 16, x, y, z);
 			}));
 		}
 	}
@@ -359,6 +367,34 @@ public class PannelGui extends RisModElements.ModElement {
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				EtpProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 5) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				MarsdimtpProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 6) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				JuptpProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 7) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				SattpProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 8) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				UtpProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

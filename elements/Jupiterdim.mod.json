@@ -6,7 +6,7 @@
       "value": "CUSTOM:Portal"
     },
     "portalParticles": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Portaleffect"
     },
     "portalLuminance": 0.0,
     "portalSound": {

@@ -89,6 +89,9 @@
         "type": "button",
         "data": {
           "text": "Mars",
+          "onClick": {
+            "name": "Marsdimtp"
+          },
           "width": 45,
           "height": 20,
           "name": "Mars",
@@ -100,6 +103,9 @@
         "type": "button",
         "data": {
           "text": "Jupiter",
+          "onClick": {
+            "name": "Juptp"
+          },
           "width": 60,
           "height": 20,
           "name": "Jupiter",
@@ -111,6 +117,9 @@
         "type": "button",
         "data": {
           "text": "Saturn",
+          "onClick": {
+            "name": "Sattp"
+          },
           "width": 55,
           "height": 20,
           "name": "Saturn",
@@ -122,6 +131,9 @@
         "type": "button",
         "data": {
           "text": "Uranus",
+          "onClick": {
+            "name": "Utp"
+          },
           "width": 55,
           "height": 20,
           "name": "Uranus",
@@ -217,8 +229,8 @@
           "width": 55,
           "height": 20,
           "name": "Middle",
-          "x": 187,
-          "y": 161
+          "x": 180,
+          "y": 157
         }
       },
       {
@@ -228,8 +240,19 @@
           "width": 55,
           "height": 20,
           "name": "Kupier",
-          "x": 191,
+          "x": 174,
           "y": 193
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">>>>More Dwarfs<<<<",
+          "width": 120,
+          "height": 20,
+          "name": ">>>>More Dwarfs<<<<",
+          "x": 241,
+          "y": 157
         }
       }
     ]

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "ris:block/saturn_portal_ew"
+    },
+    "axis=x": {
+      "model": "ris:block/saturn_portal_ns"
+    }
+  }
+}

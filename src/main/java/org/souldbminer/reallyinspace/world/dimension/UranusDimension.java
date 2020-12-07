@@ -2,9 +2,8 @@
 package org.souldbminer.reallyinspace.world.dimension;
 
 import org.souldbminer.reallyinspace.particle.PortaleffectParticle;
-import org.souldbminer.reallyinspace.item.MercdimItem;
+import org.souldbminer.reallyinspace.item.UranusItem;
 import org.souldbminer.reallyinspace.block.PortalBlock;
-import org.souldbminer.reallyinspace.block.MercsoilBlock;
 import org.souldbminer.reallyinspace.RisModElements;
 
 import org.jline.terminal.Size;
@@ -96,41 +95,41 @@ import com.google.common.collect.ImmutableSet;
 import com.google.common.cache.LoadingCache;
 
 @RisModElements.ModElement.Tag
-public class MercdimDimension extends RisModElements.ModElement {
-	@ObjectHolder("ris:mercdim")
+public class UranusDimension extends RisModElements.ModElement {
+	@ObjectHolder("ris:uranus")
 	public static final ModDimension dimension = null;
-	@ObjectHolder("ris:mercdim_portal")
+	@ObjectHolder("ris:uranus_portal")
 	public static final CustomPortalBlock portal = null;
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
-	public MercdimDimension(RisModElements instance) {
-		super(instance, 22);
+	public UranusDimension(RisModElements instance) {
+		super(instance, 61);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@SubscribeEvent
 	public void registerDimension(RegistryEvent.Register<ModDimension> event) {
-		event.getRegistry().register(new CustomModDimension().setRegistryName("mercdim"));
+		event.getRegistry().register(new CustomModDimension().setRegistryName("uranus"));
 	}
 
 	@SubscribeEvent
 	public void onRegisterDimensionsEvent(RegisterDimensionsEvent event) {
-		if (DimensionType.byName(new ResourceLocation("ris:mercdim")) == null) {
-			DimensionManager.registerDimension(new ResourceLocation("ris:mercdim"), dimension, null, true);
+		if (DimensionType.byName(new ResourceLocation("ris:uranus")) == null) {
+			DimensionManager.registerDimension(new ResourceLocation("ris:uranus"), dimension, null, false);
 		}
-		type = DimensionType.byName(new ResourceLocation("ris:mercdim"));
+		type = DimensionType.byName(new ResourceLocation("ris:uranus"));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("ris:mercfltbiomes")),};
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("ris:uranusbiome")),};
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomPortalBlock());
-		elements.items.add(() -> new MercdimItem().setRegistryName("mercdim"));
+		elements.items.add(() -> new UranusItem().setRegistryName("uranus"));
 	}
 
 	@Override
@@ -142,7 +141,7 @@ public class MercdimDimension extends RisModElements.ModElement {
 		public CustomPortalBlock() {
 			super(Block.Properties.create(Material.PORTAL).doesNotBlockMovement().tickRandomly().hardnessAndResistance(-1.0F).sound(SoundType.GLASS)
 					.lightValue(0).noDrops());
-			setRegistryName("mercdim_portal");
+			setRegistryName("uranus_portal");
 		}
 
 		@Override
@@ -274,7 +273,7 @@ public class MercdimDimension extends RisModElements.ModElement {
 		}
 
 		private TeleporterDimensionMod getTeleporterForDimension(Entity entity, BlockPos pos, ServerWorld nextWorld) {
-			BlockPattern.PatternHelper bph = MercdimDimension.CustomPortalBlock.createPatternHelper(entity.world, pos);
+			BlockPattern.PatternHelper bph = UranusDimension.CustomPortalBlock.createPatternHelper(entity.world, pos);
 			double d0 = bph.getForwards().getAxis() == Direction.Axis.X
 					? (double) bph.getFrontTopLeft().getZ()
 					: (double) bph.getFrontTopLeft().getX();
@@ -414,14 +413,14 @@ public class MercdimDimension extends RisModElements.ModElement {
 		}
 	}
 	private static PointOfInterestType poi = null;
-	public static final TicketType<BlockPos> CUSTOM_PORTAL = TicketType.create("mercdim_portal", Vec3i::compareTo, 300);
+	public static final TicketType<BlockPos> CUSTOM_PORTAL = TicketType.create("uranus_portal", Vec3i::compareTo, 300);
 	@SubscribeEvent
 	public void registerPointOfInterest(RegistryEvent.Register<PointOfInterestType> event) {
 		try {
 			Method method = ObfuscationReflectionHelper.findMethod(PointOfInterestType.class, "func_226359_a_", String.class, Set.class, int.class,
 					int.class);
 			method.setAccessible(true);
-			poi = (PointOfInterestType) method.invoke(null, "mercdim_portal",
+			poi = (PointOfInterestType) method.invoke(null, "uranus_portal",
 					Sets.newHashSet(ImmutableSet.copyOf(portal.getStateContainer().getValidStates())), 0, 1);
 			event.getRegistry().register(poi);
 		} catch (Exception e) {
@@ -456,7 +455,7 @@ public class MercdimDimension extends RisModElements.ModElement {
 			return optional.map((p_226707_7_) -> {
 				BlockPos blockpos = p_226707_7_.getPos();
 				this.world.getChunkProvider().registerTicket(CUSTOM_PORTAL, new ChunkPos(blockpos), 3, blockpos);
-				BlockPattern.PatternHelper blockpattern$patternhelper = MercdimDimension.CustomPortalBlock.createPatternHelper(this.world, blockpos);
+				BlockPattern.PatternHelper blockpattern$patternhelper = UranusDimension.CustomPortalBlock.createPatternHelper(this.world, blockpos);
 				return blockpattern$patternhelper.getPortalInfo(directionIn, blockpos, p_222272_6_, p_222272_2_, p_222272_4_);
 			}).orElse((BlockPattern.PortalInfo) null);
 		}
@@ -693,7 +692,7 @@ public class MercdimDimension extends RisModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public Vec3d getFogColor(float cangle, float ticks) {
-			return new Vec3d(0.6, 0.6, 0.6);
+			return new Vec3d(0.4, 0.4, 1);
 		}
 
 		@Override
@@ -755,11 +754,11 @@ public class MercdimDimension extends RisModElements.ModElement {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new OverworldGenSettings() {
 				public BlockState getDefaultBlock() {
-					return Blocks.COBBLESTONE.getDefaultState();
+					return Blocks.BLUE_ICE.getDefaultState();
 				}
 
 				public BlockState getDefaultFluid() {
-					return MercsoilBlock.block.getDefaultState();
+					return Blocks.ICE.getDefaultState();
 				}
 			});
 			this.randomSeed.skip(5349);
@@ -787,7 +786,7 @@ public class MercdimDimension extends RisModElements.ModElement {
 				for (Biome biome : this.biomes) {
 					biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
 						{
-							carvableBlocks = ImmutableSet.of(Blocks.COBBLESTONE.getDefaultState().getBlock(),
+							carvableBlocks = ImmutableSet.of(Blocks.BLUE_ICE.getDefaultState().getBlock(),
 									biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
 									biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
 						}
