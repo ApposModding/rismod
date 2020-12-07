@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Tier 2rocket",
     "mobLabel": "",
-    "mobModelName": "Modelrisrocket",
+    "mobModelName": "Modelrocketmodel",
     "mobModelTexture": "rocketmodel.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:RIS"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
