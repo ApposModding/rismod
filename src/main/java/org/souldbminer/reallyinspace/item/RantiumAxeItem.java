@@ -32,7 +32,7 @@ public class RantiumAxeItem extends RisModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 0f;
+				return 7f;
 			}
 
 			public int getHarvestLevel() {

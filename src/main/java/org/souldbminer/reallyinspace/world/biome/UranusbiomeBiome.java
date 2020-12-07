@@ -21,7 +21,7 @@ public class UranusbiomeBiome extends RisModElements.ModElement {
 	@ObjectHolder("ris:uranusbiome")
 	public static final CustomBiome biome = null;
 	public UranusbiomeBiome(RisModElements instance) {
-		super(instance, 61);
+		super(instance, 69);
 	}
 
 	@Override

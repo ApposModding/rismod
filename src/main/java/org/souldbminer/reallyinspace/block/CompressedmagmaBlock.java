@@ -26,7 +26,7 @@ public class CompressedmagmaBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:compressedmagma")
 	public static final Block block = null;
 	public CompressedmagmaBlock(RisModElements instance) {
-		super(instance, 44);
+		super(instance, 24);
 	}
 
 	@Override

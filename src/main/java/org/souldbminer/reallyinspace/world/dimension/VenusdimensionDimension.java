@@ -104,7 +104,7 @@ public class VenusdimensionDimension extends RisModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public VenusdimensionDimension(RisModElements instance) {
-		super(instance, 46);
+		super(instance, 2);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

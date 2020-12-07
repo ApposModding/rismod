@@ -23,7 +23,7 @@ public class JupiterBiome extends RisModElements.ModElement {
 	@ObjectHolder("ris:jupiter")
 	public static final CustomBiome biome = null;
 	public JupiterBiome(RisModElements instance) {
-		super(instance, 52);
+		super(instance, 63);
 	}
 
 	@Override

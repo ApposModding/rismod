@@ -12,7 +12,7 @@ import net.minecraft.entity.item.PaintingType;
 @RisModElements.ModElement.Tag
 public class RocketpaintingPainting extends RisModElements.ModElement {
 	public RocketpaintingPainting(RisModElements instance) {
-		super(instance, 67);
+		super(instance, 75);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -21,7 +21,7 @@ import java.util.Map;
 @RisModElements.ModElement.Tag
 public class NtpProcedure extends RisModElements.ModElement {
 	public NtpProcedure(RisModElements instance) {
-		super(instance, 65);
+		super(instance, 73);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

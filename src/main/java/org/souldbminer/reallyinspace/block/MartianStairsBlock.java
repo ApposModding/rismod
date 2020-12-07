@@ -27,7 +27,7 @@ public class MartianStairsBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:martian_stairs")
 	public static final Block block = null;
 	public MartianStairsBlock(RisModElements instance) {
-		super(instance, 7);
+		super(instance, 18);
 	}
 
 	@Override

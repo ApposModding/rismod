@@ -28,7 +28,7 @@ public class MartianFenceBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:martian_fence")
 	public static final Block block = null;
 	public MartianFenceBlock(RisModElements instance) {
-		super(instance, 9);
+		super(instance, 20);
 	}
 
 	@Override

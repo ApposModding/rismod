@@ -2,10 +2,8 @@
 package org.souldbminer.reallyinspace.gui;
 
 import org.souldbminer.reallyinspace.procedures.VentpProcedure;
-import org.souldbminer.reallyinspace.procedures.UtpProcedure;
 import org.souldbminer.reallyinspace.procedures.SuntpProcedure;
 import org.souldbminer.reallyinspace.procedures.SattpProcedure;
-import org.souldbminer.reallyinspace.procedures.NtpProcedure;
 import org.souldbminer.reallyinspace.procedures.MoontpProcedure;
 import org.souldbminer.reallyinspace.procedures.Moon2tpProcedure;
 import org.souldbminer.reallyinspace.procedures.MerctpProcedure;
@@ -166,6 +164,7 @@ public class PannelGui extends RisModElements.ModElement {
 			this.font.drawString("Planets", 26, 4, -205);
 			this.font.drawString("Stars", 352, 2, -13369549);
 			this.font.drawString("Page 1/2", 128, 220, -256);
+			this.font.drawString("Tier 2 Rocket Is needed", 102, 55, -1);
 		}
 
 		@Override
@@ -227,69 +226,41 @@ public class PannelGui extends RisModElements.ModElement {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(5, x, y, z));
 				handleButtonAction(entity, 5, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 17, this.guiTop + 165, 55, 20, "Uranus", e -> {
+			this.addButton(new Button(this.guiLeft + 92, this.guiTop + 23, 55, 20, "Astroid", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(6, x, y, z));
 				handleButtonAction(entity, 6, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 16, this.guiTop + 185, 60, 20, "Neptune", e -> {
+			this.addButton(new Button(this.guiLeft + 337, this.guiTop + 19, 60, 20, "The Sun", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(7, x, y, z));
 				handleButtonAction(entity, 7, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 175, this.guiTop + 46, 50, 20, "Pluto", e -> {
+			this.addButton(new Button(this.guiLeft + 234, this.guiTop + 19, 100, 20, "Earth's Moon #1", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(8, x, y, z));
 				handleButtonAction(entity, 8, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 174, this.guiTop + 21, 50, 20, "Cerus", e -> {
+			this.addButton(new Button(this.guiLeft + 234, this.guiTop + 42, 100, 20, "Earth's Moon #2", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(9, x, y, z));
 				handleButtonAction(entity, 9, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 175, this.guiTop + 71, 55, 20, "Haumea", e -> {
+			this.addButton(new Button(this.guiLeft + 257, this.guiTop + 70, 55, 20, "Phobos", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(10, x, y, z));
 				handleButtonAction(entity, 10, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 180, this.guiTop + 95, 45, 20, "Eris", e -> {
+			this.addButton(new Button(this.guiLeft + 256, this.guiTop + 99, 55, 20, "Deimos", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(11, x, y, z));
 				handleButtonAction(entity, 11, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 92, this.guiTop + 23, 55, 20, "Astroid", e -> {
+			this.addButton(new Button(this.guiLeft + 259, this.guiTop + 127, 50, 20, "Titan", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(12, x, y, z));
 				handleButtonAction(entity, 12, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 93, this.guiTop + 47, 55, 20, "Kupier", e -> {
+			this.addButton(new Button(this.guiLeft + 256, this.guiTop + 151, 55, 20, "Europa", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(13, x, y, z));
 				handleButtonAction(entity, 13, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 337, this.guiTop + 19, 60, 20, "The Sun", e -> {
+			this.addButton(new Button(this.guiLeft + 267, this.guiTop + 179, 35, 20, "Io", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(14, x, y, z));
 				handleButtonAction(entity, 14, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 234, this.guiTop + 19, 100, 20, "Earth's Moon #1", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(15, x, y, z));
-				handleButtonAction(entity, 15, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 234, this.guiTop + 42, 100, 20, "Earth's Moon #2", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(16, x, y, z));
-				handleButtonAction(entity, 16, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 256, this.guiTop + 71, 55, 20, "Phobos", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(17, x, y, z));
-				handleButtonAction(entity, 17, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 257, this.guiTop + 97, 55, 20, "Deimos", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(18, x, y, z));
-				handleButtonAction(entity, 18, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 259, this.guiTop + 127, 50, 20, "Titan", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(19, x, y, z));
-				handleButtonAction(entity, 19, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 256, this.guiTop + 154, 55, 20, "Europa", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(20, x, y, z));
-				handleButtonAction(entity, 20, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 267, this.guiTop + 179, 35, 20, "Io", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(21, x, y, z));
-				handleButtonAction(entity, 21, x, y, z);
 			}));
 		}
 	}
@@ -426,38 +397,24 @@ public class PannelGui extends RisModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				UtpProcedure.executeProcedure($_dependencies);
+				AtpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 7) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				NtpProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 12) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				AtpProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 14) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				SuntpProcedure.executeProcedure($_dependencies);
 			}
 		}
-		if (buttonID == 15) {
+		if (buttonID == 8) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				MoontpProcedure.executeProcedure($_dependencies);
 			}
 		}
-		if (buttonID == 16) {
+		if (buttonID == 9) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);

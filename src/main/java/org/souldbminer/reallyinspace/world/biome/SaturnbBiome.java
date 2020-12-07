@@ -17,7 +17,7 @@ public class SaturnbBiome extends RisModElements.ModElement {
 	@ObjectHolder("ris:saturnb")
 	public static final CustomBiome biome = null;
 	public SaturnbBiome(RisModElements instance) {
-		super(instance, 59);
+		super(instance, 67);
 	}
 
 	@Override

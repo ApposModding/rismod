@@ -104,7 +104,7 @@ public class JupiterdimDimension extends RisModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public JupiterdimDimension(RisModElements instance) {
-		super(instance, 53);
+		super(instance, 7);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

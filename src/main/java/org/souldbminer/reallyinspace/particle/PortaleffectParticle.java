@@ -25,7 +25,7 @@ import net.minecraft.client.Minecraft;
 public class PortaleffectParticle extends RisModElements.ModElement {
 	public static final BasicParticleType particle = new BasicParticleType(false);
 	public PortaleffectParticle(RisModElements instance) {
-		super(instance, 60);
+		super(instance, 68);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

@@ -17,7 +17,7 @@ public class AstroidsBiome extends RisModElements.ModElement {
 	@ObjectHolder("ris:astroids")
 	public static final CustomBiome biome = null;
 	public AstroidsBiome(RisModElements instance) {
-		super(instance, 71);
+		super(instance, 78);
 	}
 
 	@Override

@@ -49,7 +49,7 @@ public class RcItem extends RisModElements.ModElement {
 	@ObjectHolder("ris:rc")
 	public static final Item block = null;
 	public RcItem(RisModElements instance) {
-		super(instance, 56);
+		super(instance, 10);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

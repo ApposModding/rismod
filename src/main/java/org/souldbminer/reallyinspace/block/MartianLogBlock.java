@@ -28,7 +28,7 @@ public class MartianLogBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:martian_log")
 	public static final Block block = null;
 	public MartianLogBlock(RisModElements instance) {
-		super(instance, 4);
+		super(instance, 15);
 	}
 
 	@Override

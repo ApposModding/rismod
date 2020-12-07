@@ -23,7 +23,7 @@ public class PortalBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:portal")
 	public static final Block block = null;
 	public PortalBlock(RisModElements instance) {
-		super(instance, 22);
+		super(instance, 9);
 	}
 
 	@Override

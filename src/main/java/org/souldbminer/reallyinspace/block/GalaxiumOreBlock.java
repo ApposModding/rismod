@@ -39,7 +39,7 @@ public class GalaxiumOreBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:galaxium_ore")
 	public static final Block block = null;
 	public GalaxiumOreBlock(RisModElements instance) {
-		super(instance, 24);
+		super(instance, 22);
 	}
 
 	@Override

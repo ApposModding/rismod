@@ -23,7 +23,7 @@ public class JupiterRockBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:jupiter_rock")
 	public static final Block block = null;
 	public JupiterRockBlock(RisModElements instance) {
-		super(instance, 52);
+		super(instance, 26);
 	}
 
 	@Override

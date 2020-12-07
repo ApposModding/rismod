@@ -43,7 +43,7 @@ public class MarsflatBiome extends RisModElements.ModElement {
 	@ObjectHolder("ris:marsflat")
 	public static final CustomBiome biome = null;
 	public MarsflatBiome(RisModElements instance) {
-		super(instance, 50);
+		super(instance, 61);
 	}
 
 	@Override

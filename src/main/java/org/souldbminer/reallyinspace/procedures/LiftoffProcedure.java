@@ -22,7 +22,7 @@ import java.util.Map;
 @RisModElements.ModElement.Tag
 public class LiftoffProcedure extends RisModElements.ModElement {
 	public LiftoffProcedure(RisModElements instance) {
-		super(instance, 58);
+		super(instance, 66);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

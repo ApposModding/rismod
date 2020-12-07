@@ -17,7 +17,7 @@ public class GalaxiumSwordItem extends RisModElements.ModElement {
 	@ObjectHolder("ris:galaxium_sword")
 	public static final Item block = null;
 	public GalaxiumSwordItem(RisModElements instance) {
-		super(instance, 31);
+		super(instance, 33);
 	}
 
 	@Override

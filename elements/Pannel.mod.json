@@ -106,56 +106,6 @@
         }
       },
       {
-        "type": "button",
-        "data": {
-          "text": "Uranus",
-          "onClick": {
-            "name": "Utp"
-          },
-          "width": 55,
-          "height": 20,
-          "name": "Uranus",
-          "x": 19,
-          "y": 166
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Neptune",
-          "onClick": {
-            "name": "Ntp"
-          },
-          "width": 60,
-          "height": 20,
-          "name": "Neptune",
-          "x": 18,
-          "y": 186
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Pluto",
-          "width": 50,
-          "height": 20,
-          "name": "Pluto",
-          "x": 177,
-          "y": 47
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Cerus",
-          "width": 50,
-          "height": 20,
-          "name": "Cerus",
-          "x": 176,
-          "y": 22
-        }
-      },
-      {
         "type": "label",
         "data": {
           "text": "Dwarf Planets",
@@ -166,28 +116,6 @@
           "name": "Dwarf Planets",
           "x": 169,
           "y": 4
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Haumea",
-          "width": 55,
-          "height": 20,
-          "name": "Haumea",
-          "x": 177,
-          "y": 72
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Eris",
-          "width": 45,
-          "height": 20,
-          "name": "Eris",
-          "x": 182,
-          "y": 96
         }
       },
       {
@@ -215,17 +143,6 @@
           "name": "Astroid",
           "x": 94,
           "y": 24
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Kupier",
-          "width": 55,
-          "height": 20,
-          "name": "Kupier",
-          "x": 95,
-          "y": 48
         }
       },
       {
@@ -316,8 +233,8 @@
           "width": 55,
           "height": 20,
           "name": "Phobos",
-          "x": 258,
-          "y": 72
+          "x": 259,
+          "y": 71
         }
       },
       {
@@ -327,8 +244,8 @@
           "width": 55,
           "height": 20,
           "name": "Deimos",
-          "x": 259,
-          "y": 98
+          "x": 258,
+          "y": 100
         }
       },
       {
@@ -350,7 +267,7 @@
           "height": 20,
           "name": "Europa",
           "x": 258,
-          "y": 155
+          "y": 152
         }
       },
       {
@@ -385,6 +302,19 @@
           "name": "modlogo.png",
           "x": 174,
           "y": 222
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Tier 2 Rocket Is needed",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Tier 2 Rocket Is needed",
+          "x": 104,
+          "y": 56
         }
       }
     ]

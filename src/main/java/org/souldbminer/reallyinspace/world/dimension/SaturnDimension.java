@@ -103,7 +103,7 @@ public class SaturnDimension extends RisModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public SaturnDimension(RisModElements instance) {
-		super(instance, 59);
+		super(instance, 3);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

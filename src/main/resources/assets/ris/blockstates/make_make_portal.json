@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "ris:block/make_make_portal_ew"
+    },
+    "axis=x": {
+      "model": "ris:block/make_make_portal_ns"
+    }
+  }
+}

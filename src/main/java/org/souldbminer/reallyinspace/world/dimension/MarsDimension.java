@@ -104,7 +104,7 @@ public class MarsDimension extends RisModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public MarsDimension(RisModElements instance) {
-		super(instance, 51);
+		super(instance, 8);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

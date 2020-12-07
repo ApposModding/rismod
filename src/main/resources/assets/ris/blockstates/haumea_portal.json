@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "ris:block/haumea_portal_ew"
+    },
+    "axis=x": {
+      "model": "ris:block/haumea_portal_ns"
+    }
+  }
+}

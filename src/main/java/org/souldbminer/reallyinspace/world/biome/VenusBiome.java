@@ -24,7 +24,7 @@ public class VenusBiome extends RisModElements.ModElement {
 	@ObjectHolder("ris:venus")
 	public static final CustomBiome biome = null;
 	public VenusBiome(RisModElements instance) {
-		super(instance, 45);
+		super(instance, 57);
 	}
 
 	@Override

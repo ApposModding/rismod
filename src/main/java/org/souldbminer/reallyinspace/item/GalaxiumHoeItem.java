@@ -17,7 +17,7 @@ public class GalaxiumHoeItem extends RisModElements.ModElement {
 	@ObjectHolder("ris:galaxium_hoe")
 	public static final Item block = null;
 	public GalaxiumHoeItem(RisModElements instance) {
-		super(instance, 33);
+		super(instance, 32);
 	}
 
 	@Override

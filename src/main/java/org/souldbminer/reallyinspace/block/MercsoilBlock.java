@@ -23,7 +23,7 @@ public class MercsoilBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:mercsoil")
 	public static final Block block = null;
 	public MercsoilBlock(RisModElements instance) {
-		super(instance, 2);
+		super(instance, 13);
 	}
 
 	@Override

@@ -14,7 +14,7 @@ public class CurseofspaceEnchantment extends RisModElements.ModElement {
 	@ObjectHolder("ris:curseofspace")
 	public static final Enchantment enchantment = null;
 	public CurseofspaceEnchantment(RisModElements instance) {
-		super(instance, 69);
+		super(instance, 76);
 	}
 
 	@Override

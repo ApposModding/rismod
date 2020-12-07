@@ -26,7 +26,7 @@ public class GalaxiumBlockBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:galaxium_block")
 	public static final Block block = null;
 	public GalaxiumBlockBlock(RisModElements instance) {
-		super(instance, 25);
+		super(instance, 23);
 	}
 
 	@Override

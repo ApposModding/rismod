@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "ris:block/kupier_portal_ew"
+    },
+    "axis=x": {
+      "model": "ris:block/kupier_portal_ns"
+    }
+  }
+}

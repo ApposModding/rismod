@@ -22,7 +22,7 @@ public class NeptunebiomeBiome extends RisModElements.ModElement {
 	@ObjectHolder("ris:neptunebiome")
 	public static final CustomBiome biome = null;
 	public NeptunebiomeBiome(RisModElements instance) {
-		super(instance, 64);
+		super(instance, 72);
 	}
 
 	@Override

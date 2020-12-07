@@ -29,7 +29,7 @@ public class GalaxiumArmorItem extends RisModElements.ModElement {
 	@ObjectHolder("ris:galaxium_armor_boots")
 	public static final Item boots = null;
 	public GalaxiumArmorItem(RisModElements instance) {
-		super(instance, 39);
+		super(instance, 12);
 	}
 
 	@Override

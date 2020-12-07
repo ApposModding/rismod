@@ -102,7 +102,7 @@ public class NeptuneDimension extends RisModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public NeptuneDimension(RisModElements instance) {
-		super(instance, 64);
+		super(instance, 6);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

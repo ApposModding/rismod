@@ -13,7 +13,7 @@ import net.minecraft.item.ItemGroup;
 @RisModElements.ModElement.Tag
 public class RISItemGroup extends RisModElements.ModElement {
 	public RISItemGroup(RisModElements instance) {
-		super(instance, 1);
+		super(instance, 34);
 	}
 
 	@Override

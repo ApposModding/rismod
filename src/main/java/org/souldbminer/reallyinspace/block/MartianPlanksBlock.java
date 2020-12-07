@@ -27,7 +27,7 @@ public class MartianPlanksBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:martian_planks")
 	public static final Block block = null;
 	public MartianPlanksBlock(RisModElements instance) {
-		super(instance, 5);
+		super(instance, 16);
 	}
 
 	@Override

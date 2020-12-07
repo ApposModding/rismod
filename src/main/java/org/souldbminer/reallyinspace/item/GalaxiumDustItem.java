@@ -16,7 +16,7 @@ public class GalaxiumDustItem extends RisModElements.ModElement {
 	@ObjectHolder("ris:galaxium_dust")
 	public static final Item block = null;
 	public GalaxiumDustItem(RisModElements instance) {
-		super(instance, 23);
+		super(instance, 27);
 	}
 
 	@Override

@@ -100,7 +100,7 @@ public class AstroidBeltDimension extends RisModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public AstroidBeltDimension(RisModElements instance) {
-		super(instance, 71);
+		super(instance, 5);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

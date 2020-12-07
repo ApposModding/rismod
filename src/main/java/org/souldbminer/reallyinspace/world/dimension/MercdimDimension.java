@@ -104,7 +104,7 @@ public class MercdimDimension extends RisModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public MercdimDimension(RisModElements instance) {
-		super(instance, 22);
+		super(instance, 1);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

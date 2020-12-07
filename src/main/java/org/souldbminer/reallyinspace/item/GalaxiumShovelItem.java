@@ -17,7 +17,7 @@ public class GalaxiumShovelItem extends RisModElements.ModElement {
 	@ObjectHolder("ris:galaxium_shovel")
 	public static final Item block = null;
 	public GalaxiumShovelItem(RisModElements instance) {
-		super(instance, 32);
+		super(instance, 31);
 	}
 
 	@Override

@@ -28,7 +28,7 @@ public class MartianWoodBlock extends RisModElements.ModElement {
 	@ObjectHolder("ris:martian_wood")
 	public static final Block block = null;
 	public MartianWoodBlock(RisModElements instance) {
-		super(instance, 3);
+		super(instance, 14);
 	}
 
 	@Override

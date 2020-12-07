@@ -27,8 +27,8 @@
           "image": "modlogo.png",
           "use1Xscale": false,
           "name": "modlogo.png",
-          "x": 265,
-          "y": 219
+          "x": 255,
+          "y": 217
         }
       },
       {
@@ -86,14 +86,14 @@
       {
         "type": "label",
         "data": {
-          "text": "astroids",
+          "text": "belts",
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "astroids",
-          "x": 243,
-          "y": 6
+          "name": "belts",
+          "x": 244,
+          "y": 5
         }
       },
       {
@@ -106,8 +106,8 @@
           "width": 50,
           "height": 20,
           "name": "Ceres",
-          "x": 241,
-          "y": 20
+          "x": 89,
+          "y": 114
         }
       },
       {
@@ -135,6 +135,129 @@
           "name": "Page 2/2",
           "x": 206,
           "y": 221
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Uranus",
+          "onClick": {
+            "name": "Utp"
+          },
+          "width": 55,
+          "height": 20,
+          "name": "Uranus",
+          "x": 17,
+          "y": 28
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Neptune",
+          "onClick": {
+            "name": "Ntp"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Neptune",
+          "x": 17,
+          "y": 57
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Ceres",
+          "width": 50,
+          "height": 20,
+          "name": "Ceres",
+          "x": 28,
+          "y": -24
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Pluto",
+          "onClick": {
+            "name": "Ptp"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Pluto",
+          "x": 88,
+          "y": 21
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Haumea",
+          "onClick": {
+            "name": "HaumeaTP"
+          },
+          "width": 55,
+          "height": 20,
+          "name": "Haumea",
+          "x": 86,
+          "y": 46
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Eris",
+          "onClick": {
+            "name": "Eristp"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Eris",
+          "x": 93,
+          "y": 91
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<<",
+          "onClick": {
+            "name": "Guitrigger2"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "<<",
+          "x": 13,
+          "y": 217
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "MakeMake",
+          "onClick": {
+            "name": "MakeMakeTP"
+          },
+          "width": 65,
+          "height": 20,
+          "name": "MakeMake",
+          "x": 85,
+          "y": 69
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Kupier",
+          "onClick": {
+            "name": "Kupertp"
+          },
+          "width": 55,
+          "height": 20,
+          "name": "Kupier",
+          "x": 234,
+          "y": 23
         }
       }
     ]

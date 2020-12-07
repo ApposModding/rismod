@@ -24,7 +24,7 @@ import io.netty.buffer.Unpooled;
 @RisModElements.ModElement.Tag
 public class Guitrigger1Procedure extends RisModElements.ModElement {
 	public Guitrigger1Procedure(RisModElements instance) {
-		super(instance, 73);
+		super(instance, 81);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

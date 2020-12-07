@@ -43,7 +43,7 @@ public class MercfltbiomesBiome extends RisModElements.ModElement {
 	@ObjectHolder("ris:mercfltbiomes")
 	public static final CustomBiome biome = null;
 	public MercfltbiomesBiome(RisModElements instance) {
-		super(instance, 19);
+		super(instance, 43);
 	}
 
 	@Override

@@ -12,7 +12,7 @@ import net.minecraft.entity.item.PaintingType;
 @RisModElements.ModElement.Tag
 public class RtingPainting extends RisModElements.ModElement {
 	public RtingPainting(RisModElements instance) {
-		super(instance, 70);
+		super(instance, 77);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

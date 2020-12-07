@@ -20,7 +20,7 @@ import java.util.Map;
 @RisModElements.ModElement.Tag
 public class EtpProcedure extends RisModElements.ModElement {
 	public EtpProcedure(RisModElements instance) {
-		super(instance, 48);
+		super(instance, 59);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
