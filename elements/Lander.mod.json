@@ -2,10 +2,10 @@
   "_fv": 13,
   "_type": "mob",
   "definition": {
-    "mobName": "Rocket",
+    "mobName": "Lander",
     "mobLabel": "",
-    "mobModelName": "Modelrocketmodel",
-    "mobModelTexture": "rocketmodel.png",
+    "mobModelName": "Modellander",
+    "mobModelTexture": "lander.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,15 +13,15 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16777216,
+      "value": -1,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -11513776,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:RIS"
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -44,7 +44,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
+    "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "attackKnockback": 0.0,
@@ -54,7 +54,7 @@
     "trackingRange": 64,
     "health": 10,
     "xpAmount": 0,
-    "waterMob": false,
+    "waterMob": true,
     "flyingMob": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -88,20 +88,14 @@
     },
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "FIREWORKS_SPARK"
+      "value": "CUSTOM:Portaleffect"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "onRightClickedOn": {
-      "name": "Liftoff"
-    },
-    "onPlayerCollidesWith": {
-      "name": "Liftoff"
-    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"-153\"></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -110,8 +104,8 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": false,
-    "doesDespawnWhenIdle": false,
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,

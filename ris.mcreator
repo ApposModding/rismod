@@ -612,6 +612,10 @@
           {
             "name": "z",
             "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -747,6 +751,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rocketpainting"
+    },
+    {
+      "name": "Lander",
+      "type": "mob",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lander"
     }
   ],
   "variable_elements": [],
@@ -754,8 +767,9 @@
   "language_map": {
     "en_gb": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.rismod.jupiter_rock": "Jupiter Rock",
+      "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "item.ris.lander_spawn_egg": "Lander Spawn Egg",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -835,6 +849,7 @@
       "block.ris.martian_fence": "Martian Fence",
       "block.ris.compressedmagma": "Compressed magma",
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
+      "entity.ris.lander": "Lander",
       "biome.ris.jupiter": "Jupiter",
       "entity.ris.rocket": "Rocket",
       "block.rismod.martian_fence": "Martian Fence",
@@ -846,8 +861,9 @@
     },
     "en_us": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.rismod.jupiter_rock": "Jupiter Rock",
+      "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "item.ris.lander_spawn_egg": "Lander Spawn Egg",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -927,6 +943,7 @@
       "block.ris.martian_fence": "Martian Fence",
       "block.ris.compressedmagma": "Compressed magma",
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
+      "entity.ris.lander": "Lander",
       "biome.ris.jupiter": "Jupiter",
       "entity.ris.rocket": "Rocket",
       "block.rismod.martian_fence": "Martian Fence",
@@ -938,8 +955,9 @@
     },
     "hi_in": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.rismod.jupiter_rock": "Jupiter Rock",
+      "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "item.ris.lander_spawn_egg": "Lander Spawn Egg",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -1019,6 +1037,7 @@
       "block.ris.martian_fence": "Martian Fence",
       "block.ris.compressedmagma": "Compressed magma",
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
+      "entity.ris.lander": "Lander",
       "biome.ris.jupiter": "Jupiter",
       "entity.ris.rocket": "Rocket",
       "block.rismod.martian_fence": "Martian Fence",
@@ -1030,8 +1049,9 @@
     },
     "en_in": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.rismod.jupiter_rock": "Jupiter Rock",
+      "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "item.ris.lander_spawn_egg": "Lander Spawn Egg",
       "item.ris.mercdim": "Mercury Rocket",
       "block.rismod.martian_stairs": "Martian Stairs",
       "biome.rismod.venus": "Venus",
@@ -1111,6 +1131,7 @@
       "block.ris.martian_fence": "Martian Fence",
       "block.ris.compressedmagma": "Compressed magma",
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
+      "entity.ris.lander": "Lander",
       "biome.ris.jupiter": "Jupiter",
       "entity.ris.rocket": "Rocket",
       "block.rismod.martian_fence": "Martian Fence",
@@ -1122,8 +1143,9 @@
     },
     "es_es": {
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-      "block.rismod.jupiter_rock": "Jupiter Rock",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
+      "block.rismod.jupiter_rock": "Jupiter Rock",
+      "item.ris.lander_spawn_egg": "Lander Spawn Egg",
       "item.ris.mercdim": "Mercury Rocket",
       "biome.rismod.venus": "Venus",
       "block.rismod.martian_stairs": "Martian Stairs",
@@ -1203,6 +1225,7 @@
       "block.ris.martian_fence": "Martian Fence",
       "block.ris.compressedmagma": "Compressed magma",
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
+      "entity.ris.lander": "Lander",
       "biome.ris.jupiter": "Jupiter",
       "entity.ris.rocket": "Rocket",
       "block.rismod.martian_fence": "Martian Fence",

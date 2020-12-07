@@ -1,7 +1,8 @@
 {
   "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
-  "block.rismod.jupiter_rock": "Jupiter Rock",
   "block.spacecraftforge.martian_stairs": "Martian Stairs",
+  "block.rismod.jupiter_rock": "Jupiter Rock",
+  "item.ris.lander_spawn_egg": "Lander Spawn Egg",
   "item.ris.mercdim": "Mercury Rocket",
   "biome.rismod.venus": "Venus",
   "block.rismod.martian_stairs": "Martian Stairs",
@@ -81,6 +82,7 @@
   "block.ris.martian_fence": "Martian Fence",
   "block.ris.compressedmagma": "Compressed magma",
   "item.rismod.galaxium_shovel": "Galaxium Shovel",
+  "entity.ris.lander": "Lander",
   "biome.ris.jupiter": "Jupiter",
   "entity.ris.rocket": "Rocket",
   "block.rismod.martian_fence": "Martian Fence",

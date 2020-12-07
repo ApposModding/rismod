@@ -1,21 +1,24 @@
 
 package org.souldbminer.reallyinspace.entity;
 
-import org.souldbminer.reallyinspace.procedures.LiftoffProcedure;
-import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
 import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.gen.Heightmap;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorldReader;
+import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.BlockPos;
@@ -26,60 +29,72 @@ import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.ai.goal.SwimGoal;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.block.BlockState;
 
-import java.util.Map;
-import java.util.HashMap;
-
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @RisModElements.ModElement.Tag
-public class RocketEntity extends RisModElements.ModElement {
+public class LanderEntity extends RisModElements.ModElement {
 	public static EntityType entity = null;
-	public RocketEntity(RisModElements instance) {
-		super(instance, 20);
+	public LanderEntity(RisModElements instance) {
+		super(instance, 68);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f)).build("rocket")
-						.setRegistryName("rocket");
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f)).build("lander")
+						.setRegistryName("lander");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16777216, -11513776, new Item.Properties().group(RISItemGroup.tab))
-				.setRegistryName("rocket_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("lander_spawn_egg"));
+	}
+
+	@Override
+	public void init(FMLCommonSetupEvent event) {
+		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
+			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 20, 4, 4));
+		}
+		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
+				MonsterEntity::canMonsterSpawn);
 	}
 
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			return new MobRenderer(renderManager, new Modelrocketmodel(), 0.5f) {
+			return new MobRenderer(renderManager, new Modellander(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("ris:textures/rocketmodel.png");
+					return new ResourceLocation("ris:textures/lander.png");
 				}
 			};
 		});
 	}
-	public static class CustomEntity extends CreatureEntity {
+	public static class CustomEntity extends MonsterEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -88,7 +103,6 @@ public class RocketEntity extends RisModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-			enablePersistence();
 			this.moveController = new FlyingMovementController(this, 10, true);
 			this.navigator = new FlyingPathNavigator(this, this.world);
 		}
@@ -101,16 +115,16 @@ public class RocketEntity extends RisModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
+			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(5, new SwimGoal(this));
 		}
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		@Override
-		public boolean canDespawn(double distanceToClosestPlayer) {
-			return false;
 		}
 
 		@Override
@@ -157,34 +171,7 @@ public class RocketEntity extends RisModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				LiftoffProcedure.executeProcedure($_dependencies);
-			}
 			return retval;
-		}
-
-		@Override
-		public void onCollideWithPlayer(PlayerEntity sourceentity) {
-			super.onCollideWithPlayer(sourceentity);
-			Entity entity = this;
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				LiftoffProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
@@ -202,6 +189,21 @@ public class RocketEntity extends RisModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.FLYING_SPEED) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.FLYING_SPEED);
 			this.getAttribute(SharedMonsterAttributes.FLYING_SPEED).setBaseValue(0.3);
+		}
+
+		@Override
+		public boolean canBreatheUnderwater() {
+			return true;
+		}
+
+		@Override
+		public boolean isNotColliding(IWorldReader worldreader) {
+			return worldreader.checkNoEntityCollision(this, VoxelShapes.create(this.getBoundingBox()));
+		}
+
+		@Override
+		public boolean isPushedByWater() {
+			return false;
 		}
 
 		@Override
@@ -255,41 +257,43 @@ public class RocketEntity extends RisModElements.ModElement {
 	// Made with Blockbench 3.7.4
 	// Exported for Minecraft version 1.15
 	// Paste this class into your mod and generate all required imports
-	public static class Modelrocketmodel extends EntityModel<Entity> {
+	public static class Modellander extends EntityModel<Entity> {
 		private final ModelRenderer bb_main;
-		public Modelrocketmodel() {
+		private final ModelRenderer cube_r1;
+		private final ModelRenderer cube_r2;
+		private final ModelRenderer cube_r3;
+		private final ModelRenderer cube_r4;
+		public Modellander() {
 			textureWidth = 16;
 			textureHeight = 16;
 			bb_main = new ModelRenderer(this);
 			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bb_main.setTextureOffset(0, 0).addBox(-11.0F, -62.0F, -9.0F, 20.0F, 50.0F, 20.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-11.0F, -111.0F, -9.0F, 20.0F, 50.0F, 20.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-11.0F, -160.0F, -9.0F, 20.0F, 50.0F, 20.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-2.0F, -259.0F, 0.0F, 2.0F, 100.0F, 2.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-32.0F, -92.0F, -1.0F, 21.0F, 76.0F, 2.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-26.0F, -115.0F, -1.0F, 15.0F, 23.0F, 2.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(9.0F, -92.0F, -1.0F, 21.0F, 76.0F, 2.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(9.0F, -115.0F, -1.0F, 15.0F, 23.0F, 2.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-3.0F, -92.0F, 11.0F, 2.0F, 76.0F, 21.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-3.0F, -115.0F, 11.0F, 2.0F, 23.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-3.0F, -115.0F, -24.0F, 2.0F, 23.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-3.0F, -92.0F, -30.0F, 2.0F, 76.0F, 21.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-2.0F, -264.0F, -1.0F, 4.0F, 4.0F, 4.0F, 0.0F, true);
-			bb_main.setTextureOffset(0, 0).addBox(-9.0F, -14.0F, -6.0F, 15.0F, 10.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-14.0F, -5.0F, -11.0F, 25.0F, 10.0F, 25.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-18.0F, 4.0F, -16.0F, 35.0F, 10.0F, 35.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(4.0F, -15.0F, 6.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(15.0F, -3.0F, 17.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(26.0F, 9.0F, 27.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-22.0F, -15.0F, 6.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-22.0F, -15.0F, -21.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(6.0F, -15.0F, -21.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(15.0F, -3.0F, -33.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-33.0F, -3.0F, -33.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-33.0F, -3.0F, 18.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(26.0F, 9.0F, -45.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-45.0F, 9.0F, -45.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 0).addBox(-45.0F, 9.0F, 29.0F, 15.0F, 15.0F, 15.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 0).addBox(-6.0F, -11.0F, -6.0F, 11.0F, 9.0F, 13.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 0).addBox(-13.0F, -41.0F, -12.0F, 23.0F, 1.0F, 10.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 0).addBox(-13.0F, -41.0F, 4.0F, 23.0F, 1.0F, 10.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 0).addBox(-13.0F, -42.0F, -4.0F, 23.0F, 1.0F, 10.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 0).addBox(-12.0F, -43.0F, -3.0F, 20.0F, 1.0F, 1.0F, 0.0F, false);
+			bb_main.setTextureOffset(0, 2).addBox(7.0F, -43.0F, -2.0F, 1.0F, 1.0F, 7.0F, 0.0F, false);
+			cube_r1 = new ModelRenderer(this);
+			cube_r1.setRotationPoint(5.0F, -10.0F, -6.0F);
+			bb_main.addChild(cube_r1);
+			setRotationAngle(cube_r1, 0.1745F, 0.0F, 0.1745F);
+			cube_r1.setTextureOffset(0, 0).addBox(-1.0F, -35.0F, 0.0F, 1.0F, 35.0F, 1.0F, 0.0F, false);
+			cube_r2 = new ModelRenderer(this);
+			cube_r2.setRotationPoint(-5.0F, -10.0F, -6.0F);
+			bb_main.addChild(cube_r2);
+			setRotationAngle(cube_r2, 0.1745F, 0.0F, -0.2182F);
+			cube_r2.setTextureOffset(0, 0).addBox(-1.0F, -35.0F, 0.0F, 1.0F, 35.0F, 1.0F, 0.0F, false);
+			cube_r3 = new ModelRenderer(this);
+			cube_r3.setRotationPoint(5.0F, -10.0F, 6.0F);
+			bb_main.addChild(cube_r3);
+			setRotationAngle(cube_r3, -0.2618F, 0.0F, 0.0873F);
+			cube_r3.setTextureOffset(0, 0).addBox(-1.0F, -35.0F, 0.0F, 1.0F, 35.0F, 1.0F, 0.0F, false);
+			cube_r4 = new ModelRenderer(this);
+			cube_r4.setRotationPoint(-5.0F, -10.0F, 6.0F);
+			bb_main.addChild(cube_r4);
+			setRotationAngle(cube_r4, -0.2182F, 0.0F, -0.2182F);
+			cube_r4.setTextureOffset(0, 0).addBox(-1.0F, -35.0F, 0.0F, 1.0F, 35.0F, 1.0F, 0.0F, false);
 		}
 
 		@Override
