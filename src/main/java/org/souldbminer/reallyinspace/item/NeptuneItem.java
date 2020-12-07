@@ -1,7 +1,7 @@
 
 package org.souldbminer.reallyinspace.item;
 
-import org.souldbminer.reallyinspace.world.dimension.UranusDimension;
+import org.souldbminer.reallyinspace.world.dimension.NeptuneDimension;
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
 
 import net.minecraftforge.registries.ObjectHolder;
@@ -14,10 +14,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
-public class UranusItem extends Item {
-	@ObjectHolder("ris:uranus")
+public class NeptuneItem extends Item {
+	@ObjectHolder("ris:neptune")
 	public static final Item block = null;
-	public UranusItem() {
+	public NeptuneItem() {
 		super(new Item.Properties().group(RISItemGroup.tab).maxDamage(64));
 	}
 
@@ -34,7 +34,7 @@ public class UranusItem extends Item {
 			int y = pos.getY();
 			int z = pos.getZ();
 			if (world.isAirBlock(pos) && true)
-				UranusDimension.portal.portalSpawn(world, pos);
+				NeptuneDimension.portal.portalSpawn(world, pos);
 			itemstack.damageItem(1, entity, c -> c.sendBreakAnimation(context.getHand()));
 			return ActionResultType.SUCCESS;
 		}

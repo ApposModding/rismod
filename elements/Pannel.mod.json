@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 300,
+    "width": 424,
     "height": 238,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -17,8 +17,8 @@
           "width": 120,
           "height": 20,
           "name": "Search",
-          "x": 153,
-          "y": 17
+          "x": 67,
+          "y": 217
         }
       },
       {
@@ -28,8 +28,8 @@
           "width": 35,
           "height": 20,
           "name": "<<",
-          "x": 78,
-          "y": 208
+          "x": 2,
+          "y": 218
         }
       },
       {
@@ -39,8 +39,8 @@
           "width": 35,
           "height": 20,
           "name": ">>",
-          "x": 317,
-          "y": 210
+          "x": 390,
+          "y": 219
         }
       },
       {
@@ -53,8 +53,8 @@
           "width": 60,
           "height": 20,
           "name": "Mercury",
-          "x": 91,
-          "y": 40
+          "x": 16,
+          "y": 22
         }
       },
       {
@@ -67,8 +67,8 @@
           "width": 50,
           "height": 20,
           "name": "Venus",
-          "x": 95,
-          "y": 73
+          "x": 20,
+          "y": 47
         }
       },
       {
@@ -81,8 +81,8 @@
           "width": 50,
           "height": 20,
           "name": "Earth",
-          "x": 96,
-          "y": 110
+          "x": 21,
+          "y": 72
         }
       },
       {
@@ -95,8 +95,8 @@
           "width": 45,
           "height": 20,
           "name": "Mars",
-          "x": 95,
-          "y": 141
+          "x": 24,
+          "y": 97
         }
       },
       {
@@ -109,8 +109,8 @@
           "width": 60,
           "height": 20,
           "name": "Jupiter",
-          "x": 88,
-          "y": 167
+          "x": 17,
+          "y": 121
         }
       },
       {
@@ -123,8 +123,8 @@
           "width": 55,
           "height": 20,
           "name": "Saturn",
-          "x": 188,
-          "y": 40
+          "x": 19,
+          "y": 142
         }
       },
       {
@@ -137,19 +137,22 @@
           "width": 55,
           "height": 20,
           "name": "Uranus",
-          "x": 186,
-          "y": 72
+          "x": 19,
+          "y": 166
         }
       },
       {
         "type": "button",
         "data": {
           "text": "Neptune",
+          "onClick": {
+            "name": "Ntp"
+          },
           "width": 60,
           "height": 20,
           "name": "Neptune",
-          "x": 186,
-          "y": 105
+          "x": 18,
+          "y": 186
         }
       },
       {
@@ -159,8 +162,8 @@
           "width": 50,
           "height": 20,
           "name": "Pluto",
-          "x": 292,
-          "y": 74
+          "x": 177,
+          "y": 47
         }
       },
       {
@@ -170,8 +173,8 @@
           "width": 50,
           "height": 20,
           "name": "Cerus",
-          "x": 291,
-          "y": 48
+          "x": 176,
+          "y": 22
         }
       },
       {
@@ -183,8 +186,8 @@
             "falpha": 0.0
           },
           "name": "Dwarf Planets",
-          "x": 285,
-          "y": 23
+          "x": 169,
+          "y": 4
         }
       },
       {
@@ -194,8 +197,8 @@
           "width": 55,
           "height": 20,
           "name": "Haumea",
-          "x": 291,
-          "y": 104
+          "x": 177,
+          "y": 72
         }
       },
       {
@@ -205,8 +208,8 @@
           "width": 45,
           "height": 20,
           "name": "Eris",
-          "x": 298,
-          "y": 129
+          "x": 182,
+          "y": 96
         }
       },
       {
@@ -218,19 +221,19 @@
             "falpha": 0.0
           },
           "name": "Astroid Belts",
-          "x": 183,
-          "y": 139
+          "x": 89,
+          "y": 5
         }
       },
       {
         "type": "button",
         "data": {
-          "text": "Middle",
+          "text": "Astroid",
           "width": 55,
           "height": 20,
-          "name": "Middle",
-          "x": 180,
-          "y": 157
+          "name": "Astroid",
+          "x": 94,
+          "y": 24
         }
       },
       {
@@ -240,19 +243,158 @@
           "width": 55,
           "height": 20,
           "name": "Kupier",
-          "x": 174,
-          "y": 193
+          "x": 95,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Moons",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Moons",
+          "x": 260,
+          "y": 4
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Planets",
+          "color": {
+            "value": -205,
+            "falpha": 0.0
+          },
+          "name": "Planets",
+          "x": 28,
+          "y": 5
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Stars",
+          "color": {
+            "value": -13369549,
+            "falpha": 0.0
+          },
+          "name": "Stars",
+          "x": 354,
+          "y": 3
         }
       },
       {
         "type": "button",
         "data": {
-          "text": ">>>>More Dwarfs<<<<",
-          "width": 120,
+          "text": "The Sun",
+          "width": 60,
           "height": 20,
-          "name": ">>>>More Dwarfs<<<<",
-          "x": 241,
-          "y": 157
+          "name": "The Sun",
+          "x": 339,
+          "y": 20
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Earth's Moon #1",
+          "width": 100,
+          "height": 20,
+          "name": "Earth's Moon #1",
+          "x": 236,
+          "y": 20
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Earth's Moon #2",
+          "width": 100,
+          "height": 20,
+          "name": "Earth's Moon #2",
+          "x": 237,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Phobos",
+          "width": 55,
+          "height": 20,
+          "name": "Phobos",
+          "x": 258,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Deimos",
+          "width": 55,
+          "height": 20,
+          "name": "Deimos",
+          "x": 259,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Titan",
+          "width": 50,
+          "height": 20,
+          "name": "Titan",
+          "x": 261,
+          "y": 128
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Europa",
+          "width": 55,
+          "height": 20,
+          "name": "Europa",
+          "x": 258,
+          "y": 155
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Io",
+          "width": 35,
+          "height": 20,
+          "name": "Io",
+          "x": 269,
+          "y": 180
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Page 1/1",
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "name": "Page 1/1",
+          "x": 211,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "modlogo.png",
+          "use1Xscale": true,
+          "name": "modlogo.png",
+          "x": 259,
+          "y": 218
         }
       }
     ]

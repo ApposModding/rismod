@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "ris:block/neptune_portal_ew"
+    },
+    "axis=x": {
+      "model": "ris:block/neptune_portal_ns"
+    }
+  }
+}

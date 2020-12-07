@@ -2,28 +2,28 @@
   "_fv": 13,
   "_type": "biome",
   "definition": {
-    "name": "Saturnbiome",
+    "name": "Neptunebiome",
     "groundBlock": {
-      "value": "CUSTOM:Gas"
+      "value": "Blocks.BLUE_ICE"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Compressedmagma"
+      "value": "Blocks.PACKED_ICE"
     },
     "treeType": 1,
     "vanillaTreeType": "Default",
     "minHeight": 7,
     "spawnVines": false,
     "treeVines": {
-      "value": "CUSTOM:Gas"
+      "value": "Blocks.SANDSTONE_WALL"
     },
     "treeStem": {
-      "value": "CUSTOM:Gas"
+      "value": "Blocks.BUBBLE_COLUMN"
     },
     "treeBranch": {
-      "value": "CUSTOM:Gas"
+      "value": "Blocks.DOUBLE_PLANT#4"
     },
     "treeFruits": {
-      "value": "CUSTOM:Gas"
+      "value": "Blocks.LEAVES"
     },
     "treesPerChunk": 0,
     "grassPerChunk": 0,
@@ -35,13 +35,13 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "rainingPossibility": 0.0,
+    "rainingPossibility": 1.0,
     "temperature": -1.0,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": false,
     "biomeWeight": 10,
-    "biomeType": "COOL",
+    "biomeType": "ICY",
     "biomeCategory": "NONE",
     "parent": {
       "value": "No parent"
@@ -49,16 +49,18 @@
     "spawnStronghold": false,
     "spawnMineshaft": false,
     "spawnPillagerOutpost": false,
-    "villageType": "none",
+    "villageType": "snowy",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
-    "spawnIgloo": false,
+    "spawnIgloo": true,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
-    "oceanRuinType": "NONE",
+    "oceanRuinType": "COLD",
     "biomeDictionaryTypes": [],
-    "defaultFeatures": [],
+    "defaultFeatures": [
+      "Caves"
+    ],
     "spawnEntries": []
   }
 }

@@ -703,6 +703,41 @@
           }
         ]
       }
+    },
+    {
+      "name": "Neptunebiome",
+      "type": "biome",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "neptunebiome"
+    },
+    {
+      "name": "Neptune",
+      "type": "dimension",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "neptune"
+    },
+    {
+      "name": "Ntp",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ntp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -734,6 +769,7 @@
       "item.ris.saturn": "Saturn Rocket",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
       "item.ris.galaxium_sword": "Galaxium Sword",
+      "biome.ris.neptunebiome": "Neptunebiome",
       "item.ris.galaxium_armor_helmet": "Galaxium Helmet",
       "item.ris.galaxium_dust": "Galaxium",
       "block.rismod.martian_planks": "Martian Planks",
@@ -745,6 +781,7 @@
       "item.ris.rc": "Rocket Controller",
       "block.spacecraftforge.martian_planks": "Martian Planks",
       "biome.rismod.marsflat": "Marsflat",
+      "item.ris.neptune": "Neptune Rocket",
       "block.ris.portal": "Portal",
       "block.rismod.martian_leaves": "Martian Leaves",
       "item.rismod.galaxium_armor_chestplate": "Galaxium Chestplate",
@@ -826,6 +863,7 @@
       "item.ris.saturn": "Saturn Rocket",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
       "item.ris.galaxium_sword": "Galaxium Sword",
+      "biome.ris.neptunebiome": "Neptunebiome",
       "item.ris.galaxium_armor_helmet": "Galaxium Helmet",
       "item.ris.galaxium_dust": "Galaxium",
       "block.rismod.martian_planks": "Martian Planks",
@@ -837,6 +875,7 @@
       "item.ris.rc": "Rocket Controller",
       "block.spacecraftforge.martian_planks": "Martian Planks",
       "biome.rismod.marsflat": "Marsflat",
+      "item.ris.neptune": "Neptune Rocket",
       "block.ris.portal": "Portal",
       "block.rismod.martian_leaves": "Martian Leaves",
       "item.rismod.galaxium_armor_chestplate": "Galaxium Chestplate",
@@ -887,7 +926,7 @@
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",
       "fluid.gas": "Gas",
-      "itemGroup.tabris": "RIS",
+      "itemGroup.tabris": "Really In Space",
       "biome.ris.marsflat": "Marsflat",
       "block.spacecraftforge.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_boots": "Galaxium Boots"
@@ -918,6 +957,7 @@
       "item.ris.saturn": "Saturn Rocket",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
       "item.ris.galaxium_sword": "Galaxium Sword",
+      "biome.ris.neptunebiome": "Neptunebiome",
       "item.ris.galaxium_armor_helmet": "Galaxium Helmet",
       "item.ris.galaxium_dust": "Galaxium",
       "block.rismod.martian_planks": "Martian Planks",
@@ -929,6 +969,7 @@
       "item.ris.rc": "Rocket Controller",
       "block.spacecraftforge.martian_planks": "Martian Planks",
       "biome.rismod.marsflat": "Marsflat",
+      "item.ris.neptune": "Neptune Rocket",
       "block.ris.portal": "Portal",
       "block.rismod.martian_leaves": "Martian Leaves",
       "item.rismod.galaxium_armor_chestplate": "Galaxium Chestplate",
@@ -1010,6 +1051,7 @@
       "item.ris.saturn": "Saturn Rocket",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
       "item.ris.galaxium_sword": "Galaxium Sword",
+      "biome.ris.neptunebiome": "Neptunebiome",
       "item.ris.galaxium_armor_helmet": "Galaxium Helmet",
       "item.ris.galaxium_dust": "Galaxium",
       "block.rismod.martian_planks": "Martian Planks",
@@ -1021,6 +1063,7 @@
       "item.ris.rc": "Rocket Controller",
       "block.spacecraftforge.martian_planks": "Martian Planks",
       "biome.rismod.marsflat": "Marsflat",
+      "item.ris.neptune": "Neptune Rocket",
       "block.ris.portal": "Portal",
       "block.rismod.martian_leaves": "Martian Leaves",
       "item.rismod.galaxium_armor_chestplate": "Galaxium Chestplate",
@@ -1102,6 +1145,7 @@
       "item.ris.saturn": "Saturn Rocket",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
       "item.ris.galaxium_sword": "Galaxium Sword",
+      "biome.ris.neptunebiome": "Neptunebiome",
       "item.ris.galaxium_armor_helmet": "Galaxium Helmet",
       "item.ris.galaxium_dust": "Galaxium",
       "block.rismod.martian_planks": "Martian Planks",
@@ -1113,6 +1157,7 @@
       "item.ris.rc": "Rocket Controller",
       "block.spacecraftforge.martian_planks": "Martian Planks",
       "biome.rismod.marsflat": "Marsflat",
+      "item.ris.neptune": "Neptune Rocket",
       "block.ris.portal": "Portal",
       "block.rismod.martian_leaves": "Martian Leaves",
       "item.rismod.galaxium_armor_chestplate": "Galaxium Chestplate",
