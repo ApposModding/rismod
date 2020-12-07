@@ -1,18 +1,12 @@
 package org.souldbminer.reallyinspace.procedures;
 
 import org.souldbminer.reallyinspace.RisModElements;
+import org.souldbminer.reallyinspace.RisMod;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.Entity;
-import net.minecraft.command.ICommandSource;
 import net.minecraft.command.FunctionObject;
-import net.minecraft.command.CommandSource;
 
 import java.util.Optional;
 import java.util.Map;
@@ -45,38 +39,30 @@ public class LiftoffProcedure extends RisModElements.ModElement {
 				System.err.println("Failed to load dependency z for procedure Liftoff!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure Liftoff!");
-			return;
-		}
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
 		boolean funcran = false;
-		funcran = (boolean) (false);
-		while (((entity.isBeingRidden()) == (true))) {
+		RisMod.LOGGER.info("Lifting Off rocket");
+		for (int index0 = 0; index0 < (int) (1000); index0++) {
 			{
 				Entity _ent = entity;
-				_ent.setPositionAndUpdate(x, (y + 0.1), z);
+				_ent.setPositionAndUpdate(x, (y + 1), z);
 				if (_ent instanceof ServerPlayerEntity) {
-					((ServerPlayerEntity) _ent).connection.setPlayerLocation(x, (y + 0.1), z, _ent.rotationYaw, _ent.rotationPitch,
+					((ServerPlayerEntity) _ent).connection.setPlayerLocation(x, (y + 1), z, _ent.rotationYaw, _ent.rotationPitch,
 							Collections.emptySet());
 				}
 			}
-			if (((funcran) == (false))) {
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					Optional<FunctionObject> _fopt = world.getWorld().getServer().getFunctionManager().get(new ResourceLocation("ris:rcfunc"));
-					if (_fopt.isPresent()) {
-						FunctionObject _fobj = _fopt.get();
-						world.getWorld().getServer().getFunctionManager().execute(_fobj, new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z),
-								Vec2f.ZERO, (ServerWorld) world.getWorld(), 4, "", new StringTextComponent(""), world.getWorld().getServer(), null));
-					}
-				}
-			}
-			funcran = (boolean) (true);
 		}
+		RisMod.LOGGER.info("Liftoff finished sucsessfuly, TPing into Space");
+		if (!entity.world.isRemote && entity.world.getServer() != null) {
+			Optional<FunctionObject> _fopt = entity.world.getServer().getFunctionManager().get(new ResourceLocation("ris:ric"));
+			if (_fopt.isPresent()) {
+				FunctionObject _fobj = _fopt.get();
+				entity.world.getServer().getFunctionManager().execute(_fobj, entity.getCommandSource());
+			}
+		}
+		RisMod.LOGGER.info("Opened Pannel");
 	}
 }
