@@ -1,0 +1,42 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ris:rantium_dust"
+    },
+    "1": {
+      "item": "ris:rantium_dust"
+    },
+    "2": {
+      "item": "ris:rantium_dust"
+    },
+    "3": {
+      "item": "ris:rantium_dust"
+    },
+    "4": {
+      "item": "ris:rantium_dust"
+    },
+    "5": {
+      "item": "ris:rantium_dust"
+    },
+    "6": {
+      "item": "ris:rantium_dust"
+    },
+    "7": {
+      "item": "ris:rantium_dust"
+    },
+    "8": {
+      "item": "ris:rantium_dust"
+    }
+  },
+  "result": {
+    "item": "ris:rantium_block",
+    "count": 1
+  }
+}

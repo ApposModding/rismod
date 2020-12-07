@@ -56,7 +56,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "Pannel",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -93,12 +93,6 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "onRightClickedOn": {
-      "name": "Liftoff"
-    },
-    "onPlayerCollidesWith": {
-      "name": "Liftoff"
-    },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"-153\"></block></xml>",

@@ -1,0 +1,33 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ris:ch_14_planks"
+    },
+    "3": {
+      "item": "ris:ch_14_planks"
+    },
+    "4": {
+      "item": "ris:ch_14_planks"
+    },
+    "6": {
+      "item": "ris:ch_14_planks"
+    },
+    "7": {
+      "item": "ris:ch_14_planks"
+    },
+    "8": {
+      "item": "ris:ch_14_planks"
+    }
+  },
+  "result": {
+    "item": "ris:ch_14_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "ris:block/moon_2_portal_ew"
+    },
+    "axis=x": {
+      "model": "ris:block/moon_2_portal_ns"
+    }
+  }
+}

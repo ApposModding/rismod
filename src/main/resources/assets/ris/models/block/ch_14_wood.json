@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ris:blocks/ch14_log_side",
+    "particle": "ris:blocks/ch14_log_side"
+  }
+}

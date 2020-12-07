@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "ris:blocks/ch15_planks",
+    "top": "ris:blocks/ch15_planks",
+    "side": "ris:blocks/ch15_planks"
+  }
+}

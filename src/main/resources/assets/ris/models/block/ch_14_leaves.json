@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ris:blocks/ch14_leaves",
+    "particle": "ris:blocks/ch14_leaves"
+  }
+}

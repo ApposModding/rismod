@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "ris:blocks/ch15_planks",
+    "top": "ris:blocks/ch15_planks",
+    "side": "ris:blocks/ch15_planks"
+  }
+}

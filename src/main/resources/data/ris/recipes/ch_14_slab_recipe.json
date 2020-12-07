@@ -1,0 +1,22 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "ris:ch_14_planks"
+    },
+    "1": {
+      "item": "ris:ch_14_planks"
+    },
+    "2": {
+      "item": "ris:ch_14_planks"
+    }
+  },
+  "result": {
+    "item": "ris:ch_14_slab",
+    "count": 6
+  }
+}

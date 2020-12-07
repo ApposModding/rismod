@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "ris:blocks/ch14_planks",
+    "particle": "ris:blocks/ch14_planks"
+  }
+}

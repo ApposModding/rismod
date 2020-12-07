@@ -24,20 +24,6 @@
       {
         "type": "button",
         "data": {
-          "text": ">>",
-          "onClick": {
-            "name": "Guitrigger1"
-          },
-          "width": 35,
-          "height": 20,
-          "name": ">>",
-          "x": 390,
-          "y": 219
-        }
-      },
-      {
-        "type": "button",
-        "data": {
           "text": "Mercury",
           "onClick": {
             "name": "Merctp"
@@ -285,6 +271,9 @@
         "type": "button",
         "data": {
           "text": "The Sun",
+          "onClick": {
+            "name": "Suntp"
+          },
           "width": 60,
           "height": 20,
           "name": "The Sun",
@@ -296,6 +285,9 @@
         "type": "button",
         "data": {
           "text": "Earth's Moon #1",
+          "onClick": {
+            "name": "Moontp"
+          },
           "width": 100,
           "height": 20,
           "name": "Earth's Moon #1",
@@ -307,6 +299,9 @@
         "type": "button",
         "data": {
           "text": "Earth's Moon #2",
+          "onClick": {
+            "name": "Moon2tp"
+          },
           "width": 100,
           "height": 20,
           "name": "Earth's Moon #2",

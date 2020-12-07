@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ris:block/ch_14_slab"
+    },
+    "type=top": {
+      "model": "ris:block/ch_14_slab_top"
+    },
+    "type=double": {
+      "model": "ris:block/ch_14_slab_full"
+    }
+  }
+}

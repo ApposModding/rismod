@@ -1,0 +1,13 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ch14_log"
+    }
+  ],
+  "result": {
+    "item": "ris:ch_14_planks",
+    "count": 4
+  }
+}

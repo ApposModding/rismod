@@ -11,20 +11,6 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "button",
-        "data": {
-          "text": "<<",
-          "onClick": {
-            "name": "Guitrigger2"
-          },
-          "width": 35,
-          "height": 20,
-          "name": "<<",
-          "x": 4,
-          "y": 217
-        }
-      },
-      {
         "type": "textfield",
         "data": {
           "placeholder": "Search Planets",
@@ -114,21 +100,27 @@
         "type": "button",
         "data": {
           "text": "Ceres",
+          "onClick": {
+            "name": "Cerestp"
+          },
           "width": 50,
           "height": 20,
           "name": "Ceres",
-          "x": 242,
-          "y": 22
+          "x": 241,
+          "y": 20
         }
       },
       {
         "type": "button",
         "data": {
           "text": "Alpha Centuri",
+          "onClick": {
+            "name": "Centuritp"
+          },
           "width": 90,
           "height": 20,
           "name": "Alpha Centuri",
-          "x": 321,
+          "x": 320,
           "y": 21
         }
       },
@@ -141,8 +133,8 @@
             "falpha": 0.0
           },
           "name": "Page 2/2",
-          "x": 209,
-          "y": 219
+          "x": 206,
+          "y": 221
         }
       }
     ]

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "ris:block/ceres_portal_ew"
+    },
+    "axis=x": {
+      "model": "ris:block/ceres_portal_ns"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 6,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CH14Planks"
+      },
+      {
+        "value": "CUSTOM:CH14Planks"
+      },
+      {
+        "value": "CUSTOM:CH14Planks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CH14Slab"
+    },
+    "name": "ch_14_slab_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,7 +1,8 @@
 
 package org.souldbminer.reallyinspace.gui;
 
-import org.souldbminer.reallyinspace.procedures.Guitrigger2Procedure;
+import org.souldbminer.reallyinspace.procedures.CerestpProcedure;
+import org.souldbminer.reallyinspace.procedures.CenturitpProcedure;
 import org.souldbminer.reallyinspace.RisModElements;
 import org.souldbminer.reallyinspace.RisMod;
 
@@ -43,7 +44,7 @@ public class Pa2nellGui extends RisModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public Pa2nellGui(RisModElements instance) {
-		super(instance, 73);
+		super(instance, 80);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -154,7 +155,7 @@ public class Pa2nellGui extends RisModElements.ModElement {
 			this.font.drawString("Dwarfs", 91, 2, -1);
 			this.font.drawString("Moons", 169, 1, -1);
 			this.font.drawString("astroids", 242, 5, -1);
-			this.font.drawString("Page 2/2", 208, 218, -256);
+			this.font.drawString("Page 2/2", 205, 220, -256);
 		}
 
 		@Override
@@ -167,10 +168,6 @@ public class Pa2nellGui extends RisModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 3, this.guiTop + 216, 35, 20, "<<", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
-				handleButtonAction(entity, 0, x, y, z);
-			}));
 			SEarch = new TextFieldWidget(this.font, this.guiLeft + 68, this.guiTop + 217, 120, 20, "Search Planets") {
 				{
 					setSuggestion("Search Planets");
@@ -196,13 +193,13 @@ public class Pa2nellGui extends RisModElements.ModElement {
 			guistate.put("text:SEarch", SEarch);
 			SEarch.setMaxStringLength(32767);
 			this.children.add(this.SEarch);
-			this.addButton(new Button(this.guiLeft + 241, this.guiTop + 21, 50, 20, "Ceres", e -> {
+			this.addButton(new Button(this.guiLeft + 240, this.guiTop + 19, 50, 20, "Ceres", e -> {
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
+				handleButtonAction(entity, 0, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + 319, this.guiTop + 20, 90, 20, "Alpha Centuri", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 320, this.guiTop + 20, 90, 20, "Alpha Centuri", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
-				handleButtonAction(entity, 2, x, y, z);
 			}));
 		}
 	}
@@ -297,11 +294,14 @@ public class Pa2nellGui extends RisModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				Guitrigger2Procedure.executeProcedure($_dependencies);
+				CerestpProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				CenturitpProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}
