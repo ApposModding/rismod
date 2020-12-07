@@ -4,9 +4,9 @@ loaderVersion="[31,)"
 [[mods]]
 modId="ris"
 version="1.0.0"
-displayName="ReallyInSpaceForge"
+displayName="ReallyInSpaceMod"
 credits="Help From my Patreons"
-displayURL="https://mcreator.net"
+displayURL="https://github.com/ApposModding/rismod"
 logoFile="logo.png"
 authors="Souldbminer & Help From My Patreons"
 description='''

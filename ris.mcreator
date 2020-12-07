@@ -1238,11 +1238,11 @@
   },
   "workspaceSettings": {
     "modid": "ris",
-    "modName": "ReallyInSpaceForge",
+    "modName": "ReallyInSpaceMod",
     "version": "1.0.0",
     "description": "Adds 10+ Custom Dimensions to explore space and thrive ",
     "author": "Souldbminer \u0026 Help From My Patreons",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/ApposModding/rismod",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "modlogo",
