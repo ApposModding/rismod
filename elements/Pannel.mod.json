@@ -17,25 +17,17 @@
           "width": 120,
           "height": 20,
           "name": "Search",
-          "x": 67,
-          "y": 217
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "<<",
-          "width": 35,
-          "height": 20,
-          "name": "<<",
-          "x": 2,
-          "y": 218
+          "x": 4,
+          "y": 216
         }
       },
       {
         "type": "button",
         "data": {
           "text": ">>",
+          "onClick": {
+            "name": "Guitrigger1"
+          },
           "width": 35,
           "height": 20,
           "name": ">>",
@@ -229,6 +221,9 @@
         "type": "button",
         "data": {
           "text": "Astroid",
+          "onClick": {
+            "name": "Atp"
+          },
           "width": 55,
           "height": 20,
           "name": "Astroid",
@@ -315,8 +310,8 @@
           "width": 100,
           "height": 20,
           "name": "Earth's Moon #2",
-          "x": 237,
-          "y": 44
+          "x": 236,
+          "y": 43
         }
       },
       {
@@ -377,14 +372,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Page 1/1",
+          "text": "Page 1/2",
           "color": {
             "value": -256,
             "falpha": 0.0
           },
-          "name": "Page 1/1",
-          "x": 211,
-          "y": 218
+          "name": "Page 1/2",
+          "x": 130,
+          "y": 221
         }
       },
       {
@@ -393,8 +388,8 @@
           "image": "modlogo.png",
           "use1Xscale": true,
           "name": "modlogo.png",
-          "x": 259,
-          "y": 218
+          "x": 174,
+          "y": 222
         }
       }
     ]

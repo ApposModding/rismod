@@ -1,0 +1,150 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 425,
+    "height": 239,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "<<",
+          "onClick": {
+            "name": "Guitrigger2"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "<<",
+          "x": 4,
+          "y": 217
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Search Planets",
+          "width": 120,
+          "height": 20,
+          "name": "SEarch",
+          "x": 69,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "modlogo.png",
+          "use1Xscale": false,
+          "name": "modlogo.png",
+          "x": 265,
+          "y": 219
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Stars",
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "name": "Stars",
+          "x": 343,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Planets",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Planets",
+          "x": 23,
+          "y": 6
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Dwarfs",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Dwarfs",
+          "x": 92,
+          "y": 3
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Moons",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Moons",
+          "x": 170,
+          "y": 2
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "astroids",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "astroids",
+          "x": 243,
+          "y": 6
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Ceres",
+          "width": 50,
+          "height": 20,
+          "name": "Ceres",
+          "x": 242,
+          "y": 22
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Alpha Centuri",
+          "width": 90,
+          "height": 20,
+          "name": "Alpha Centuri",
+          "x": 321,
+          "y": 21
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Page 2/2",
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "name": "Page 2/2",
+          "x": 209,
+          "y": 219
+        }
+      }
+    ]
+  }
+}

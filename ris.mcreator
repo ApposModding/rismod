@@ -760,6 +760,134 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lander"
+    },
+    {
+      "name": "Curseofspace",
+      "type": "enchantment",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "curseofspace"
+    },
+    {
+      "name": "Rting",
+      "type": "painting",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rting"
+    },
+    {
+      "name": "Astroids",
+      "type": "biome",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "astroids"
+    },
+    {
+      "name": "AstroidBelt",
+      "type": "dimension",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "astroid_belt"
+    },
+    {
+      "name": "Atp",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "atp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pa2nell",
+      "type": "gui",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pa_2nell"
+    },
+    {
+      "name": "Guitrigger1",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guitrigger_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Guitrigger2",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guitrigger_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -796,6 +924,7 @@
       "item.ris.galaxium_dust": "Galaxium",
       "block.rismod.martian_planks": "Martian Planks",
       "block.ris.jupiter_rock": "Jupiter Rock",
+      "biome.ris.astroids": "Astroids",
       "item.rismod.rocket_spawn_egg": "Rocket Spawn Egg",
       "item.ris.uranus": "Uranus Rocket",
       "item.rismod.galaxium_armor_helmet": "Galaxium Helmet",
@@ -843,6 +972,7 @@
       "block.rismod.mercsoil": "Mercsoil",
       "block.ris.martian_stairs": "Martian Stairs",
       "block.ris.martian_stone": "Martian Stone",
+      "item.ris.astroid_belt": "Astroid Rocket",
       "item.rismod.galaxium_dust": "Galaxium",
       "biome.spacecraftforge.mercfltbiomes": "MercFlatBiome",
       "block.ris.mercsoil": "Mercsoil",
@@ -851,6 +981,7 @@
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
       "entity.ris.lander": "Lander",
       "biome.ris.jupiter": "Jupiter",
+      "enchantment.ris.curseofspace": "Curse of space",
       "entity.ris.rocket": "Rocket",
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",
@@ -890,6 +1021,7 @@
       "item.ris.galaxium_dust": "Galaxium",
       "block.rismod.martian_planks": "Martian Planks",
       "block.ris.jupiter_rock": "Jupiter Rock",
+      "biome.ris.astroids": "Astroids",
       "item.rismod.rocket_spawn_egg": "Rocket Spawn Egg",
       "item.ris.uranus": "Uranus Rocket",
       "item.rismod.galaxium_armor_helmet": "Galaxium Helmet",
@@ -937,6 +1069,7 @@
       "block.rismod.mercsoil": "Mercsoil",
       "block.ris.martian_stairs": "Martian Stairs",
       "block.ris.martian_stone": "Martian Stone",
+      "item.ris.astroid_belt": "Astroid Rocket",
       "item.rismod.galaxium_dust": "Galaxium",
       "biome.spacecraftforge.mercfltbiomes": "MercFlatBiome",
       "block.ris.mercsoil": "Mercsoil",
@@ -945,6 +1078,7 @@
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
       "entity.ris.lander": "Lander",
       "biome.ris.jupiter": "Jupiter",
+      "enchantment.ris.curseofspace": "Curse of space",
       "entity.ris.rocket": "Rocket",
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",
@@ -984,6 +1118,7 @@
       "item.ris.galaxium_dust": "Galaxium",
       "block.rismod.martian_planks": "Martian Planks",
       "block.ris.jupiter_rock": "Jupiter Rock",
+      "biome.ris.astroids": "Astroids",
       "item.rismod.rocket_spawn_egg": "Rocket Spawn Egg",
       "item.ris.uranus": "Uranus Rocket",
       "item.rismod.galaxium_armor_helmet": "Galaxium Helmet",
@@ -1031,6 +1166,7 @@
       "block.rismod.mercsoil": "Mercsoil",
       "block.ris.martian_stairs": "Martian Stairs",
       "block.ris.martian_stone": "Martian Stone",
+      "item.ris.astroid_belt": "Astroid Rocket",
       "item.rismod.galaxium_dust": "Galaxium",
       "biome.spacecraftforge.mercfltbiomes": "MercFlatBiome",
       "block.ris.mercsoil": "Mercsoil",
@@ -1039,6 +1175,7 @@
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
       "entity.ris.lander": "Lander",
       "biome.ris.jupiter": "Jupiter",
+      "enchantment.ris.curseofspace": "Curse of space",
       "entity.ris.rocket": "Rocket",
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",
@@ -1078,6 +1215,7 @@
       "item.ris.galaxium_dust": "Galaxium",
       "block.rismod.martian_planks": "Martian Planks",
       "block.ris.jupiter_rock": "Jupiter Rock",
+      "biome.ris.astroids": "Astroids",
       "item.rismod.rocket_spawn_egg": "Rocket Spawn Egg",
       "item.ris.uranus": "Uranus Rocket",
       "item.rismod.galaxium_armor_helmet": "Galaxium Helmet",
@@ -1125,6 +1263,7 @@
       "block.rismod.mercsoil": "Mercsoil",
       "block.ris.martian_stairs": "Martian Stairs",
       "block.ris.martian_stone": "Martian Stone",
+      "item.ris.astroid_belt": "Astroid Rocket",
       "item.rismod.galaxium_dust": "Galaxium",
       "biome.spacecraftforge.mercfltbiomes": "MercFlatBiome",
       "block.ris.mercsoil": "Mercsoil",
@@ -1133,6 +1272,7 @@
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
       "entity.ris.lander": "Lander",
       "biome.ris.jupiter": "Jupiter",
+      "enchantment.ris.curseofspace": "Curse of space",
       "entity.ris.rocket": "Rocket",
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",
@@ -1172,6 +1312,7 @@
       "item.ris.galaxium_dust": "Galaxium",
       "block.rismod.martian_planks": "Martian Planks",
       "block.ris.jupiter_rock": "Jupiter Rock",
+      "biome.ris.astroids": "Astroids",
       "item.rismod.rocket_spawn_egg": "Rocket Spawn Egg",
       "item.ris.uranus": "Uranus Rocket",
       "item.rismod.galaxium_armor_helmet": "Galaxium Helmet",
@@ -1219,6 +1360,7 @@
       "block.rismod.mercsoil": "Mercsoil",
       "block.ris.martian_stairs": "Martian Stairs",
       "block.ris.martian_stone": "Martian Stone",
+      "item.ris.astroid_belt": "Astroid Rocket",
       "item.rismod.galaxium_dust": "Galaxium",
       "biome.spacecraftforge.mercfltbiomes": "MercFlatBiome",
       "block.ris.mercsoil": "Mercsoil",
@@ -1227,6 +1369,7 @@
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
       "entity.ris.lander": "Lander",
       "biome.ris.jupiter": "Jupiter",
+      "enchantment.ris.curseofspace": "Curse of space",
       "entity.ris.rocket": "Rocket",
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",

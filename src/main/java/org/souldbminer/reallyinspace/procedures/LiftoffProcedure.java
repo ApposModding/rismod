@@ -8,7 +8,9 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.FunctionObject;
@@ -16,7 +18,6 @@ import net.minecraft.command.CommandSource;
 
 import java.util.Optional;
 import java.util.Map;
-import java.util.Collections;
 
 @RisModElements.ModElement.Tag
 public class LiftoffProcedure extends RisModElements.ModElement {
@@ -60,16 +61,8 @@ public class LiftoffProcedure extends RisModElements.ModElement {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		for (int index0 = 0; index0 < (int) (70); index0++) {
-			{
-				Entity _ent = entity;
-				_ent.setPositionAndUpdate(x, (y + 7), z);
-				if (_ent instanceof ServerPlayerEntity) {
-					((ServerPlayerEntity) _ent).connection.setPlayerLocation(x, (y + 7), z, _ent.rotationYaw, _ent.rotationPitch,
-							Collections.emptySet());
-				}
-			}
-		}
+		if (entity instanceof LivingEntity)
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.LEVITATION, (int) 5000, (int) 255, (false), (false)));
 		if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 			Optional<FunctionObject> _fopt = world.getWorld().getServer().getFunctionManager().get(new ResourceLocation("ris:rcfunc"));
 			if (_fopt.isPresent()) {

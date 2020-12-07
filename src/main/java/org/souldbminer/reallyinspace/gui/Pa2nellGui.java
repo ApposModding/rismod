@@ -1,16 +1,7 @@
 
 package org.souldbminer.reallyinspace.gui;
 
-import org.souldbminer.reallyinspace.procedures.VentpProcedure;
-import org.souldbminer.reallyinspace.procedures.UtpProcedure;
-import org.souldbminer.reallyinspace.procedures.SattpProcedure;
-import org.souldbminer.reallyinspace.procedures.NtpProcedure;
-import org.souldbminer.reallyinspace.procedures.MerctpProcedure;
-import org.souldbminer.reallyinspace.procedures.MarsdimtpProcedure;
-import org.souldbminer.reallyinspace.procedures.JuptpProcedure;
-import org.souldbminer.reallyinspace.procedures.Guitrigger1Procedure;
-import org.souldbminer.reallyinspace.procedures.EtpProcedure;
-import org.souldbminer.reallyinspace.procedures.AtpProcedure;
+import org.souldbminer.reallyinspace.procedures.Guitrigger2Procedure;
 import org.souldbminer.reallyinspace.RisModElements;
 import org.souldbminer.reallyinspace.RisMod;
 
@@ -48,11 +39,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @RisModElements.ModElement.Tag
-public class PannelGui extends RisModElements.ModElement {
+public class Pa2nellGui extends RisModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public PannelGui(RisModElements instance) {
-		super(instance, 21);
+	public Pa2nellGui(RisModElements instance) {
+		super(instance, 73);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -68,7 +59,7 @@ public class PannelGui extends RisModElements.ModElement {
 
 	@SubscribeEvent
 	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("pannel"));
+		event.getRegistry().register(containerType.setRegistryName("pa_2nell"));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -112,7 +103,7 @@ public class PannelGui extends RisModElements.ModElement {
 		private World world;
 		private int x, y, z;
 		private PlayerEntity entity;
-		TextFieldWidget Search;
+		TextFieldWidget SEarch;
 		public GuiWindow(GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 			super(container, inventory, text);
 			this.world = container.world;
@@ -120,8 +111,8 @@ public class PannelGui extends RisModElements.ModElement {
 			this.y = container.y;
 			this.z = container.z;
 			this.entity = container.entity;
-			this.xSize = 424;
-			this.ySize = 238;
+			this.xSize = 425;
+			this.ySize = 239;
 		}
 
 		@Override
@@ -129,14 +120,14 @@ public class PannelGui extends RisModElements.ModElement {
 			this.renderBackground();
 			super.render(mouseX, mouseY, partialTicks);
 			this.renderHoveredToolTip(mouseX, mouseY);
-			Search.render(mouseX, mouseY, partialTicks);
+			SEarch.render(mouseX, mouseY, partialTicks);
 		}
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
 			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 172, this.guiTop + 221, 0, 0, 8, 8, 8, 8);
+			this.blit(this.guiLeft + 264, this.guiTop + 218, 0, 0, 16, 16, 16, 16);
 		}
 
 		@Override
@@ -145,25 +136,25 @@ public class PannelGui extends RisModElements.ModElement {
 				this.minecraft.player.closeScreen();
 				return true;
 			}
-			if (Search.isFocused())
-				return Search.keyPressed(key, b, c);
+			if (SEarch.isFocused())
+				return SEarch.keyPressed(key, b, c);
 			return super.keyPressed(key, b, c);
 		}
 
 		@Override
 		public void tick() {
 			super.tick();
-			Search.tick();
+			SEarch.tick();
 		}
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("Dwarf Planets", 167, 3, -3407872);
-			this.font.drawString("Astroid Belts", 87, 4, -16776961);
-			this.font.drawString("Moons", 258, 3, -1);
-			this.font.drawString("Planets", 26, 4, -205);
-			this.font.drawString("Stars", 352, 2, -13369549);
-			this.font.drawString("Page 1/2", 128, 220, -256);
+			this.font.drawString("Stars", 342, 7, -16711936);
+			this.font.drawString("Planets", 22, 5, -1);
+			this.font.drawString("Dwarfs", 91, 2, -1);
+			this.font.drawString("Moons", 169, 1, -1);
+			this.font.drawString("astroids", 242, 5, -1);
+			this.font.drawString("Page 2/2", 208, 218, -256);
 		}
 
 		@Override
@@ -176,7 +167,11 @@ public class PannelGui extends RisModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			Search = new TextFieldWidget(this.font, this.guiLeft + 2, this.guiTop + 215, 120, 20, "Search Planets") {
+			this.addButton(new Button(this.guiLeft + 3, this.guiTop + 216, 35, 20, "<<", e -> {
+				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
+				handleButtonAction(entity, 0, x, y, z);
+			}));
+			SEarch = new TextFieldWidget(this.font, this.guiLeft + 68, this.guiTop + 217, 120, 20, "Search Planets") {
 				{
 					setSuggestion("Search Planets");
 				}
@@ -198,100 +193,16 @@ public class PannelGui extends RisModElements.ModElement {
 						setSuggestion(null);
 				}
 			};
-			guistate.put("text:Search", Search);
-			Search.setMaxStringLength(32767);
-			this.children.add(this.Search);
-			this.addButton(new Button(this.guiLeft + 388, this.guiTop + 218, 35, 20, ">>", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
-				handleButtonAction(entity, 0, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 14, this.guiTop + 21, 60, 20, "Mercury", e -> {
+			guistate.put("text:SEarch", SEarch);
+			SEarch.setMaxStringLength(32767);
+			this.children.add(this.SEarch);
+			this.addButton(new Button(this.guiLeft + 241, this.guiTop + 21, 50, 20, "Ceres", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 18, this.guiTop + 46, 50, 20, "Venus", e -> {
+			this.addButton(new Button(this.guiLeft + 320, this.guiTop + 20, 90, 20, "Alpha Centuri", e -> {
 				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
 				handleButtonAction(entity, 2, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 19, this.guiTop + 71, 50, 20, "Earth", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
-				handleButtonAction(entity, 3, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 22, this.guiTop + 96, 45, 20, "Mars", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(4, x, y, z));
-				handleButtonAction(entity, 4, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 15, this.guiTop + 120, 60, 20, "Jupiter", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(5, x, y, z));
-				handleButtonAction(entity, 5, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 17, this.guiTop + 141, 55, 20, "Saturn", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(6, x, y, z));
-				handleButtonAction(entity, 6, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 17, this.guiTop + 165, 55, 20, "Uranus", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(7, x, y, z));
-				handleButtonAction(entity, 7, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 16, this.guiTop + 185, 60, 20, "Neptune", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(8, x, y, z));
-				handleButtonAction(entity, 8, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 175, this.guiTop + 46, 50, 20, "Pluto", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(9, x, y, z));
-				handleButtonAction(entity, 9, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 174, this.guiTop + 21, 50, 20, "Cerus", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(10, x, y, z));
-				handleButtonAction(entity, 10, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 175, this.guiTop + 71, 55, 20, "Haumea", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(11, x, y, z));
-				handleButtonAction(entity, 11, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 180, this.guiTop + 95, 45, 20, "Eris", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(12, x, y, z));
-				handleButtonAction(entity, 12, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 92, this.guiTop + 23, 55, 20, "Astroid", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(13, x, y, z));
-				handleButtonAction(entity, 13, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 93, this.guiTop + 47, 55, 20, "Kupier", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(14, x, y, z));
-				handleButtonAction(entity, 14, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 337, this.guiTop + 19, 60, 20, "The Sun", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(15, x, y, z));
-				handleButtonAction(entity, 15, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 234, this.guiTop + 19, 100, 20, "Earth's Moon #1", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(16, x, y, z));
-				handleButtonAction(entity, 16, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 234, this.guiTop + 42, 100, 20, "Earth's Moon #2", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(17, x, y, z));
-				handleButtonAction(entity, 17, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 256, this.guiTop + 71, 55, 20, "Phobos", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(18, x, y, z));
-				handleButtonAction(entity, 18, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 257, this.guiTop + 97, 55, 20, "Deimos", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(19, x, y, z));
-				handleButtonAction(entity, 19, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 259, this.guiTop + 127, 50, 20, "Titan", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(20, x, y, z));
-				handleButtonAction(entity, 20, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 256, this.guiTop + 154, 55, 20, "Europa", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(21, x, y, z));
-				handleButtonAction(entity, 21, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 267, this.guiTop + 179, 35, 20, "Io", e -> {
-				RisMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(22, x, y, z));
-				handleButtonAction(entity, 22, x, y, z);
 			}));
 		}
 	}
@@ -390,70 +301,7 @@ public class PannelGui extends RisModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				Guitrigger1Procedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 1) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				MerctpProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 2) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				VentpProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 3) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				EtpProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 4) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				MarsdimtpProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 5) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				JuptpProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 6) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				SattpProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 7) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				UtpProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 8) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				NtpProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 13) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				AtpProcedure.executeProcedure($_dependencies);
+				Guitrigger2Procedure.executeProcedure($_dependencies);
 			}
 		}
 	}
