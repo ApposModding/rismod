@@ -4,7 +4,7 @@
   "definition": {
     "name": "Saturnbiome",
     "groundBlock": {
-      "value": "CUSTOM:Gas"
+      "value": "Blocks.PACKED_ICE"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Compressedmagma"

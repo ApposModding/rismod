@@ -26,7 +26,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:Gas"
+      "value": "Blocks.PACKED_ICE"
     },
     "fluidBlock": {
       "value": "Blocks.ICE"

@@ -4,7 +4,6 @@ package org.souldbminer.reallyinspace.world.dimension;
 import org.souldbminer.reallyinspace.particle.PortaleffectParticle;
 import org.souldbminer.reallyinspace.item.SaturnItem;
 import org.souldbminer.reallyinspace.block.PortalBlock;
-import org.souldbminer.reallyinspace.block.GasBlock;
 import org.souldbminer.reallyinspace.RisModElements;
 
 import org.jline.terminal.Size;
@@ -755,7 +754,7 @@ public class SaturnDimension extends RisModElements.ModElement {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new OverworldGenSettings() {
 				public BlockState getDefaultBlock() {
-					return GasBlock.block.getDefaultState();
+					return Blocks.PACKED_ICE.getDefaultState();
 				}
 
 				public BlockState getDefaultFluid() {
@@ -787,7 +786,7 @@ public class SaturnDimension extends RisModElements.ModElement {
 				for (Biome biome : this.biomes) {
 					biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
 						{
-							carvableBlocks = ImmutableSet.of(GasBlock.block.getDefaultState().getBlock(),
+							carvableBlocks = ImmutableSet.of(Blocks.PACKED_ICE.getDefaultState().getBlock(),
 									biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
 									biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
 						}
