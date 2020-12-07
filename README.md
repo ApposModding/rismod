@@ -16,6 +16,24 @@ Competitor To Galacticraft.
 Version: 1.0
 Forge: 31.2.0(1.15.2)
 Fabric: In Devlopment (1.16.2,3,4)
+Forge is in DEVLOPMENT.
 
+Planned Features
 
-
+Rovers
+Space Suits
+Aleins
+Saturn
+Uranus
+Neptune
+More Biomes
+Volcanos on mars
+Flags
+Rocket Tiers
+Capes
+Pluto
+Cerus
+Haumea
+Eris
+Astroids
+Space Stations
