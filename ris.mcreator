@@ -2339,13 +2339,13 @@
       "registry_name": "batteryrecipe"
     },
     {
-      "name": "Waila",
-      "type": "overlay",
+      "name": "Bigstationr",
+      "type": "recipe",
       "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "waila"
+      "registry_name": "bigstationr"
     }
   ],
   "variable_elements": [],
@@ -2353,8 +2353,8 @@
   "language_map": {
     "en_gb": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "item.ris.rantium_shovel": "Rantium Shovel",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
@@ -2534,8 +2534,8 @@
     },
     "en_us": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "item.ris.rantium_shovel": "Rantium Shovel",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
@@ -2715,8 +2715,8 @@
     },
     "hi_in": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "item.ris.rantium_shovel": "Rantium Shovel",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
@@ -2896,8 +2896,8 @@
     },
     "en_in": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "item.ris.rantium_shovel": "Rantium Shovel",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
@@ -3077,8 +3077,8 @@
     },
     "es_es": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "item.ris.rantium_shovel": "Rantium Shovel",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
@@ -3270,7 +3270,9 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "obfuscate"
+    ],
     "currentGenerator": "forge-1.15.2",
     "credits": "Help From my Patreons",
     "modElementsPackage": "org.souldbminer.reallyinspace",
