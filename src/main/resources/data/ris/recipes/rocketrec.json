@@ -1,0 +1,31 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ris:battery"
+    },
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "ris:rc"
+    },
+    {
+      "item": "minecraft:firework_rocket"
+    },
+    {
+      "item": "minecraft:firework_rocket"
+    },
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:iron_block"
+    }
+  ],
+  "result": {
+    "item": "ris:jupiter_rock",
+    "count": 1
+  }
+}

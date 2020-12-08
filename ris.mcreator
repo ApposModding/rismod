@@ -596,28 +596,7 @@
       "ids": {},
       "registry_name": "liftoff",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -2255,6 +2234,118 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ore_compresser"
+    },
+    {
+      "name": "AilenBoss",
+      "type": "mob",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ailen_boss"
+    },
+    {
+      "name": "Rocketrec",
+      "type": "recipe",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocketrec"
+    },
+    {
+      "name": "Rocketmaker",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocketmaker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NASAStatoion",
+      "type": "block",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nasa_statoion"
+    },
+    {
+      "name": "Rockettwomaker",
+      "type": "procedure",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rockettwomaker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NASABIGStation",
+      "type": "block",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nasabig_station"
+    },
+    {
+      "name": "Batteryrecipe",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryrecipe"
+    },
+    {
+      "name": "Waila",
+      "type": "overlay",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "waila"
     }
   ],
   "variable_elements": [],
@@ -2262,8 +2353,8 @@
   "language_map": {
     "en_gb": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "item.ris.rantium_shovel": "Rantium Shovel",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
@@ -2337,6 +2428,7 @@
       "biome.ris.marsflat": "Marsflat",
       "block.ris.rantium_ore": "Rantium Ore",
       "entity.ris.agressive_alein": "Agressive Alein",
+      "entity.ris.ailen_boss": "Ailen Boss",
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.ris.moon_stone": "Moon Stone",
@@ -2351,6 +2443,7 @@
       "block.ris.manton_ore": "Manton Ore",
       "block.rismod.martian_slab": "Martian Slab",
       "item.ris.agressive_alein_spawn_egg": "Agressive Alein Spawn Egg",
+      "block.ris.nasa_statoion": "NASA Statoion",
       "block.ris.ch_14_wood": "CH14 Wood",
       "item.ris.rantium_armor_leggings": "Rantium Leggings",
       "block.spacecraftforge.mercsoil": "Mercsoil",
@@ -2368,6 +2461,7 @@
       "item.rismod.galaxium_armor_helmet": "Galaxium Helmet",
       "item.ris.rc": "Rocket Controller",
       "biome.ris.haumeaflat": "Haumeaflat",
+      "block.ris.nasabig_station": "NASA Big Station",
       "biome.rismod.marsflat": "Marsflat",
       "item.ris.neptune": "Neptune Rocket",
       "item.ris.rantium_armor_helmet": "Rantium Helmet",
@@ -2416,6 +2510,7 @@
       "block.rismod.martian_wood": "Martian Wood",
       "item.ris.rantium_armor_chestplate": "Rantium Chestplate",
       "item.ris.galaxium_armor_chestplate": "Galaxium Chestplate",
+      "item.ris.ailen_boss_spawn_egg": "Ailen Boss Spawn Egg",
       "block.ris.martian_stairs": "Martian Stairs",
       "block.ris.ch_15_leaves": "CH15 Leaves",
       "item.rismod.galaxium_dust": "Galaxium",
@@ -2439,8 +2534,8 @@
     },
     "en_us": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "item.ris.rantium_shovel": "Rantium Shovel",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
@@ -2514,6 +2609,7 @@
       "biome.ris.marsflat": "Marsflat",
       "block.ris.rantium_ore": "Rantium Ore",
       "entity.ris.agressive_alein": "Agressive Alein",
+      "entity.ris.ailen_boss": "Ailen Boss",
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.ris.moon_stone": "Moon Stone",
@@ -2528,6 +2624,7 @@
       "block.ris.manton_ore": "Manton Ore",
       "block.rismod.martian_slab": "Martian Slab",
       "item.ris.agressive_alein_spawn_egg": "Agressive Alein Spawn Egg",
+      "block.ris.nasa_statoion": "NASA Statoion",
       "block.ris.ch_14_wood": "CH14 Wood",
       "item.ris.rantium_armor_leggings": "Rantium Leggings",
       "block.spacecraftforge.mercsoil": "Mercsoil",
@@ -2545,6 +2642,7 @@
       "item.rismod.galaxium_armor_helmet": "Galaxium Helmet",
       "item.ris.rc": "Rocket Controller",
       "biome.ris.haumeaflat": "Haumeaflat",
+      "block.ris.nasabig_station": "NASA Big Station",
       "biome.rismod.marsflat": "Marsflat",
       "item.ris.neptune": "Neptune Rocket",
       "item.ris.rantium_armor_helmet": "Rantium Helmet",
@@ -2593,6 +2691,7 @@
       "block.rismod.martian_wood": "Martian Wood",
       "item.ris.rantium_armor_chestplate": "Rantium Chestplate",
       "item.ris.galaxium_armor_chestplate": "Galaxium Chestplate",
+      "item.ris.ailen_boss_spawn_egg": "Ailen Boss Spawn Egg",
       "block.ris.martian_stairs": "Martian Stairs",
       "block.ris.ch_15_leaves": "CH15 Leaves",
       "item.rismod.galaxium_dust": "Galaxium",
@@ -2616,8 +2715,8 @@
     },
     "hi_in": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "item.ris.rantium_shovel": "Rantium Shovel",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
@@ -2691,6 +2790,7 @@
       "biome.ris.marsflat": "Marsflat",
       "block.ris.rantium_ore": "Rantium Ore",
       "entity.ris.agressive_alein": "Agressive Alein",
+      "entity.ris.ailen_boss": "Ailen Boss",
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.ris.moon_stone": "Moon Stone",
@@ -2705,6 +2805,7 @@
       "block.ris.manton_ore": "Manton Ore",
       "block.rismod.martian_slab": "Martian Slab",
       "item.ris.agressive_alein_spawn_egg": "Agressive Alein Spawn Egg",
+      "block.ris.nasa_statoion": "NASA Statoion",
       "block.ris.ch_14_wood": "CH14 Wood",
       "item.ris.rantium_armor_leggings": "Rantium Leggings",
       "block.spacecraftforge.mercsoil": "Mercsoil",
@@ -2722,6 +2823,7 @@
       "item.rismod.galaxium_armor_helmet": "Galaxium Helmet",
       "item.ris.rc": "Rocket Controller",
       "biome.ris.haumeaflat": "Haumeaflat",
+      "block.ris.nasabig_station": "NASA Big Station",
       "biome.rismod.marsflat": "Marsflat",
       "item.ris.neptune": "Neptune Rocket",
       "item.ris.rantium_armor_helmet": "Rantium Helmet",
@@ -2770,6 +2872,7 @@
       "block.rismod.martian_wood": "Martian Wood",
       "item.ris.rantium_armor_chestplate": "Rantium Chestplate",
       "item.ris.galaxium_armor_chestplate": "Galaxium Chestplate",
+      "item.ris.ailen_boss_spawn_egg": "Ailen Boss Spawn Egg",
       "block.ris.martian_stairs": "Martian Stairs",
       "block.ris.ch_15_leaves": "CH15 Leaves",
       "item.rismod.galaxium_dust": "Galaxium",
@@ -2793,8 +2896,8 @@
     },
     "en_in": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "item.ris.rantium_shovel": "Rantium Shovel",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
@@ -2868,6 +2971,7 @@
       "biome.ris.marsflat": "Marsflat",
       "block.ris.rantium_ore": "Rantium Ore",
       "entity.ris.agressive_alein": "Agressive Alein",
+      "entity.ris.ailen_boss": "Ailen Boss",
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.ris.moon_stone": "Moon Stone",
@@ -2882,6 +2986,7 @@
       "block.ris.manton_ore": "Manton Ore",
       "block.rismod.martian_slab": "Martian Slab",
       "item.ris.agressive_alein_spawn_egg": "Agressive Alein Spawn Egg",
+      "block.ris.nasa_statoion": "NASA Statoion",
       "block.ris.ch_14_wood": "CH14 Wood",
       "item.ris.rantium_armor_leggings": "Rantium Leggings",
       "block.spacecraftforge.mercsoil": "Mercsoil",
@@ -2899,6 +3004,7 @@
       "item.rismod.galaxium_armor_helmet": "Galaxium Helmet",
       "item.ris.rc": "Rocket Controller",
       "biome.ris.haumeaflat": "Haumeaflat",
+      "block.ris.nasabig_station": "NASA Big Station",
       "biome.rismod.marsflat": "Marsflat",
       "item.ris.neptune": "Neptune Rocket",
       "item.ris.rantium_armor_helmet": "Rantium Helmet",
@@ -2947,6 +3053,7 @@
       "block.rismod.martian_wood": "Martian Wood",
       "item.ris.rantium_armor_chestplate": "Rantium Chestplate",
       "item.ris.galaxium_armor_chestplate": "Galaxium Chestplate",
+      "item.ris.ailen_boss_spawn_egg": "Ailen Boss Spawn Egg",
       "block.ris.martian_stairs": "Martian Stairs",
       "block.ris.ch_15_leaves": "CH15 Leaves",
       "item.rismod.galaxium_dust": "Galaxium",
@@ -2970,8 +3077,8 @@
     },
     "es_es": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "item.ris.rantium_shovel": "Rantium Shovel",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
@@ -3045,6 +3152,7 @@
       "biome.ris.marsflat": "Marsflat",
       "block.ris.rantium_ore": "Rantium Ore",
       "entity.ris.agressive_alein": "Agressive Alein",
+      "entity.ris.ailen_boss": "Ailen Boss",
       "item.ris.galaxium_armor_leggings": "Galaxium Leggings",
       "block.spacecraftforge.martian_stairs": "Martian Stairs",
       "block.ris.moon_stone": "Moon Stone",
@@ -3059,6 +3167,7 @@
       "block.ris.manton_ore": "Manton Ore",
       "block.rismod.martian_slab": "Martian Slab",
       "item.ris.agressive_alein_spawn_egg": "Agressive Alein Spawn Egg",
+      "block.ris.nasa_statoion": "NASA Statoion",
       "block.ris.ch_14_wood": "CH14 Wood",
       "item.ris.rantium_armor_leggings": "Rantium Leggings",
       "block.spacecraftforge.mercsoil": "Mercsoil",
@@ -3076,6 +3185,7 @@
       "item.rismod.galaxium_armor_helmet": "Galaxium Helmet",
       "item.ris.rc": "Rocket Controller",
       "biome.ris.haumeaflat": "Haumeaflat",
+      "block.ris.nasabig_station": "NASA Big Station",
       "biome.rismod.marsflat": "Marsflat",
       "item.ris.neptune": "Neptune Rocket",
       "item.ris.rantium_armor_helmet": "Rantium Helmet",
@@ -3124,6 +3234,7 @@
       "block.rismod.martian_wood": "Martian Wood",
       "item.ris.rantium_armor_chestplate": "Rantium Chestplate",
       "item.ris.galaxium_armor_chestplate": "Galaxium Chestplate",
+      "item.ris.ailen_boss_spawn_egg": "Ailen Boss Spawn Egg",
       "block.ris.martian_stairs": "Martian Stairs",
       "block.ris.ch_15_leaves": "CH15 Leaves",
       "item.rismod.galaxium_dust": "Galaxium",

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ris:blocks/nasastation",
+    "particle": "ris:blocks/nasastation"
+  }
+}
