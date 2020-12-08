@@ -290,7 +290,7 @@
             "falpha": 0.0
           },
           "name": "Page 1/2",
-          "x": 130,
+          "x": 129,
           "y": 221
         }
       },
@@ -300,7 +300,7 @@
           "image": "modlogo.png",
           "use1Xscale": true,
           "name": "modlogo.png",
-          "x": 174,
+          "x": 171,
           "y": 222
         }
       },
@@ -313,8 +313,28 @@
             "falpha": 0.0
           },
           "name": "Tier 2 Rocket Is needed",
-          "x": 104,
-          "y": 56
+          "x": 106,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rocket.png",
+          "use1Xscale": true,
+          "name": "rocket.png",
+          "x": 237,
+          "y": 6
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bigrocket.png",
+          "use1Xscale": false,
+          "name": "bigrocket.png",
+          "x": -2,
+          "y": -7
         }
       }
     ]

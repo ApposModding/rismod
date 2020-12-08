@@ -136,7 +136,11 @@ public class PannelGui extends RisModElements.ModElement {
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
 			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 172, this.guiTop + 221, 0, 0, 8, 8, 8, 8);
+			this.blit(this.guiLeft + 169, this.guiTop + 221, 0, 0, 8, 8, 8, 8);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/rocket.png"));
+			this.blit(this.guiLeft + 235, this.guiTop + 5, 0, 0, 8, 8, 8, 8);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/bigrocket.png"));
+			this.blit(this.guiLeft + -3, this.guiTop + -8, 0, 0, 256, 256, 256, 256);
 		}
 
 		@Override
@@ -163,8 +167,8 @@ public class PannelGui extends RisModElements.ModElement {
 			this.font.drawString("Moons", 258, 3, -1);
 			this.font.drawString("Planets", 26, 4, -205);
 			this.font.drawString("Stars", 352, 2, -13369549);
-			this.font.drawString("Page 1/2", 128, 220, -256);
-			this.font.drawString("Tier 2 Rocket Is needed", 102, 55, -1);
+			this.font.drawString("Page 1/2", 127, 220, -256);
+			this.font.drawString("Tier 2 Rocket Is needed", 104, 50, -1);
 		}
 
 		@Override

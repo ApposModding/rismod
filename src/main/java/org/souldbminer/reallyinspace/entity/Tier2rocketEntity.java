@@ -225,7 +225,7 @@ public class Tier2rocketEntity extends RisModElements.ModElement {
 					NetworkHooks.openGui((ServerPlayerEntity) sourceentity, new INamedContainerProvider() {
 						@Override
 						public ITextComponent getDisplayName() {
-							return new StringTextComponent("Tier 2rocket");
+							return new StringTextComponent("Tier 2 Rocket");
 						}
 
 						@Override
