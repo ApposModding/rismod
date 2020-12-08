@@ -1,0 +1,26 @@
+{
+  "_fv": 13,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "ailenmeal",
+    "customModelName": "Normal",
+    "name": "Alein Meal",
+    "rarity": "RARE",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:RIS"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 8,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "drink",
+    "hasGlow": false
+  }
+}
