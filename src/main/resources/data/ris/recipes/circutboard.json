@@ -1,0 +1,37 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ris:resistor"
+    },
+    {
+      "item": "minecraft:lime_concrete"
+    },
+    {
+      "item": "ris:capacitor"
+    },
+    {
+      "item": "ris:resistor"
+    },
+    {
+      "item": "ris:ic"
+    },
+    {
+      "item": "ris:capacitor"
+    },
+    {
+      "item": "ris:resistor"
+    },
+    {
+      "item": "minecraft:lime_concrete"
+    },
+    {
+      "item": "ris:capacitor"
+    }
+  ],
+  "result": {
+    "item": "ris:cboard",
+    "count": 5
+  }
+}

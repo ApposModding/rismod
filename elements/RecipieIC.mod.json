@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 16,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Blocks.CONCRETE#8"
+      },
+      {
+        "value": "Blocks.CONCRETE#15"
+      },
+      {
+        "value": "Blocks.CONCRETE#8"
+      },
+      {
+        "value": "Blocks.CONCRETE#8"
+      },
+      {
+        "value": "Blocks.CONCRETE#15"
+      },
+      {
+        "value": "Blocks.CONCRETE#8"
+      },
+      {
+        "value": "Blocks.CONCRETE#8"
+      },
+      {
+        "value": "Blocks.CONCRETE#15"
+      },
+      {
+        "value": "Blocks.CONCRETE#8"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IC"
+    },
+    "name": "recipie_ic",
+    "namespace": "mod"
+  }
+}

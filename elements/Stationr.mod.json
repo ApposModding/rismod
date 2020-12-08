@@ -10,13 +10,13 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:NASAStatoion"
-      },
-      {
-        "value": "Blocks.DIAMOND_BLOCK"
-      },
-      {
         "value": "CUSTOM:Cboard"
+      },
+      {
+        "value": "CUSTOM:Battery"
+      },
+      {
+        "value": ""
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:NASABIGStation"
+      "value": "CUSTOM:NASAStatoion"
     },
-    "name": "bigstationr",
+    "name": "stationr",
     "namespace": "mod"
   }
 }

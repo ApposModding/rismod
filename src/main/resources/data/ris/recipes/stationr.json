@@ -1,0 +1,16 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ris:cboard"
+    },
+    {
+      "item": "ris:battery"
+    }
+  ],
+  "result": {
+    "item": "ris:nasa_statoion",
+    "count": 1
+  }
+}

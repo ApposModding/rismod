@@ -12,10 +12,7 @@
       "item": "minecraft:white_terracotta"
     },
     {
-      "item": "minecraft:firework_rocket"
-    },
-    {
-      "tag": "minecraft:saplings"
+      "item": "ris:cboard"
     }
   ],
   "result": {
