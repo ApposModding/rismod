@@ -2,6 +2,7 @@
 package org.souldbminer.reallyinspace.item;
 
 import org.souldbminer.reallyinspace.world.dimension.PhobosDimension;
+import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -10,7 +11,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
@@ -18,7 +18,7 @@ public class PhobosItem extends Item {
 	@ObjectHolder("ris:phobos")
 	public static final Item block = null;
 	public PhobosItem() {
-		super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(64));
+		super(new Item.Properties().group(RISItemGroup.tab).maxDamage(64));
 	}
 
 	@Override

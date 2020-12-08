@@ -14,7 +14,7 @@
     },
     "igniterName": "Phobos Rocket",
     "igniterTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:RIS"
     },
     "texture": "igneiertextures",
     "portalTexture": "t2bottom",
