@@ -10,20 +10,20 @@ import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.enchantment.Enchantment;
 
 @RisModElements.ModElement.Tag
-public class CurseofspaceEnchantment extends RisModElements.ModElement {
-	@ObjectHolder("ris:spacecurse")
+public class CurseOfMarsEnchantment extends RisModElements.ModElement {
+	@ObjectHolder("ris:marscurse")
 	public static final Enchantment enchantment = null;
-	public CurseofspaceEnchantment(RisModElements instance) {
-		super(instance, 76);
+	public CurseOfMarsEnchantment(RisModElements instance) {
+		super(instance, 221);
 	}
 
 	@Override
 	public void initElements() {
-		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("spacecurse"));
+		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("marscurse"));
 	}
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
-			super(Enchantment.Rarity.COMMON, EnchantmentType.WEAPON, slots);
+			super(Enchantment.Rarity.VERY_RARE, EnchantmentType.ALL, slots);
 		}
 
 		@Override
@@ -38,7 +38,7 @@ public class CurseofspaceEnchantment extends RisModElements.ModElement {
 
 		@Override
 		public boolean isTreasureEnchantment() {
-			return true;
+			return false;
 		}
 
 		@Override
