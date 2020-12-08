@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ris:blocks/manton_ore",
+    "particle": "ris:blocks/manton_ore"
+  }
+}

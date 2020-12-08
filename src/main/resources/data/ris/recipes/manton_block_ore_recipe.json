@@ -1,0 +1,13 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ris:manton_block"
+    }
+  ],
+  "result": {
+    "item": "ris:manton_ingot",
+    "count": 9
+  }
+}

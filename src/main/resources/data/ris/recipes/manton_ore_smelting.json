@@ -1,0 +1,12 @@
+{
+  "group": "ris",
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "ris:manton_ore"
+  },
+  "result": {
+    "item": "ris:manton_ingot"
+  }
+}

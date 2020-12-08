@@ -1,0 +1,41 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<energy>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<energy>",
+          "x": 152,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/ 400,000",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "/ 400,000",
+          "x": 202,
+          "y": 50
+        }
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 
 package org.souldbminer.reallyinspace.entity;
 
+import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
 import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,7 +27,6 @@ import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
@@ -66,7 +66,8 @@ public class LanderEntity extends RisModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f)).build("lander")
 						.setRegistryName("lander");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("lander_spawn_egg"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -10066330, -1, new Item.Properties().group(RISItemGroup.tab)).setRegistryName("lander_spawn_egg"));
 	}
 
 	@SubscribeEvent

@@ -1,0 +1,32 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "ris:ch_16_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "ris:ch_16_planks"
+    },
+    "3": {
+      "item": "ris:ch_16_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "ris:ch_16_planks"
+    }
+  },
+  "result": {
+    "item": "ris:ch_16_fence",
+    "count": 3
+  }
+}

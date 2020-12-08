@@ -1,0 +1,26 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "ris:ch_16_log"
+    },
+    "1": {
+      "item": "ris:ch_16_log"
+    },
+    "2": {
+      "item": "ris:ch_16_log"
+    },
+    "3": {
+      "item": "ris:ch_16_log"
+    }
+  },
+  "result": {
+    "item": "ris:ch_16_wood",
+    "count": 3
+  }
+}

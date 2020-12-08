@@ -1,6 +1,7 @@
 
 package org.souldbminer.reallyinspace.entity;
 
+import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
 import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,7 +25,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.AnimalEntity;
@@ -64,8 +64,8 @@ public class AgressiveAleinEntity extends RisModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("agressive_alein")
 						.setRegistryName("agressive_alein");
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("agressive_alein_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -65536, -13369549, new Item.Properties().group(RISItemGroup.tab))
+				.setRegistryName("agressive_alein_spawn_egg"));
 	}
 
 	@Override

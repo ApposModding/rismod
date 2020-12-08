@@ -1,0 +1,26 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "ris:manton_ingot"
+    },
+    "2": {
+      "item": "ris:manton_ingot"
+    },
+    "3": {
+      "item": "ris:manton_ingot"
+    },
+    "5": {
+      "item": "ris:manton_ingot"
+    }
+  },
+  "result": {
+    "item": "ris:manton_armor_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "group": "ris",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "ris:manton_ingot"
+    },
+    "1": {
+      "item": "ris:manton_ingot"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "ris:manton_sword",
+    "count": 1
+  }
+}

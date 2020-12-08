@@ -17,7 +17,7 @@
     "particleTexture": "",
     "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "TRANSLUCENT",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
@@ -33,9 +33,9 @@
     "creativeTab": {
       "value": "CUSTOM:RIS"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.MOB_SPAWNER"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
