@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:magma_cream"
+    },
+    "title": {
+      "translate": "advancements.the_heat_in_your_feet.title"
+    },
+    "description": {
+      "translate": "advancements.the_heat_in_your_feet.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_heat_in_your_feet": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "ris:sun"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "ris:really_in_spacea"
+}

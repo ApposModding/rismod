@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "ris:moon_stone"
+    },
+    "title": {
+      "translate": "advancements.the_moon_is_near.title"
+    },
+    "description": {
+      "translate": "advancements.the_moon_is_near.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_moon_is_near": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "ris:moon"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "ris:really_in_spacea"
+}

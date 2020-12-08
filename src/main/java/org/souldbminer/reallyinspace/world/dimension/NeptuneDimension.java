@@ -666,14 +666,14 @@ public class NeptuneDimension extends RisModElements.ModElement {
 	public static class CustomDimension extends Dimension {
 		private BiomeProviderCustom biomeProviderCustom = null;
 		public CustomDimension(World world, DimensionType type) {
-			super(world, type, 0);
+			super(world, type, 0.5f);
 			this.nether = false;
 		}
 
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public Vec3d getFogColor(float cangle, float ticks) {
-			return new Vec3d(0.752941176471, 0.847058823529, 1);
+			return new Vec3d(0.6, 0.6, 0.6);
 		}
 
 		@Override
@@ -697,7 +697,7 @@ public class NeptuneDimension extends RisModElements.ModElement {
 		@OnlyIn(Dist.CLIENT)
 		@Override
 		public boolean doesXZShowFog(int x, int z) {
-			return true;
+			return false;
 		}
 
 		@Override

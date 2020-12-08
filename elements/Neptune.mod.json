@@ -32,23 +32,13 @@
       "value": "Blocks.BLUE_ICE"
     },
     "airColor": {
-      "value": -4138753,
-      "frgbvalue": [
-        0.753,
-        0.847,
-        1.0
-      ],
-      "fvalue": [
-        0.753,
-        0.847,
-        1.0
-      ],
-      "falpha": 1.0
+      "value": -6710887,
+      "falpha": 0.0
     },
     "canRespawnHere": false,
-    "hasFog": true,
+    "hasFog": false,
     "hasWeather": true,
-    "isDark": true,
+    "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": false,

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "ris:textures/bigrocket.png",
+    "icon": {
+      "item": "ris:portal"
+    },
+    "title": {
+      "translate": "advancements.really_in_spacea.title"
+    },
+    "description": {
+      "translate": "advancements.really_in_spacea.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "really_in_spacea": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

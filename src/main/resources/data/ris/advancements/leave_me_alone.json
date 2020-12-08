@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "ris:nasa_statoion"
+    },
+    "title": {
+      "translate": "advancements.leave_me_alone.title"
+    },
+    "description": {
+      "translate": "advancements.leave_me_alone.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "leave_me_alone": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "ris:moon"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "loot": [
+      "ris:alein_tressure"
+    ]
+  },
+  "parent": "ris:the_moon_is_near"
+}
