@@ -311,23 +311,23 @@ public class NasastationGUIGui extends RisModElements.ModElement {
 			int l = (this.height - this.ySize) / 2;
 			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 7, this.guiTop + 101, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 7, this.guiTop + 101, 0, 0, -1, -1, -1, -1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 25, this.guiTop + 101, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 25, this.guiTop + 101, 0, 0, -1, -1, -1, -1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 44, this.guiTop + 101, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 44, this.guiTop + 101, 0, 0, -1, -1, -1, -1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 60, this.guiTop + 102, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 60, this.guiTop + 102, 0, 0, -1, -1, -1, -1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 80, this.guiTop + 102, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 80, this.guiTop + 102, 0, 0, -1, -1, -1, -1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 97, this.guiTop + 101, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 97, this.guiTop + 101, 0, 0, -1, -1, -1, -1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 115, this.guiTop + 101, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 115, this.guiTop + 101, 0, 0, -1, -1, -1, -1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 133, this.guiTop + 101, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 133, this.guiTop + 101, 0, 0, -1, -1, -1, -1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 151, this.guiTop + 100, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 151, this.guiTop + 100, 0, 0, -1, -1, -1, -1);
 		}
 
 		@Override

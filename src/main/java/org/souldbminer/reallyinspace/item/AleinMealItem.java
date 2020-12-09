@@ -33,12 +33,7 @@ public class AleinMealItem extends RisModElements.ModElement {
 
 		@Override
 		public UseAction getUseAction(ItemStack itemstack) {
-			return UseAction.DRINK;
-		}
-
-		@Override
-		public net.minecraft.util.SoundEvent getEatSound() {
-			return net.minecraft.util.SoundEvents.ENTITY_GENERIC_DRINK;
+			return UseAction.EAT;
 		}
 	}
 }

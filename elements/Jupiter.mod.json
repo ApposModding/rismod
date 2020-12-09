@@ -4,10 +4,10 @@
   "definition": {
     "name": "Jupiter",
     "groundBlock": {
-      "value": "CUSTOM:JupiterRock"
+      "value": "Blocks.STAINED_HARDENED_CLAY#1"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:JupiterRock"
+      "value": "Blocks.STAINED_HARDENED_CLAY#1"
     },
     "treeType": 1,
     "vanillaTreeType": "Default",

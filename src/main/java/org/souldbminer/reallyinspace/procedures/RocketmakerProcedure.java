@@ -1,7 +1,6 @@
 package org.souldbminer.reallyinspace.procedures;
 
 import org.souldbminer.reallyinspace.entity.RocketEntity;
-import org.souldbminer.reallyinspace.block.JupiterRockBlock;
 import org.souldbminer.reallyinspace.block.BatteryBlock;
 import org.souldbminer.reallyinspace.RisModElements;
 
@@ -13,6 +12,7 @@ import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 
 import java.util.Map;
 
@@ -58,8 +58,8 @@ public class RocketmakerProcedure extends RisModElements.ModElement {
 			for (int index1 = 0; index1 < (int) (6); index1++) {
 				sz = (double) (-3);
 				for (int index2 = 0; index2 < (int) (6); index2++) {
-					if (((world.getBlockState(new BlockPos((int) (x + (sx)), (int) (y + (sy)), (int) (z + (sz)))))
-							.getBlock() == JupiterRockBlock.block.getDefaultState().getBlock())) {
+					if (((world.getBlockState(new BlockPos((int) (x + (sx)), (int) (y + (sy)), (int) (z + (sz))))).getBlock() == Blocks.NOTE_BLOCK
+							.getDefaultState().getBlock())) {
 						found = (boolean) (true);
 					}
 					sz = (double) ((sz) + 1);

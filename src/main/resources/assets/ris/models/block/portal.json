@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "ris:blocks/ptex",
+    "down": "ris:blocks/ptex",
+    "up": "ris:blocks//ptex",
+    "north": "ris:blocks//ptex",
+    "east": "ris:blocks//ptex",
+    "south": "ris:blocks//ptex",
+    "west": "ris:blocks//ptex",
     "particle": "ris:blocks/ptex"
   }
 }

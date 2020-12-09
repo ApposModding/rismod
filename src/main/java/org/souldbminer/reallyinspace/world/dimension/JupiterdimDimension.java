@@ -4,7 +4,6 @@ package org.souldbminer.reallyinspace.world.dimension;
 import org.souldbminer.reallyinspace.particle.PortaleffectParticle;
 import org.souldbminer.reallyinspace.item.JupiterdimItem;
 import org.souldbminer.reallyinspace.block.PortalBlock;
-import org.souldbminer.reallyinspace.block.JupiterRockBlock;
 import org.souldbminer.reallyinspace.RisModElements;
 
 import org.jline.terminal.Size;
@@ -756,11 +755,11 @@ public class JupiterdimDimension extends RisModElements.ModElement {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new OverworldGenSettings() {
 				public BlockState getDefaultBlock() {
-					return JupiterRockBlock.block.getDefaultState();
+					return Blocks.ORANGE_TERRACOTTA.getDefaultState();
 				}
 
 				public BlockState getDefaultFluid() {
-					return JupiterRockBlock.block.getDefaultState();
+					return Blocks.ORANGE_TERRACOTTA.getDefaultState();
 				}
 			});
 			this.randomSeed.skip(5349);
@@ -788,7 +787,7 @@ public class JupiterdimDimension extends RisModElements.ModElement {
 				for (Biome biome : this.biomes) {
 					biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
 						{
-							carvableBlocks = ImmutableSet.of(JupiterRockBlock.block.getDefaultState().getBlock(),
+							carvableBlocks = ImmutableSet.of(Blocks.ORANGE_TERRACOTTA.getDefaultState().getBlock(),
 									biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
 									biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
 						}

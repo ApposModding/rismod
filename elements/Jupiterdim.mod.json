@@ -26,10 +26,10 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:JupiterRock"
+      "value": "Blocks.STAINED_HARDENED_CLAY#1"
     },
     "fluidBlock": {
-      "value": "CUSTOM:JupiterRock"
+      "value": "Blocks.STAINED_HARDENED_CLAY#1"
     },
     "airColor": {
       "value": -26368,

@@ -7,7 +7,6 @@ version="1.0.0"
 displayName="ReallyInSpaceMod"
 credits="Help From my Patreons"
 displayURL="https://github.com/ApposModding/rismod"
-logoFile="logo.png"
 authors="Souldbminer & Help From My Patreons"
 description='''
 16+ custom dimensions. adding more things soom
@@ -22,4 +21,9 @@ description='''
 
 
 
+[[dependencies.ris]]
+    modId="obfuscate"
+    mandatory=false
+    ordering="NONE"
+    side="BOTH"
 

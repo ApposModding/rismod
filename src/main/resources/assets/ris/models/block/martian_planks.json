@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "ris:blocks/martian_planks",
+    "down": "ris:blocks/martian_planks",
+    "up": "ris:blocks//martian_planks",
+    "north": "ris:blocks//martian_planks",
+    "east": "ris:blocks//martian_planks",
+    "south": "ris:blocks//martian_planks",
+    "west": "ris:blocks//martian_planks",
     "particle": "ris:blocks/martian_planks"
   }
 }

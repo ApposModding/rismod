@@ -18,7 +18,6 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -56,7 +55,7 @@ public class PortalBlock extends RisModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Blocks.SPAWNER, (int) (1)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 }

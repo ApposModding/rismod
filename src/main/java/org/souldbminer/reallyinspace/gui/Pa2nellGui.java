@@ -136,7 +136,7 @@ public class Pa2nellGui extends RisModElements.ModElement {
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
 			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 254, this.guiTop + 216, 0, 0, 16, 16, 16, 16);
+			this.blit(this.guiLeft + 254, this.guiTop + 216, 0, 0, -1, -1, -1, -1);
 		}
 
 		@Override

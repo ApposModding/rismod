@@ -20,7 +20,7 @@
     },
     "forDogs": false,
     "isAlwaysEdible": false,
-    "animation": "drink",
+    "animation": "eat",
     "hasGlow": false
   }
 }

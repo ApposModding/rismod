@@ -136,11 +136,11 @@ public class PannelGui extends RisModElements.ModElement {
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
 			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-			this.blit(this.guiLeft + 169, this.guiTop + 221, 0, 0, 8, 8, 8, 8);
+			this.blit(this.guiLeft + 169, this.guiTop + 221, 0, 0, 0, 0, 0, 0);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/rocket.png"));
-			this.blit(this.guiLeft + 235, this.guiTop + 5, 0, 0, 8, 8, 8, 8);
+			this.blit(this.guiLeft + 235, this.guiTop + 5, 0, 0, 0, 0, 0, 0);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/bigrocket.png"));
-			this.blit(this.guiLeft + -3, this.guiTop + -8, 0, 0, 256, 256, 256, 256);
+			this.blit(this.guiLeft + -3, this.guiTop + -8, 0, 0, -1, -1, -1, -1);
 		}
 
 		@Override

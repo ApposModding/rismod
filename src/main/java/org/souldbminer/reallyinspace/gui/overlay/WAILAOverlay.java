@@ -73,7 +73,7 @@ public class WAILAOverlay extends RisModElements.ModElement {
 				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris:textures/modlogo.png"));
-				Minecraft.getInstance().ingameGUI.blit(posX + 193, posY + -106, 0, 0, 16, 16, 16, 16);
+				Minecraft.getInstance().ingameGUI.blit(posX + 193, posY + -106, 0, 0, -1, -1, -1, -1);
 				RenderSystem.depthMask(true);
 				RenderSystem.enableDepthTest();
 				RenderSystem.enableAlphaTest();

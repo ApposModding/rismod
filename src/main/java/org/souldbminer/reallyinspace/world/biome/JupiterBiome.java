@@ -1,7 +1,6 @@
 
 package org.souldbminer.reallyinspace.world.biome;
 
-import org.souldbminer.reallyinspace.block.JupiterRockBlock;
 import org.souldbminer.reallyinspace.RisModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
@@ -17,6 +16,7 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.block.Blocks;
 
 @RisModElements.ModElement.Tag
 public class JupiterBiome extends RisModElements.ModElement {
@@ -38,8 +38,8 @@ public class JupiterBiome extends RisModElements.ModElement {
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
 					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011)
-					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(JupiterRockBlock.block.getDefaultState(),
-							JupiterRockBlock.block.getDefaultState(), JupiterRockBlock.block.getDefaultState())));
+					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.ORANGE_TERRACOTTA.getDefaultState(),
+							Blocks.ORANGE_TERRACOTTA.getDefaultState(), Blocks.ORANGE_TERRACOTTA.getDefaultState())));
 			setRegistryName("jupiter");
 			DefaultBiomeFeatures.addCarvers(this);
 			DefaultBiomeFeatures.addStructures(this);
