@@ -2,7 +2,7 @@
   "_fv": 13,
   "_type": "mob",
   "definition": {
-    "mobName": "Agressive Alein",
+    "mobName": "Reaguar Alein",
     "mobLabel": "",
     "mobModelName": "Modelalien",
     "mobModelTexture": "al.png",
@@ -13,7 +13,7 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -65536,
+      "value": -52429,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
@@ -44,7 +44,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "attackKnockback": 0.0,
@@ -63,11 +63,11 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
-    "immuneToDrowning": false,
+    "immuneToDrowning": true,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
@@ -95,8 +95,8 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": true,
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
     "ranged": false,

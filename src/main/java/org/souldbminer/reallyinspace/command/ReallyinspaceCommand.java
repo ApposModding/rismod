@@ -32,7 +32,7 @@ public class ReallyinspaceCommand extends RisModElements.ModElement {
 	}
 
 	private LiteralArgumentBuilder<CommandSource> customCommand() {
-		return LiteralArgumentBuilder.<CommandSource>literal("reallyinspacedimensions").requires(s -> s.hasPermissionLevel(4))
+		return LiteralArgumentBuilder.<CommandSource>literal("risdebug").requires(s -> s.hasPermissionLevel(4))
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(this::execute)).executes(this::execute);
 	}
 

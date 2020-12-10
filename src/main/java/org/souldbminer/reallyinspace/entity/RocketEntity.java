@@ -94,7 +94,7 @@ public class RocketEntity extends RisModElements.ModElement {
 			return new MobRenderer(renderManager, new Modelrisrocket(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("ris:textures/rocketmodel.png");
+					return new ResourceLocation("ris:textures/risrocket.png");
 				}
 			};
 		});

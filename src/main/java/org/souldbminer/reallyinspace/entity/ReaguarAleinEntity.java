@@ -18,31 +18,23 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.entity.AgeableEntity;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
@@ -51,21 +43,21 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @RisModElements.ModElement.Tag
-public class AgressiveAleinEntity extends RisModElements.ModElement {
+public class ReaguarAleinEntity extends RisModElements.ModElement {
 	public static EntityType entity = null;
-	public AgressiveAleinEntity(RisModElements instance) {
-		super(instance, 164);
+	public ReaguarAleinEntity(RisModElements instance) {
+		super(instance, 234);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("agressive_alein")
-						.setRegistryName("agressive_alein");
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f))
+						.build("reaguar_alein").setRegistryName("reaguar_alein");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -65536, -13369549, new Item.Properties().group(RISItemGroup.tab))
-				.setRegistryName("agressive_alein_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -52429, -13369549, new Item.Properties().group(RISItemGroup.tab))
+				.setRegistryName("reaguar_alein_spawn_egg"));
 	}
 
 	@Override
@@ -98,7 +90,7 @@ public class AgressiveAleinEntity extends RisModElements.ModElement {
 			};
 		});
 	}
-	public static class CustomEntity extends AnimalEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -117,11 +109,10 @@ public class AgressiveAleinEntity extends RisModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(3, new SwimGoal(this));
+			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.5));
 		}
 
 		@Override
@@ -140,6 +131,13 @@ public class AgressiveAleinEntity extends RisModElements.ModElement {
 		}
 
 		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source == DamageSource.DROWN)
+				return false;
+			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
@@ -151,21 +149,6 @@ public class AgressiveAleinEntity extends RisModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
-		}
-
-		@Override
-		public AgeableEntity createChild(AgeableEntity ageable) {
-			CustomEntity retval = (CustomEntity) entity.create(this.world);
-			retval.onInitialSpawn(this.world, this.world.getDifficultyForLocation(new BlockPos(retval)), SpawnReason.BREEDING,
-					(ILivingEntityData) null, (CompoundNBT) null);
-			return retval;
-		}
-
-		@Override
-		public boolean isBreedingItem(ItemStack stack) {
-			if (stack == null)
-				return false;
-			return false;
 		}
 	}
 

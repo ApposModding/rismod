@@ -1915,15 +1915,6 @@
       "registry_name": "ailen_boss"
     },
     {
-      "name": "Rocketrec",
-      "type": "recipe",
-      "sortid": 208,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocketrec"
-    },
-    {
       "name": "Rocketmaker",
       "type": "procedure",
       "sortid": 209,
@@ -2169,6 +2160,57 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "waila"
+    },
+    {
+      "name": "LIFToFfThERoCkEt",
+      "type": "procedure",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lif_to_ff_th_e_ro_ck_et",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pannel2",
+      "type": "gui",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pannel_2"
+    },
+    {
+      "name": "ReaguarAlein",
+      "type": "mob",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reaguar_alein"
     }
   ],
   "variable_elements": [],
@@ -2177,8 +2219,8 @@
     "en_gb": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.resistor": "Resistor",
-      "biome.ris.plutobiome": "Plutobiome",
       "block.ris.ch_15_stairs": "CH15 Stairs",
+      "biome.ris.plutobiome": "Plutobiome",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
       "item.rismod.venusdimension": "Venus Rocket",
@@ -2189,8 +2231,8 @@
       "item.ris.eris": "Eris Rocket",
       "biome.ris.saturnb": "Saturnbiome",
       "block.rismod.martian_log": "Martian Log",
-      "enchantment.ris.marscurse": "Curse Of Mars",
       "biome.ris.venus": "Venus",
+      "enchantment.ris.marscurse": "Curse Of Mars",
       "entity.rismod.rocket": "Rocket",
       "biome.ris.neptunebiome": "Neptunebiome",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
@@ -2263,6 +2305,7 @@
       "block.rismod.martian_slab": "Martian Slab",
       "item.ris.agressive_alein_spawn_egg": "Agressive Alein Spawn Egg",
       "block.ris.ch_14_wood": "CH14 Wood",
+      "item.ris.reaguar_alein_spawn_egg": "Reaguar Alein Spawn Egg",
       "block.spacecraftforge.mercsoil": "Mercsoil",
       "block.ris.martian_leaves": "Martian Leaves",
       "block.spacecraftforge.martian_leaves": "Martian Leaves",
@@ -2287,6 +2330,7 @@
       "item.ris.venusdimension": "Venus Rocket",
       "item.rismod.galaxium_armor_chestplate": "Galaxium Chestplate",
       "block.rismod.martian_leaves": "Martian Leaves",
+      "entity.ris.reaguar_alein": "Reaguar Alein",
       "biome.ris.kupierbiome": "Kupierbiome",
       "biome.ris.mercfltbiomes": "MercFlatBiome",
       "item.rismod.galaxium_pickaxe": "Galaxium Pickaxe",
@@ -2347,8 +2391,8 @@
     "en_us": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.resistor": "Resistor",
-      "biome.ris.plutobiome": "Plutobiome",
       "block.ris.ch_15_stairs": "CH15 Stairs",
+      "biome.ris.plutobiome": "Plutobiome",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
       "item.rismod.venusdimension": "Venus Rocket",
@@ -2359,8 +2403,8 @@
       "item.ris.eris": "Eris Rocket",
       "biome.ris.saturnb": "Saturnbiome",
       "block.rismod.martian_log": "Martian Log",
-      "enchantment.ris.marscurse": "Curse Of Mars",
       "biome.ris.venus": "Venus",
+      "enchantment.ris.marscurse": "Curse Of Mars",
       "entity.rismod.rocket": "Rocket",
       "biome.ris.neptunebiome": "Neptunebiome",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
@@ -2433,6 +2477,7 @@
       "block.rismod.martian_slab": "Martian Slab",
       "item.ris.agressive_alein_spawn_egg": "Agressive Alein Spawn Egg",
       "block.ris.ch_14_wood": "CH14 Wood",
+      "item.ris.reaguar_alein_spawn_egg": "Reaguar Alein Spawn Egg",
       "block.spacecraftforge.mercsoil": "Mercsoil",
       "block.ris.martian_leaves": "Martian Leaves",
       "block.spacecraftforge.martian_leaves": "Martian Leaves",
@@ -2457,6 +2502,7 @@
       "item.ris.venusdimension": "Venus Rocket",
       "item.rismod.galaxium_armor_chestplate": "Galaxium Chestplate",
       "block.rismod.martian_leaves": "Martian Leaves",
+      "entity.ris.reaguar_alein": "Reaguar Alein",
       "biome.ris.kupierbiome": "Kupierbiome",
       "biome.ris.mercfltbiomes": "MercFlatBiome",
       "item.rismod.galaxium_pickaxe": "Galaxium Pickaxe",
@@ -2517,8 +2563,8 @@
     "hi_in": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.resistor": "Resistor",
-      "biome.ris.plutobiome": "Plutobiome",
       "block.ris.ch_15_stairs": "CH15 Stairs",
+      "biome.ris.plutobiome": "Plutobiome",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
       "item.rismod.venusdimension": "Venus Rocket",
@@ -2529,8 +2575,8 @@
       "item.ris.eris": "Eris Rocket",
       "biome.ris.saturnb": "Saturnbiome",
       "block.rismod.martian_log": "Martian Log",
-      "enchantment.ris.marscurse": "Curse Of Mars",
       "biome.ris.venus": "Venus",
+      "enchantment.ris.marscurse": "Curse Of Mars",
       "entity.rismod.rocket": "Rocket",
       "biome.ris.neptunebiome": "Neptunebiome",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
@@ -2603,6 +2649,7 @@
       "block.rismod.martian_slab": "Martian Slab",
       "item.ris.agressive_alein_spawn_egg": "Agressive Alein Spawn Egg",
       "block.ris.ch_14_wood": "CH14 Wood",
+      "item.ris.reaguar_alein_spawn_egg": "Reaguar Alein Spawn Egg",
       "block.spacecraftforge.mercsoil": "Mercsoil",
       "block.ris.martian_leaves": "Martian Leaves",
       "block.spacecraftforge.martian_leaves": "Martian Leaves",
@@ -2627,6 +2674,7 @@
       "item.ris.venusdimension": "Venus Rocket",
       "item.rismod.galaxium_armor_chestplate": "Galaxium Chestplate",
       "block.rismod.martian_leaves": "Martian Leaves",
+      "entity.ris.reaguar_alein": "Reaguar Alein",
       "biome.ris.kupierbiome": "Kupierbiome",
       "biome.ris.mercfltbiomes": "MercFlatBiome",
       "item.rismod.galaxium_pickaxe": "Galaxium Pickaxe",
@@ -2687,8 +2735,8 @@
     "en_in": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.resistor": "Resistor",
-      "biome.ris.plutobiome": "Plutobiome",
       "block.ris.ch_15_stairs": "CH15 Stairs",
+      "biome.ris.plutobiome": "Plutobiome",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
       "item.rismod.venusdimension": "Venus Rocket",
@@ -2699,8 +2747,8 @@
       "item.ris.eris": "Eris Rocket",
       "biome.ris.saturnb": "Saturnbiome",
       "block.rismod.martian_log": "Martian Log",
-      "enchantment.ris.marscurse": "Curse Of Mars",
       "biome.ris.venus": "Venus",
+      "enchantment.ris.marscurse": "Curse Of Mars",
       "entity.rismod.rocket": "Rocket",
       "biome.ris.neptunebiome": "Neptunebiome",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
@@ -2773,6 +2821,7 @@
       "block.rismod.martian_slab": "Martian Slab",
       "item.ris.agressive_alein_spawn_egg": "Agressive Alein Spawn Egg",
       "block.ris.ch_14_wood": "CH14 Wood",
+      "item.ris.reaguar_alein_spawn_egg": "Reaguar Alein Spawn Egg",
       "block.spacecraftforge.mercsoil": "Mercsoil",
       "block.ris.martian_leaves": "Martian Leaves",
       "block.spacecraftforge.martian_leaves": "Martian Leaves",
@@ -2797,6 +2846,7 @@
       "item.ris.venusdimension": "Venus Rocket",
       "item.rismod.galaxium_armor_chestplate": "Galaxium Chestplate",
       "block.rismod.martian_leaves": "Martian Leaves",
+      "entity.ris.reaguar_alein": "Reaguar Alein",
       "biome.ris.kupierbiome": "Kupierbiome",
       "biome.ris.mercfltbiomes": "MercFlatBiome",
       "item.rismod.galaxium_pickaxe": "Galaxium Pickaxe",
@@ -2857,8 +2907,8 @@
     "es_es": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.resistor": "Resistor",
-      "biome.ris.plutobiome": "Plutobiome",
       "block.ris.ch_15_stairs": "CH15 Stairs",
+      "biome.ris.plutobiome": "Plutobiome",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
       "item.rismod.venusdimension": "Venus Rocket",
@@ -2869,8 +2919,8 @@
       "item.ris.eris": "Eris Rocket",
       "biome.ris.saturnb": "Saturnbiome",
       "block.rismod.martian_log": "Martian Log",
-      "enchantment.ris.marscurse": "Curse Of Mars",
       "biome.ris.venus": "Venus",
+      "enchantment.ris.marscurse": "Curse Of Mars",
       "entity.rismod.rocket": "Rocket",
       "biome.ris.neptunebiome": "Neptunebiome",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
@@ -2943,6 +2993,7 @@
       "block.rismod.martian_slab": "Martian Slab",
       "item.ris.agressive_alein_spawn_egg": "Agressive Alein Spawn Egg",
       "block.ris.ch_14_wood": "CH14 Wood",
+      "item.ris.reaguar_alein_spawn_egg": "Reaguar Alein Spawn Egg",
       "block.spacecraftforge.mercsoil": "Mercsoil",
       "block.ris.martian_leaves": "Martian Leaves",
       "block.spacecraftforge.martian_leaves": "Martian Leaves",
@@ -2967,6 +3018,7 @@
       "item.ris.venusdimension": "Venus Rocket",
       "item.rismod.galaxium_armor_chestplate": "Galaxium Chestplate",
       "block.rismod.martian_leaves": "Martian Leaves",
+      "entity.ris.reaguar_alein": "Reaguar Alein",
       "biome.ris.kupierbiome": "Kupierbiome",
       "biome.ris.mercfltbiomes": "MercFlatBiome",
       "item.rismod.galaxium_pickaxe": "Galaxium Pickaxe",

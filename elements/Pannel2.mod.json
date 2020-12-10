@@ -1,0 +1,356 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 424,
+    "height": 238,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Search Planets",
+          "width": 120,
+          "height": 20,
+          "name": "Search",
+          "x": 4,
+          "y": 216
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mercury",
+          "onClick": {
+            "name": "Merctp"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Mercury",
+          "x": 16,
+          "y": 22
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Venus",
+          "onClick": {
+            "name": "Ventp"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Venus",
+          "x": 20,
+          "y": 47
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Earth",
+          "onClick": {
+            "name": "Etp"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Earth",
+          "x": 21,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mars",
+          "onClick": {
+            "name": "Marsdimtp"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Mars",
+          "x": 24,
+          "y": 97
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Jupiter",
+          "onClick": {
+            "name": "Juptp"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Jupiter",
+          "x": 17,
+          "y": 121
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Saturn",
+          "onClick": {
+            "name": "Sattp"
+          },
+          "width": 55,
+          "height": 20,
+          "name": "Saturn",
+          "x": 19,
+          "y": 142
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Dwarf Planets",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "Dwarf Planets",
+          "x": 169,
+          "y": 4
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Astroid Belts",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": "Astroid Belts",
+          "x": 89,
+          "y": 5
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Astroid",
+          "onClick": {
+            "name": "Atp"
+          },
+          "width": 55,
+          "height": 20,
+          "name": "Astroid",
+          "x": 94,
+          "y": 24
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Moons",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Moons",
+          "x": 260,
+          "y": 4
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Planets",
+          "color": {
+            "value": -205,
+            "falpha": 0.0
+          },
+          "name": "Planets",
+          "x": 28,
+          "y": 5
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Stars",
+          "color": {
+            "value": -13369549,
+            "falpha": 0.0
+          },
+          "name": "Stars",
+          "x": 354,
+          "y": 3
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "The Sun",
+          "onClick": {
+            "name": "Suntp"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "The Sun",
+          "x": 339,
+          "y": 20
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Earth's Moon #1",
+          "onClick": {
+            "name": "Moontp"
+          },
+          "width": 100,
+          "height": 20,
+          "name": "Earth's Moon #1",
+          "x": 236,
+          "y": 20
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Earth's Moon #2",
+          "onClick": {
+            "name": "Moon2tp"
+          },
+          "width": 100,
+          "height": 20,
+          "name": "Earth's Moon #2",
+          "x": 236,
+          "y": 43
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Phobos",
+          "width": 55,
+          "height": 20,
+          "name": "Phobos",
+          "x": 259,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Deimos",
+          "width": 55,
+          "height": 20,
+          "name": "Deimos",
+          "x": 258,
+          "y": 100
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Titan",
+          "width": 50,
+          "height": 20,
+          "name": "Titan",
+          "x": 261,
+          "y": 128
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Europa",
+          "width": 55,
+          "height": 20,
+          "name": "Europa",
+          "x": 258,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Io",
+          "width": 35,
+          "height": 20,
+          "name": "Io",
+          "x": 269,
+          "y": 180
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Page 1/2",
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "name": "Page 1/2",
+          "x": 129,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "modlogo.png",
+          "use1Xscale": true,
+          "name": "modlogo.png",
+          "x": 171,
+          "y": 222
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Tier 2 Rocket Is needed",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Tier 2 Rocket Is needed",
+          "x": 106,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rocket.png",
+          "use1Xscale": true,
+          "name": "rocket.png",
+          "x": 237,
+          "y": 6
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bigrocket.png",
+          "use1Xscale": false,
+          "name": "bigrocket.png",
+          "x": -2,
+          "y": -7
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">>>>",
+          "onClick": {
+            "name": "Guitrigger1"
+          },
+          "width": 45,
+          "height": 20,
+          "name": ">>>>",
+          "x": 373,
+          "y": 212
+        }
+      }
+    ]
+  }
+}

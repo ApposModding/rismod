@@ -2,7 +2,7 @@
   "display": {
     "background": "ris:textures/bigrocket.png",
     "icon": {
-      "item": "ris:portal"
+      "item": "ris:space_portal"
     },
     "title": {
       "translate": "advancements.really_in_spacea.title"
