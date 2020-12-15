@@ -1,0 +1,82 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 218,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Gaze At the stars",
+          "width": 110,
+          "height": 20,
+          "name": "Gaze At the stars",
+          "x": 164,
+          "y": 56
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Star Gazer",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": "Star Gazer",
+          "x": 186,
+          "y": 43
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Make Sure a star finder is nearby to gaze!",
+          "color": {
+            "value": -65485,
+            "falpha": 0.0
+          },
+          "name": "Make Sure a star finder is nearby to gaze!",
+          "x": 107,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Input Star finder",
+          "color": {
+            "value": -65281,
+            "falpha": 0.0
+          },
+          "name": "Input Star finder",
+          "x": 111,
+          "y": 86
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Takeinstarfinderitem"
+          },
+          "name": "Slot #1",
+          "x": 223,
+          "y": 83
+        }
+      }
+    ]
+  }
+}

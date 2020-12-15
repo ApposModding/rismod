@@ -2211,6 +2211,59 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "reaguar_alein"
+    },
+    {
+      "name": "Stargazer",
+      "type": "gui",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stargazer"
+    },
+    {
+      "name": "Stargazerblock",
+      "type": "block",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stargazerblock"
+    },
+    {
+      "name": "Takeinstarfinderitem",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "takeinstarfinderitem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StarFinderitem",
+      "type": "item",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "star_finderitem"
+    },
+    {
+      "name": "Sgo",
+      "type": "overlay",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sgo"
     }
   ],
   "variable_elements": [],
@@ -2278,6 +2331,7 @@
       "block.ris.ch_15_slab": "CH15 Slab",
       "item.ris.alein_meal.command.tooltip1": "Hello?",
       "block.ris.martian_fence": "Martian Fence",
+      "block.ris.stargazerblock": "Stargazer",
       "advancements.the_moon_is_near.title": "The Moon Is Near",
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
       "entity.ris.lander": "Lander",
@@ -2348,6 +2402,7 @@
       "item.ris.rocket_spawn_egg": "Rocket Spawn Egg",
       "item.ris.moon_2": "Moon#2 Rocket",
       "block.ris.galaxium_ore": "Galaxium Ore",
+      "item.ris.star_finderitem": "Star Finder",
       "block.ris.battery": "Battery",
       "block.rismod.galaxium_ore": "Galaxium Ore",
       "block.rismod.compressedmagma": "Compressed magma",
@@ -2450,6 +2505,7 @@
       "block.ris.ch_15_slab": "CH15 Slab",
       "item.ris.alein_meal.command.tooltip1": "Hello?",
       "block.ris.martian_fence": "Martian Fence",
+      "block.ris.stargazerblock": "Stargazer",
       "advancements.the_moon_is_near.title": "The Moon Is Near",
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
       "entity.ris.lander": "Lander",
@@ -2520,6 +2576,7 @@
       "item.ris.rocket_spawn_egg": "Rocket Spawn Egg",
       "item.ris.moon_2": "Moon#2 Rocket",
       "block.ris.galaxium_ore": "Galaxium Ore",
+      "item.ris.star_finderitem": "Star Finder",
       "block.ris.battery": "Battery",
       "block.rismod.galaxium_ore": "Galaxium Ore",
       "block.rismod.compressedmagma": "Compressed magma",
@@ -2622,6 +2679,7 @@
       "block.ris.ch_15_slab": "CH15 Slab",
       "item.ris.alein_meal.command.tooltip1": "Hello?",
       "block.ris.martian_fence": "Martian Fence",
+      "block.ris.stargazerblock": "Stargazer",
       "advancements.the_moon_is_near.title": "The Moon Is Near",
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
       "entity.ris.lander": "Lander",
@@ -2692,6 +2750,7 @@
       "item.ris.rocket_spawn_egg": "Rocket Spawn Egg",
       "item.ris.moon_2": "Moon#2 Rocket",
       "block.ris.galaxium_ore": "Galaxium Ore",
+      "item.ris.star_finderitem": "Star Finder",
       "block.ris.battery": "Battery",
       "block.rismod.galaxium_ore": "Galaxium Ore",
       "block.rismod.compressedmagma": "Compressed magma",
@@ -2794,6 +2853,7 @@
       "block.ris.ch_15_slab": "CH15 Slab",
       "item.ris.alein_meal.command.tooltip1": "Hello?",
       "block.ris.martian_fence": "Martian Fence",
+      "block.ris.stargazerblock": "Stargazer",
       "advancements.the_moon_is_near.title": "The Moon Is Near",
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
       "entity.ris.lander": "Lander",
@@ -2864,6 +2924,7 @@
       "item.ris.rocket_spawn_egg": "Rocket Spawn Egg",
       "item.ris.moon_2": "Moon#2 Rocket",
       "block.ris.galaxium_ore": "Galaxium Ore",
+      "item.ris.star_finderitem": "Star Finder",
       "block.ris.battery": "Battery",
       "block.rismod.galaxium_ore": "Galaxium Ore",
       "block.rismod.compressedmagma": "Compressed magma",
@@ -2966,6 +3027,7 @@
       "block.ris.ch_15_slab": "CH15 Slab",
       "item.ris.alein_meal.command.tooltip1": "Hello?",
       "block.ris.martian_fence": "Martian Fence",
+      "block.ris.stargazerblock": "Stargazer",
       "advancements.the_moon_is_near.title": "The Moon Is Near",
       "item.rismod.galaxium_shovel": "Galaxium Shovel",
       "entity.ris.lander": "Lander",
@@ -3036,6 +3098,7 @@
       "item.ris.rocket_spawn_egg": "Rocket Spawn Egg",
       "item.ris.moon_2": "Moon#2 Rocket",
       "block.ris.galaxium_ore": "Galaxium Ore",
+      "item.ris.star_finderitem": "Star Finder",
       "block.ris.battery": "Battery",
       "block.rismod.galaxium_ore": "Galaxium Ore",
       "block.rismod.compressedmagma": "Compressed magma",
