@@ -33,7 +33,7 @@
     "bulletItemTexture": {
       "value": "CUSTOM:IC"
     },
-    "bulletModel": "Default",
+    "bulletModel": "Modelbl",
     "customBulletModelTexture": "risrocket.png"
   }
 }

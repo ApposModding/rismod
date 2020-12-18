@@ -337,12 +337,14 @@ public class Pa2nellGui extends RisModElements.ModElement {
 		if (buttonID == 0) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				CerestpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 1) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				CenturitpProcedure.executeProcedure($_dependencies);
 			}
 		}
@@ -363,36 +365,46 @@ public class Pa2nellGui extends RisModElements.ModElement {
 		if (buttonID == 5) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				PtpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 6) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				HaumeaTPProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 7) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				EristpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 8) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				Guitrigger2Procedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 9) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				MakeMakeTPProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 10) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				KupertpProcedure.executeProcedure($_dependencies);
 			}
 		}

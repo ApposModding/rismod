@@ -455,6 +455,7 @@ public class StargazerGui extends RisModElements.ModElement {
 		if (slotID == 1 && changeType == 0) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				TakeinstarfinderitemProcedure.executeProcedure($_dependencies);
 			}
 		}

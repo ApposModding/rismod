@@ -2066,15 +2066,6 @@
       "registry_name": "recipie_ic"
     },
     {
-      "name": "WAILA",
-      "type": "overlay",
-      "sortid": 231,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "waila"
-    },
-    {
       "name": "LIFToFfThERoCkEt",
       "type": "procedure",
       "sortid": 232,
@@ -2385,6 +2376,39 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "really_in_space_guns"
+    },
+    {
+      "name": "OPenCraftinggrid",
+      "type": "procedure",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "o_pen_craftinggrid",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

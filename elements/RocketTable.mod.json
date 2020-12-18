@@ -75,7 +75,7 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": true,
+    "hasInventory": false,
     "guiBoundTo": "Rocketcreator",
     "openGUIOnRightClick": false,
     "inventorySize": 17,
@@ -95,6 +95,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "OPenCraftinggrid"
+    },
     "onTickUpdate": {
       "name": "Craftrockets"
     },

@@ -96,7 +96,7 @@ public class Tier2rocketEntity extends RisModElements.ModElement {
 			return new MobRenderer(renderManager, new Modelrocketmodel(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("ris:textures/rocketmodel.png");
+					return new ResourceLocation("ris:textures/risrocket.png");
 				}
 			};
 		});
