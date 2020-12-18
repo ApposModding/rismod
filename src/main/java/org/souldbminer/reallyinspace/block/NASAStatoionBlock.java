@@ -1,7 +1,7 @@
 
 package org.souldbminer.reallyinspace.block;
 
-import org.souldbminer.reallyinspace.procedures.RocketmakerProcedure;
+import org.souldbminer.reallyinspace.procedures.Rmaker1Procedure;
 import org.souldbminer.reallyinspace.itemgroup.RISItemGroup;
 import org.souldbminer.reallyinspace.RisModElements;
 
@@ -75,7 +75,7 @@ public class NASAStatoionBlock extends RisModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				RocketmakerProcedure.executeProcedure($_dependencies);
+				Rmaker1Procedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}

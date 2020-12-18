@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
@@ -29,6 +28,7 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Users/apposteam/MCreatorWorkspaces/spacecraftforge/build/natives"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry sourcepath="/Users/apposteam/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-sources.jar" kind="lib" path="/Users/apposteam/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar">
 		<attributes>
@@ -145,7 +145,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/apposteam/.mcreator/gradle/caches/modules-2/files-2.1/net.jodah/typetools/0.8.1/d12de898d333cb7eb0e39a35db03c1e09d92d595/typetools-0.8.1.jar">
+	<classpathentry kind="lib" path="/Users/apposteam/.mcreator/gradle/caches/modules-2/files-2.1/net.jodah/typetools/0.8.3/98f84f353457629e81cc6827224871b1a8faa7af/typetools-0.8.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

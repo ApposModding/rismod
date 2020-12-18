@@ -21,9 +21,4 @@ description='''
 
 
 
-[[dependencies.ris]]
-    modId="obfuscate"
-    mandatory=false
-    ordering="NONE"
-    side="BOTH"
 

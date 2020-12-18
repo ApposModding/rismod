@@ -93,7 +93,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "Rockettwomaker"
+      "name": "Rmaker2"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

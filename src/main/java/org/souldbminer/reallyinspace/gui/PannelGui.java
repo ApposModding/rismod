@@ -358,70 +358,60 @@ public class PannelGui extends RisModElements.ModElement {
 		if (buttonID == 0) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				MerctpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 1) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				VentpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 2) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				EtpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 3) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				MarsdimtpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 4) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				JuptpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 5) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				SattpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 6) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				AtpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 7) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				SuntpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 8) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				MoontpProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 9) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				Moon2tpProcedure.executeProcedure($_dependencies);
 			}
 		}

@@ -93,7 +93,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "Rocketmaker"
+      "name": "Rmaker1"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

@@ -1850,35 +1850,6 @@
       "registry_name": "manton_hoe_recipe"
     },
     {
-      "name": "Energyfaneinput",
-      "type": "procedure",
-      "sortid": 203,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "energyfaneinput",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Battery",
       "type": "block",
       "sortid": 204,
@@ -1915,35 +1886,6 @@
       "registry_name": "ailen_boss"
     },
     {
-      "name": "Rocketmaker",
-      "type": "procedure",
-      "sortid": 209,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocketmaker",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "NASAStatoion",
       "type": "block",
       "sortid": 210,
@@ -1951,35 +1893,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "nasa_statoion"
-    },
-    {
-      "name": "Rockettwomaker",
-      "type": "procedure",
-      "sortid": 211,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rockettwomaker",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "NASABIGStation",
@@ -2257,13 +2170,62 @@
       "registry_name": "star_finderitem"
     },
     {
-      "name": "Sgo",
-      "type": "overlay",
+      "name": "Rmaker1",
+      "type": "procedure",
       "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sgo"
+      "registry_name": "rmaker_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rmaker2",
+      "type": "procedure",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rmaker_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3152,9 +3114,7 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "obfuscate"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
     "credits": "Help From my Patreons",
     "modElementsPackage": "org.souldbminer.reallyinspace",
