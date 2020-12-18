@@ -2226,6 +2226,91 @@
           }
         ]
       }
+    },
+    {
+      "name": "FuisonTable",
+      "type": "gui",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fuison_table"
+    },
+    {
+      "name": "Rocketcreator",
+      "type": "gui",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocketcreator"
+    },
+    {
+      "name": "Rocketablecraftrockets",
+      "type": "procedure",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocketablecraftrockets",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Craftrockets",
+      "type": "procedure",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "craftrockets",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RocketTable",
+      "type": "block",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_table"
     }
   ],
   "variable_elements": [],
@@ -2234,8 +2319,8 @@
     "en_gb": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.resistor": "Resistor",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
       "item.rismod.venusdimension": "Venus Rocket",
@@ -2246,8 +2331,8 @@
       "item.ris.eris": "Eris Rocket",
       "biome.ris.saturnb": "Saturnbiome",
       "block.rismod.martian_log": "Martian Log",
-      "biome.ris.venus": "Venus",
       "enchantment.ris.marscurse": "Curse Of Mars",
+      "biome.ris.venus": "Venus",
       "entity.rismod.rocket": "Rocket",
       "biome.ris.neptunebiome": "Neptunebiome",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
@@ -2394,6 +2479,7 @@
       "biome.ris.sunbiome": "Sunbiome",
       "block.ris.ch_15_planks": "CH15 Planks",
       "item.ris.kupier": "Kupier Rocket",
+      "block.ris.rocket_table": "Rocket Table",
       "item.ris.ceres": "Ceres Rocket",
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",
@@ -2408,8 +2494,8 @@
     "en_us": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.resistor": "Resistor",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
       "item.rismod.venusdimension": "Venus Rocket",
@@ -2420,8 +2506,8 @@
       "item.ris.eris": "Eris Rocket",
       "biome.ris.saturnb": "Saturnbiome",
       "block.rismod.martian_log": "Martian Log",
-      "biome.ris.venus": "Venus",
       "enchantment.ris.marscurse": "Curse Of Mars",
+      "biome.ris.venus": "Venus",
       "entity.rismod.rocket": "Rocket",
       "biome.ris.neptunebiome": "Neptunebiome",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
@@ -2568,6 +2654,7 @@
       "biome.ris.sunbiome": "Sunbiome",
       "block.ris.ch_15_planks": "CH15 Planks",
       "item.ris.kupier": "Kupier Rocket",
+      "block.ris.rocket_table": "Rocket Table",
       "item.ris.ceres": "Ceres Rocket",
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",
@@ -2582,8 +2669,8 @@
     "hi_in": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.resistor": "Resistor",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
       "item.rismod.venusdimension": "Venus Rocket",
@@ -2594,8 +2681,8 @@
       "item.ris.eris": "Eris Rocket",
       "biome.ris.saturnb": "Saturnbiome",
       "block.rismod.martian_log": "Martian Log",
-      "biome.ris.venus": "Venus",
       "enchantment.ris.marscurse": "Curse Of Mars",
+      "biome.ris.venus": "Venus",
       "entity.rismod.rocket": "Rocket",
       "biome.ris.neptunebiome": "Neptunebiome",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
@@ -2742,6 +2829,7 @@
       "biome.ris.sunbiome": "Sunbiome",
       "block.ris.ch_15_planks": "CH15 Planks",
       "item.ris.kupier": "Kupier Rocket",
+      "block.ris.rocket_table": "Rocket Table",
       "item.ris.ceres": "Ceres Rocket",
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",
@@ -2756,8 +2844,8 @@
     "en_in": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.resistor": "Resistor",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
       "item.rismod.venusdimension": "Venus Rocket",
@@ -2768,8 +2856,8 @@
       "item.ris.eris": "Eris Rocket",
       "biome.ris.saturnb": "Saturnbiome",
       "block.rismod.martian_log": "Martian Log",
-      "biome.ris.venus": "Venus",
       "enchantment.ris.marscurse": "Curse Of Mars",
+      "biome.ris.venus": "Venus",
       "entity.rismod.rocket": "Rocket",
       "biome.ris.neptunebiome": "Neptunebiome",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
@@ -2916,6 +3004,7 @@
       "biome.ris.sunbiome": "Sunbiome",
       "block.ris.ch_15_planks": "CH15 Planks",
       "item.ris.kupier": "Kupier Rocket",
+      "block.ris.rocket_table": "Rocket Table",
       "item.ris.ceres": "Ceres Rocket",
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",
@@ -2930,8 +3019,8 @@
     "es_es": {
       "block.rismod.jupiter_rock": "Jupiter Rock",
       "item.ris.resistor": "Resistor",
-      "block.ris.ch_15_stairs": "CH15 Stairs",
       "biome.ris.plutobiome": "Plutobiome",
+      "block.ris.ch_15_stairs": "CH15 Stairs",
       "block.ris.ch_16_stairs": "CH16 Stairs",
       "block.ris.ch_14_stairs": "CH14 Stairs",
       "item.rismod.venusdimension": "Venus Rocket",
@@ -2942,8 +3031,8 @@
       "item.ris.eris": "Eris Rocket",
       "biome.ris.saturnb": "Saturnbiome",
       "block.rismod.martian_log": "Martian Log",
-      "biome.ris.venus": "Venus",
       "enchantment.ris.marscurse": "Curse Of Mars",
+      "biome.ris.venus": "Venus",
       "entity.rismod.rocket": "Rocket",
       "biome.ris.neptunebiome": "Neptunebiome",
       "item.rismod.galaxium_hoe": "Galaxium Hoe",
@@ -3090,6 +3179,7 @@
       "biome.ris.sunbiome": "Sunbiome",
       "block.ris.ch_15_planks": "CH15 Planks",
       "item.ris.kupier": "Kupier Rocket",
+      "block.ris.rocket_table": "Rocket Table",
       "item.ris.ceres": "Ceres Rocket",
       "block.rismod.martian_fence": "Martian Fence",
       "item.rismod.galaxium_armor_leggings": "Galaxium Leggings",
