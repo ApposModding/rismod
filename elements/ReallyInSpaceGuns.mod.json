@@ -2,9 +2,9 @@
   "_fv": 13,
   "_type": "tab",
   "definition": {
-    "name": "Really In Space",
+    "name": "Really In Space Guns",
     "icon": {
-      "value": "CUSTOM:Portal"
+      "value": "CUSTOM:AEK971Gun"
     },
     "showSearch": false
   }
